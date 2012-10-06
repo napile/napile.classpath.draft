@@ -1,0 +1,18 @@
+package coveredTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 18.08.12
+ * Time: 21:42
+ * To change this template use File | Settings | File Templates.
+ */
+class CoveredClass
+{
+	this()
+
+	covered meth test()
+	{
+
+	}
+}

@@ -1,0 +1,28 @@
+package napile.reflect
+
+import napile.reflect.Class
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 12.09.12
+ * Time: 21:07
+ * To change this template use File | Settings | File Templates.
+ */
+class Class<E>
+{
+	var name : String
+
+	local this(name)
+
+	meth getEClass() : Class<E>
+	{
+		return classOf(E)
+	}
+
+	meth isSuper(value : Class<E>) : Bool
+	{
+		return false
+	}
+}

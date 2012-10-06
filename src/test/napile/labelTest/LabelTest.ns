@@ -1,0 +1,24 @@
+package labelTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 08.09.12
+ * Time: 20:35
+ * To change this template use File | Settings | File Templates.
+ */
+class LabelTest
+{
+	meth a() : Int
+	{
+		label my
+		{
+			var c = 1
+
+			if(c == 1)
+				break my
+		}
+
+		return 1
+	}
+}

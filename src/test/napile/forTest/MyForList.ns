@@ -1,0 +1,25 @@
+package forTest
+
+import napile.util.Iterator
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 14.09.12
+ * Time: 17:45
+ * To change this template use File | Settings | File Templates.
+ */
+class MyForList<E>
+{
+	this()
+
+	meth iterator() : Iterator<E>
+	{
+		return anonym : Iterator<E>()
+		{
+			override meth hasNext() : Bool  = false
+
+			override meth next() : E = throw Exception()
+		}
+	}
+}

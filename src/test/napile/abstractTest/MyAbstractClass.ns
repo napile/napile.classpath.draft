@@ -1,0 +1,18 @@
+package abstractTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 13.09.12
+ * Time: 0:23
+ * To change this template use File | Settings | File Templates.
+ */
+abstract class MyAbstractClass
+{
+	this()
+
+	meth me()
+	{
+		//var c = MyAbstractClass()
+	}
+}

@@ -1,0 +1,28 @@
+package napile.lang
+
+import napile.util.Iterator
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 06.09.12
+ * Time: 23:58
+ * To change this template use File | Settings | File Templates.
+ */
+class Array<E>
+{
+	var length : Int = 0
+
+	this(length)
+	{
+		init()
+	}
+
+	native meth init()
+
+	native meth set(index : Int, value : E)
+
+	native meth get(index : Int)
+
+	meth iterator() : Iterator<E> = ArrayIterator<E>(this)
+}

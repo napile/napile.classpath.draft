@@ -1,0 +1,26 @@
+package codegenTest.forTest
+
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 03.10.12
+ * Time: 13:49
+ * To change this template use File | Settings | File Templates.
+ */
+class ForTest
+{
+	static meth main(arg : Array<String>)
+	{
+		var b = Array<String>(5)
+		b[0] = "b0"
+		b[1] = "b1"
+		b[2] = "b2"
+		b[3] = "b3"
+		b[4] = "b4"
+
+		for(c in b)
+			Console.writeLine(c.toString())
+	}
+}

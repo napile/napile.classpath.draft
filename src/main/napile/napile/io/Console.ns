@@ -1,0 +1,15 @@
+package napile.io
+
+import napile.io.Console.writeLine
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 20.09.12
+ * Time: 14:53
+ * To change this template use File | Settings | File Templates.
+ */
+class Console
+{
+	native static meth writeLine(value : String)
+}

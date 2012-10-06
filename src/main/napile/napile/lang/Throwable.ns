@@ -1,0 +1,33 @@
+package napile.lang
+
+import napile.io.Console
+import napile.util.Iterator
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 06.09.12
+ * Time: 12:42
+ * To change this template use File | Settings | File Templates.
+ */
+class Throwable
+{
+	var message : String = "no message"
+
+	var stack : Array<StackTraceElement>
+
+	this(message)
+	{
+		stack = getStack0()
+	}
+
+	native local meth getStack0() : Array<StackTraceElement>
+
+	meth printStackTrace()
+	{
+		Console.writeLine("Message: ")
+		Console.writeLine(message)
+		for(b in stack)
+			Console.writeLine(b.name)
+	}
+}

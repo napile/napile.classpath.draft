@@ -1,0 +1,18 @@
+package annotationTest
+
+import napile.annotation.Annotation
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 29.08.12
+ * Time: 0:54
+ * To change this template use File | Settings | File Templates.
+ */
+@Annotation(null)
+class AnnotationTp<T>
+{
+	this(t : T)
+
+
+}

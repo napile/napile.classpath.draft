@@ -1,0 +1,25 @@
+package staticTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 19.08.12
+ * Time: 6:23
+ * To change this template use File | Settings | File Templates.
+ */
+class VarHolder
+{
+	static var myVar1 : Int = 1
+
+	meth test()
+	{
+		myVar1 = 1 + 2
+	}
+
+	static meth a()
+	{
+		//test()
+
+		//myVar1 = 1 + 2
+	}
+}

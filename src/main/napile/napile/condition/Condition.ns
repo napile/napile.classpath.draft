@@ -1,0 +1,17 @@
+package napile.condition
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 06.09.12
+ * Time: 12:43
+ * To change this template use File | Settings | File Templates.
+ */
+abstract class Condition<E>
+{
+	this()
+
+	abstract meth test(value : E) : Bool
+
+	meth and(ConditionValue : Condition<E>) : ConditionContainer<E> = And<E>()
+}

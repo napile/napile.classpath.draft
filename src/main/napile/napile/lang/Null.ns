@@ -1,0 +1,18 @@
+package napile.lang
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 12.08.12
+ * Time: 13:54
+ * To change this template use File | Settings | File Templates.
+ */
+
+class Null
+{
+	static var INSTANCE : Null = Null()
+
+	local this()
+
+	override meth toString() = "null"
+}

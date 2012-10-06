@@ -1,0 +1,22 @@
+package napile.lang
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 04.08.12
+ * Time: 21:23
+ * To change this template use File | Settings | File Templates.
+ */
+class Bool
+{
+	final static var TRUE : Bool = Bool("true")
+	final static var FALSE : Bool = Bool("false")
+
+	local var value : String = ""
+
+	local this(value)
+
+	meth not() : Bool = if(this) FALSE else TRUE
+
+	override meth toString() = value
+}

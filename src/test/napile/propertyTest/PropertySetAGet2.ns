@@ -1,0 +1,16 @@
+package propertyTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 28.09.12
+ * Time: 12:01
+ * To change this template use File | Settings | File Templates.
+ */
+class PropertySetAGet2 : PropertySetAGet
+{
+	this() : PropertySetAGet()
+
+	/*local meth a.set(a)
+	{}*/
+}

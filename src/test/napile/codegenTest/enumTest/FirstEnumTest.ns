@@ -1,0 +1,21 @@
+package codegenTest.enumTest
+
+import napile.io.Console
+import napile.condition.CompareResult
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 05.10.12
+ * Time: 19:12
+ * To change this template use File | Settings | File Templates.
+ */
+class FirstEnumTest
+{
+	static meth main(arg : Array<String>)
+	{
+		Console.writeLine(CompareResult.EQUAL.getClass().name)
+		Console.writeLine(CompareResult.GREATER.getClass().name)
+		Console.writeLine(CompareResult.LOWER.getClass().name)
+	}
+}

@@ -1,0 +1,41 @@
+package napile.lang
+
+import napile.condition.CompareResult
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 12.08.12
+ * Time: 16:54
+ * To change this template use File | Settings | File Templates.
+ */
+class Int
+{
+	local this()
+
+	meth rangeTo(value : Int) : Array<Int>
+	{
+		var array = Array<Int>(value - this + 1)
+
+		var index = 0
+		var me = this
+		while (index != array.length)
+			array[index ++] = me ++
+
+		return array
+	}
+
+	native meth inc() : Int
+
+	native meth plus(value : Int) : Int
+
+	native meth minus(value : Int) : Int
+
+	native meth mod(value : Int) : Int
+
+	native meth compareTo(value : Int) : CompareResult
+
+	override native meth equals(o : Any?) : Bool
+
+	override native meth toString() : String
+}

@@ -1,0 +1,22 @@
+package napile.condition
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 12.09.12
+ * Time: 21:14
+ * To change this template use File | Settings | File Templates.
+ */
+class And<E> : ConditionContainer<E>
+{
+	this() : ConditionContainer<E>()
+
+	override meth test(value : E) : Bool
+	{
+		for(c in conditions)
+			if(!c.test(value))
+				return false
+
+		return true
+	}
+}

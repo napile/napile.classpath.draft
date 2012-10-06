@@ -1,0 +1,18 @@
+package varFinal
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 25.08.12
+ * Time: 12:22
+ * To change this template use File | Settings | File Templates.
+ */
+class MyFinalVar
+{
+	final var a : Int = 1
+
+	this()
+	{
+		//a = 1
+	}
+}

@@ -1,0 +1,43 @@
+package enumTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 26.08.12
+ * Time: 18:21
+ * To change this template use File | Settings | File Templates.
+ */
+enum EnumTest<T : Int>
+{
+	TEST<Int>(1)
+	{
+		override meth a() : Int
+		{
+			return 1
+		}
+
+		meth test() : Int
+		{
+			return 1
+		}
+	}
+
+	TEST2<Int>(2);
+
+	var a : Int = 1;
+
+	this(c : Int)
+	{
+		a = c;
+	}
+
+	meth a() : Int
+	{
+		return 1
+	}
+
+	final meth c()
+	{
+		//
+	}
+}

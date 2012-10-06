@@ -1,0 +1,20 @@
+package retellTest
+
+import napile.awt.Color
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 05.09.12
+ * Time: 23:14
+ * To change this template use File | Settings | File Templates.
+ */
+retell SimpleRetellTest
+{
+	RED = Color(255, 0, 0)
+
+	GREEN = Color(0, 255, 0)
+
+	BLUE = Color(0, 0, 255)
+
+}

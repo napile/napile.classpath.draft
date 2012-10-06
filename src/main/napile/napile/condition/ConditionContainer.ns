@@ -1,0 +1,17 @@
+package napile.condition
+
+import napile.util.List
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 06.09.12
+ * Time: 12:43
+ * To change this template use File | Settings | File Templates.
+ */
+abstract class ConditionContainer<E> : Condition<E>
+{
+	heritable var conditions : List<Condition<E>> = List<Condition<E>>();
+
+	this() : Condition<E>()
+}

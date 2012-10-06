@@ -1,0 +1,19 @@
+package returnTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 15.09.12
+ * Time: 16:47
+ * To change this template use File | Settings | File Templates.
+ */
+class GetFromVar
+{
+	var c : Int = 1
+		get() = 1
+
+	meth a()
+	{
+		var b = c
+	}
+}

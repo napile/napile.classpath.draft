@@ -1,0 +1,20 @@
+package heritableTest.test1
+
+import heritableTest.B1
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 18.08.12
+ * Time: 21:46
+ * To change this template use File | Settings | File Templates.
+ */
+class A2
+{
+	meth test()
+	{
+		var a = B1()
+
+		//a.test()  // ok
+	}
+}

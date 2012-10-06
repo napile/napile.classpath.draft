@@ -1,0 +1,63 @@
+package napile.lang
+
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 05.10.12
+ * Time: 17:33
+ * To change this template use File | Settings | File Templates.
+ */
+class StringBuilder
+{
+	local var array : Array<Char> = Array<Char>(10)
+	local var index : Int = 0
+
+	this()
+
+	meth plusAssign(value : Any)
+	{
+		var str = value.toString()
+
+		var arrayOrString = str.array;
+
+		checkArray(arrayOrString.length)
+
+		for (e in arrayOrString)
+		{
+			array[index] = e
+			index = index + 1
+		}
+	}
+
+	meth checkArray(a : Int)
+	{
+		var newSize = index + a
+
+		if(newSize > array.length)
+		{
+			var oldArray = array
+
+			array = Array<Char>(newSize)
+
+			index = 0
+			while (index < oldArray.length)
+			{
+				Console.writeLine(index.toString())
+				Console.writeLine(array.length.toString())
+				array[index] = oldArray[index]
+
+				index = index + 1
+			}
+		}
+	}
+
+	override meth toString() : String
+	{
+		var newArray = Array<Char>(index)
+		for (a in 0..(index - 1))
+			newArray[a] = array[a]
+		return String(newArray)
+	}
+}

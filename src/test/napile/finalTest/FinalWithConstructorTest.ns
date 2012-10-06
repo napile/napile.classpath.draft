@@ -1,0 +1,19 @@
+package finalTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 10.09.12
+ * Time: 15:49
+ * To change this template use File | Settings | File Templates.
+ */
+class FinalWithConstructorTest
+{
+	final var myVar : Int = 1
+
+	this()
+
+	this(a : Int)// : this()
+
+	//this(myVar, a : String)
+}

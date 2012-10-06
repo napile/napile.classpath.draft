@@ -1,0 +1,23 @@
+package codegenTest.stringBuilderTest
+
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 05.10.12
+ * Time: 17:33
+ * To change this template use File | Settings | File Templates.
+ */
+class StringBuilderTest
+{
+	static meth main(arg : Array<String>)
+	{
+		var b = StringBuilder()
+		b += "val is "
+		b += 1
+		b += " end task"
+
+		Console.writeLine(b.toString())
+	}
+}

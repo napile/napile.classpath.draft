@@ -1,0 +1,32 @@
+package codegenTest.classAndTypeTest
+
+import napile.io.Console
+
+import napile.reflect.Class
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 04.10.12
+ * Time: 12:48
+ * To change this template use File | Settings | File Templates.
+ */
+class GenericInMethod
+{
+	this()
+
+	meth me<E>(val : E) : E
+	{
+		Console.writeLine(classOf(E).name);
+		return val
+	}
+
+	static meth main(arg : Array<String>)
+	{
+		var o = GenericInMethod()
+
+		var b = o.me/*<Int>*/(1)
+
+		Console.writeLine(b.getClass().name)
+	}
+}

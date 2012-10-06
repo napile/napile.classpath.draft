@@ -1,0 +1,18 @@
+package heritableTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 18.08.12
+ * Time: 21:44
+ * To change this template use File | Settings | File Templates.
+ */
+class A1
+{
+	this()
+
+	heritable meth test()
+	{
+
+	}
+}

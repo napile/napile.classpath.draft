@@ -1,0 +1,14 @@
+package constructorTest
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 13.08.12
+ * Time: 17:29
+ * To change this template use File | Settings | File Templates.
+ */
+class MyClass2
+{
+    this()
+
+    this(a : Int)
+}

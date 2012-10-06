@@ -1,0 +1,32 @@
+package codegenTest.classAndTypeTest
+
+import napile.io.Console
+import napile.reflect.Class
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 04.10.12
+ * Time: 12:12
+ * To change this template use File | Settings | File Templates.
+ */
+class GenericTest<E>
+{
+	this()
+
+	meth showE()
+	{
+		var c = classOf(E);
+
+		Console.writeLine(c.name)
+	}
+
+	static meth main(arg : Array<String>)
+	{
+		var b = GenericTest<Int>()
+
+		//var d : GenericTest<Any> = b
+
+		b.showE()
+	}
+}

@@ -1,0 +1,30 @@
+package napile.lang
+
+import napile.reflect.Class
+import napile.reflect.Type
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 12.08.12
+ * Time: 13:41
+ * To change this template use File | Settings | File Templates.
+ */
+
+class Any
+{
+	this()
+
+	native meth getClass() : Class<Any>
+
+	native meth getType() : Type<Any>
+
+	meth equals(o : Any?) : Bool = fullyEquals(o)
+
+	final native meth fullyEquals(o : Any?) : Bool;
+
+	meth toString() : String = getClass().name
+
+	meth hashCode() : Int = 0
+}

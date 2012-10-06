@@ -1,0 +1,29 @@
+package napile.annotation.condition
+
+import napile.condition.Condition
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 12.09.12
+ * Time: 21:31
+ * To change this template use File | Settings | File Templates.
+ */
+enum AnnotationOwner : Condition<Any>
+{
+	CLASS
+
+	RETELL
+
+	ENUM
+
+	METHOD
+
+	VARIABLE
+
+	VARIABLE_ACCESSOR
+
+	this() : Condition<Any>()
+
+	override meth test(value : Any) : Bool = throw Throwable("this is can be directly called")
+}

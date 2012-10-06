@@ -1,0 +1,20 @@
+package codegenTest
+
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 05.10.12
+ * Time: 11:53
+ * To change this template use File | Settings | File Templates.
+ */
+class ReceiverCheck
+{
+	static meth main(arg : Array<String>)
+	{
+		var b : String = ""
+
+		Console.writeLine(b.toString())
+	}
+}

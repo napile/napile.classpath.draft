@@ -1,0 +1,18 @@
+package napile.annotation
+
+import napile.condition.Condition
+import napile.annotation.condition
+import napile.annotation.condition.AnnotationOwner
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 21.08.12
+ * Time: 18:26
+ * To change this template use File | Settings | File Templates.
+ */
+@Annotation(AnnotationOwner.CLASS)
+class Annotation
+{
+	this(cond : Condition<Any>?)
+}

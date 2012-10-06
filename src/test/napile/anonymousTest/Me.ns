@@ -1,0 +1,15 @@
+package anonymousTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 23.08.12
+ * Time: 17:39
+ * To change this template use File | Settings | File Templates.
+ */
+abstract class Me
+{
+	this()
+
+	abstract meth test() : Int
+}

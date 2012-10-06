@@ -1,0 +1,31 @@
+package napile.util
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 19.08.12
+ * Time: 6:05
+ * To change this template use File | Settings | File Templates.
+ */
+class List<E> : Collection<E>
+{
+	this() : Collection<E>()
+
+	override meth size() = 1
+
+	override meth iterator() : Iterator<E>
+	{
+		return anonym : Iterator<E>
+		{
+			override meth hasNext() : Bool
+			{
+				return false;
+			}
+
+			override meth next() : E
+			{
+				throw Throwable()
+			}
+		}
+	}
+}

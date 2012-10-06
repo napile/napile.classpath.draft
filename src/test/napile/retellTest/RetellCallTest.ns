@@ -1,0 +1,21 @@
+package retellTest
+
+import napile.awt.Color
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 06.09.12
+ * Time: 0:48
+ * To change this template use File | Settings | File Templates.
+ */
+class RetellCallTest
+{
+	meth a()
+	{
+		var c : Color = SimpleRetellTest.BLUE;
+
+
+
+	}
+}

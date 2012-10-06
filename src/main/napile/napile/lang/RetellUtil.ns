@@ -1,0 +1,17 @@
+package napile.lang
+
+import napile.reflect.Class
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 15.09.12
+ * Time: 14:49
+ * To change this template use File | Settings | File Templates.
+ */
+class RetellUtil
+{
+	static meth getSelfValues(a : Class<Any>) : Array<Any> = throw Throwable()
+
+	static meth getValues(a : Class<Any>) : Array<Any> = throw Throwable()
+}

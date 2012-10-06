@@ -1,0 +1,18 @@
+package staticTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 29.08.12
+ * Time: 5:13
+ * To change this template use File | Settings | File Templates.
+ */
+class NotStaticTest
+{
+	var a : Int = 1
+
+	meth a()
+	{
+		a = 1 + 1
+	}
+}

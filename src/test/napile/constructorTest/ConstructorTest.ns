@@ -1,0 +1,25 @@
+package constructorTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 26.08.12
+ * Time: 18:59
+ * To change this template use File | Settings | File Templates.
+ */
+class ConstructorTest
+{
+	final var a : Int = 1
+
+	this()
+	{
+		//a = 1
+
+		a()
+	}
+
+	meth a()
+	{
+
+	}
+}

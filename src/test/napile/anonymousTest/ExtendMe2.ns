@@ -1,0 +1,16 @@
+package anonymousTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 23.08.12
+ * Time: 19:31
+ * To change this template use File | Settings | File Templates.
+ */
+class ExtendMe2 : Me
+{
+	override meth test() : Int
+	{
+		return 1
+	}
+}

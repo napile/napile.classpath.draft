@@ -1,0 +1,26 @@
+package codegenTest.forTest
+
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 03.10.12
+ * Time: 19:39
+ * To change this template use File | Settings | File Templates.
+ */
+class ForAndBreakTest
+{
+	static meth main(arg : Array<String>)
+	{
+		for(a in 1..100)
+		{
+			if(a == 10)
+				break;
+
+			Console.writeLine(a.toString())
+		}
+
+		Console.writeLine("End");
+	}
+}

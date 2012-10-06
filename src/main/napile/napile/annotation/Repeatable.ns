@@ -1,0 +1,14 @@
+package napile.annotation
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 26.08.12
+ * Time: 18:03
+ * To change this template use File | Settings | File Templates.
+ */
+@Annotation(null)
+class Repeatable
+{
+	this()
+}

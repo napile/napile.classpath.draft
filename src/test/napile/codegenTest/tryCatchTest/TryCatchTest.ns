@@ -1,0 +1,24 @@
+package codegenTest.tryCatchTest
+
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 05.10.12
+ * Time: 14:23
+ * To change this template use File | Settings | File Templates.
+ */
+class TryCatchTest
+{
+	static meth main(arg : Array<String>)
+	{
+		Console.writeLine("Before throw")
+
+		var b = TryCatchObject()
+
+		b.b()
+
+		Console.writeLine("After throw")
+	}
+}

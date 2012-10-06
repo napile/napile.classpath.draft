@@ -1,0 +1,21 @@
+package napile.lang
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 29.08.12
+ * Time: 0:45
+ * To change this template use File | Settings | File Templates.
+ */
+class String
+{
+	var array : Array<Char>
+
+	this(array)
+
+	//this(another : String) : this(another.array)
+
+	meth substring(a : Int) : String = this
+
+	override native meth toString() : String
+}

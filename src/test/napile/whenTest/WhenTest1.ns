@@ -1,0 +1,18 @@
+package whenTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 06.09.12
+ * Time: 20:15
+ * To change this template use File | Settings | File Templates.
+ */
+class WhenTest1
+{
+	meth test1()
+	{
+		var c : Int? = 1 + 1
+
+	}
+
+}

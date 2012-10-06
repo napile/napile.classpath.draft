@@ -1,0 +1,17 @@
+package numbersTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 24.08.12
+ * Time: 21:10
+ * To change this template use File | Settings | File Templates.
+ */
+class ByteToInt
+{
+	meth a()
+	{
+		var b : Byte = 1
+		var c : Int = 1
+	}
+}

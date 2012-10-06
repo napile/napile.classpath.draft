@@ -1,0 +1,25 @@
+package sureTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 27.09.12
+ * Time: 20:35
+ * To change this template use File | Settings | File Templates.
+ */
+class SureTest
+{
+	meth test1()
+	{
+		var b = returnType();
+
+		var c = returnType()!!
+
+
+	}
+
+	meth returnType() : Int?
+	{
+		return null
+	}
+}

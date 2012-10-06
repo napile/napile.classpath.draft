@@ -1,0 +1,12 @@
+package overrideTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 31.08.12
+ * Time: 10:12
+ * To change this template use File | Settings | File Templates.
+ */
+class B
+{
+}

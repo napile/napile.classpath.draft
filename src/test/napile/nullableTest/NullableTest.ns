@@ -1,0 +1,20 @@
+package nullableTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 05.09.12
+ * Time: 14:41
+ * To change this template use File | Settings | File Templates.
+ */
+class NullableTest
+{
+	meth a() : Any?
+	{
+		var a : Any? = null
+
+		if(a != null)
+			return null;
+		return null;
+	}
+}

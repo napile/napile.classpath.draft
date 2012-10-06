@@ -1,0 +1,31 @@
+package napile.lang
+
+import napile.util.Iterator
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 27.09.12
+ * Time: 20:51
+ * To change this template use File | Settings | File Templates.
+ */
+class ArrayIterator<E> : Iterator<E>
+{
+	local var index : Int = 0
+	local var array : Array<E> = Array<E>(0)
+
+	this(array) : Iterator<E>()
+
+	override meth next() : E
+	{
+		var val = array[index];
+		index = index + 1
+		return val
+	}
+
+	override meth hasNext() : Bool
+	{
+		return index != array.length
+	}
+}

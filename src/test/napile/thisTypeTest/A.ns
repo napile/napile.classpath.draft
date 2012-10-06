@@ -1,0 +1,18 @@
+package thisTypeTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 11.09.12
+ * Time: 17:22
+ * To change this template use File | Settings | File Templates.
+ */
+class A
+{
+	this()
+
+	meth get() : this
+	{
+		return this
+	}
+}

@@ -1,0 +1,17 @@
+package staticTest
+
+import staticTest.VarHolder.myVar1;
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 20.08.12
+ * Time: 5:55
+ * To change this template use File | Settings | File Templates.
+ */
+class StaticImportTest
+{
+	meth a()
+	{
+		var a = myVar1
+	}
+}

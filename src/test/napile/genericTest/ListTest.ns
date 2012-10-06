@@ -1,0 +1,25 @@
+package genericTest
+
+import napile.util.List
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 19.08.12
+ * Time: 6:05
+ * To change this template use File | Settings | File Templates.
+ */
+class ListTest<T>
+{
+	meth test()
+	{
+		var a = List<Int>()
+
+		test(a)
+	}
+
+	meth test(a : List<Any>)
+	{
+
+	}
+}

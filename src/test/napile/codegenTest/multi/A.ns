@@ -1,0 +1,18 @@
+package codegenTest.multi
+
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 22.09.12
+ * Time: 18:16
+ * To change this template use File | Settings | File Templates.
+ */
+class A
+{
+	this(a : String)
+	{
+		Console.writeLine(a);
+	}
+}

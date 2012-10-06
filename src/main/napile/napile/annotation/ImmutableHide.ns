@@ -1,0 +1,14 @@
+package napile.annotation
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 11.09.12
+ * Time: 1:17
+ * To change this template use File | Settings | File Templates.
+ */
+@Annotation(null)
+class ImmutableHide
+{
+	this()
+}
