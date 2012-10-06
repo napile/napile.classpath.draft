@@ -13,7 +13,20 @@ class String
 
 	this(array)
 
-	//this(another : String) : this(another.array)
+	this(oldArray : Array<Char>, offset : Int, length : Int)
+	{
+		//this.offset = 0;
+		//this.count = count;
+		array = ArrayUtil.copyOfRange(oldArray, offset, offset + length);
+	}
+
+	meth plus(a : Any) : String
+	{
+		var c = StringBuilder();
+		c.add(toString())
+		c.add(a)
+		return c.toString()
+	}
 
 	meth substring(a : Int) : String = this
 

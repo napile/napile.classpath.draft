@@ -19,5 +19,7 @@ class StringBuilderTest
 		b += " end task"
 
 		Console.writeLine(b.toString())
+
+		Console.writeLine("test plus one " + 1 + " after")
 	}
 }

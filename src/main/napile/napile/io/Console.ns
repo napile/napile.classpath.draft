@@ -11,5 +11,7 @@ import napile.io.Console.writeLine
  */
 class Console
 {
+	native static meth write(value : String)
+
 	native static meth writeLine(value : String)
 }

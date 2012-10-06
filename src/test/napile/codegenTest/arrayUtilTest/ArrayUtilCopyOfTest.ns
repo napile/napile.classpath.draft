@@ -1,0 +1,37 @@
+package codegenTest.arrayUtilTest
+
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 06.10.12
+ * Time: 18:17
+ * To change this template use File | Settings | File Templates.
+ */
+class ArrayUtilCopyOfTest
+{
+	static meth main(arg : Array<String>)
+	{
+		var b = Array<String>(10)
+		var i = 0
+		for (c in b)
+			b[i++] = i.toString()
+
+		for (c in b)
+		{
+			Console.write(c)
+			Console.write("-")
+		}
+
+		Console.writeLine("")
+		Console.writeLine("After copyOfRange")
+
+		var newArray = ArrayUtil.copyOf(b, 7)
+		for (c in newArray)
+		{
+			Console.write(c)
+			Console.write("-")
+		}
+	}
+}

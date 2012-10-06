@@ -12,52 +12,45 @@ import napile.io.Console
 class StringBuilder
 {
 	local var array : Array<Char> = Array<Char>(10)
-	local var index : Int = 0
+	local var count : Int = 0
 
 	this()
+
+	meth add(value : Any)
+	{
+		plusAssign(value)
+	}
 
 	meth plusAssign(value : Any)
 	{
 		var str = value.toString()
 
-		var arrayOrString = str.array;
+		var arrayOfString = str.array;
 
-		checkArray(arrayOrString.length)
+		var newCount = arrayOfString.length + count
+		if(newCount > array.length)
+			expandCapacity(newCount)
 
-		for (e in arrayOrString)
-		{
-			array[index] = e
-			index = index + 1
-		}
+		var i = 0;
+		while (i < arrayOfString.length)
+			array[count ++] = arrayOfString[i++];
+
+		count = newCount;
 	}
 
-	meth checkArray(a : Int)
+	meth expandCapacity(minimumCapacity : Int)
 	{
-		var newSize = index + a
+		var newCapacity = (array.length + 1) * 2;
+		if (newCapacity < 0)
+			newCapacity = 0x7fffffff;
+		else if (minimumCapacity > newCapacity)
+			newCapacity = minimumCapacity;
 
-		if(newSize > array.length)
-		{
-			var oldArray = array
-
-			array = Array<Char>(newSize)
-
-			index = 0
-			while (index < oldArray.length)
-			{
-				Console.writeLine(index.toString())
-				Console.writeLine(array.length.toString())
-				array[index] = oldArray[index]
-
-				index = index + 1
-			}
-		}
+		array = ArrayUtil.copyOf(array, newCapacity);
 	}
 
 	override meth toString() : String
 	{
-		var newArray = Array<Char>(index)
-		for (a in 0..(index - 1))
-			newArray[a] = array[a]
-		return String(newArray)
+		return String(array, 0, count);
 	}
 }
