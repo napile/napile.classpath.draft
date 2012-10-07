@@ -11,9 +11,10 @@ import napile.io.Console
  */
 class StringBuilderTest
 {
+	static var b : StringBuilder = StringBuilder()
+
 	static meth main(arg : Array<String>)
 	{
-		var b = StringBuilder()
 		b += "val is "
 		b += 1
 		b += " end task"

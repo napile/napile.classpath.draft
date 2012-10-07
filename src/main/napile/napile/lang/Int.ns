@@ -11,6 +11,8 @@ import napile.condition.CompareResult
  */
 class Int
 {
+	final static var MAX_VALUE : Int = 0x7fffffff
+
 	local this()
 
 	meth rangeTo(value : Int) : Array<Int>

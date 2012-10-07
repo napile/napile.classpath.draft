@@ -1,0 +1,18 @@
+package assigmentTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 07.10.12
+ * Time: 15:27
+ * To change this template use File | Settings | File Templates.
+ */
+class AssignmentTarget
+{
+	this()
+
+	meth plus(a : Int) : AssignmentTarget
+	{
+		return this
+	}
+}

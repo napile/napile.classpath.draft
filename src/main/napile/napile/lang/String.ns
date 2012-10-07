@@ -23,8 +23,8 @@ class String
 	meth plus(a : Any) : String
 	{
 		var c = StringBuilder();
-		c.add(toString())
-		c.add(a)
+		c += toString()
+		c += a
 		return c.toString()
 	}
 

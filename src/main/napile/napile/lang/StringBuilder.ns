@@ -16,12 +16,7 @@ class StringBuilder
 
 	this()
 
-	meth add(value : Any)
-	{
-		plusAssign(value)
-	}
-
-	meth plusAssign(value : Any)
+	meth plus(value : Any) : StringBuilder
 	{
 		var str = value.toString()
 
@@ -36,13 +31,15 @@ class StringBuilder
 			array[count ++] = arrayOfString[i++];
 
 		count = newCount;
+
+		return this
 	}
 
 	meth expandCapacity(minimumCapacity : Int)
 	{
 		var newCapacity = (array.length + 1) * 2;
 		if (newCapacity < 0)
-			newCapacity = 0x7fffffff;
+			newCapacity = Int.MAX_VALUE;
 		else if (minimumCapacity > newCapacity)
 			newCapacity = minimumCapacity;
 
