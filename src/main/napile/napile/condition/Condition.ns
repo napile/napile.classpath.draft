@@ -9,9 +9,4 @@ package napile.condition
  */
 abstract class Condition<E>
 {
-	this()
-
-	abstract meth test(value : E) : Bool
-
-	meth and(ConditionValue : Condition<E>) : ConditionContainer<E> = And<E>()
 }

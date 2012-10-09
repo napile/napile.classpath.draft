@@ -1,8 +1,6 @@
 package napile.annotation
 
 import napile.condition.Condition
-import napile.annotation.condition
-import napile.annotation.condition.AnnotationOwner
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,7 +9,7 @@ import napile.annotation.condition.AnnotationOwner
  * Time: 18:26
  * To change this template use File | Settings | File Templates.
  */
-@Annotation(AnnotationOwner.CLASS)
+@Annotation(null)
 class Annotation
 {
 	this(cond : Condition<Any>?)
