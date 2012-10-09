@@ -1,0 +1,15 @@
+package codegenTest.typeParameterTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 08.10.12
+ * Time: 17:09
+ * To change this template use File | Settings | File Templates.
+ */
+class TWithConstructor<E(value : Int)>
+{
+	this()
+
+	meth create(size : Int) : E = E(size)
+}

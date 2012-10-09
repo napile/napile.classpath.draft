@@ -1,0 +1,22 @@
+package codegenTest.typeParameterTest
+
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 08.10.12
+ * Time: 17:10
+ * To change this template use File | Settings | File Templates.
+ */
+class TWithConstructorTest
+{
+	static meth main(arg : Array<String>)
+	{
+		var b = TWithConstructor<TWithTarget>()
+
+		var c = b.create(1234)
+
+		Console.writeLine("Class is: " + c.getClass().name + ", length: " + c.length)
+	}
+}

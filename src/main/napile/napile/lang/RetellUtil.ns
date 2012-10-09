@@ -11,7 +11,7 @@ import napile.reflect.Class
  */
 class RetellUtil
 {
-	static meth getSelfValues(a : Class<Any>) : Array<Any> = throw Throwable()
+	static meth getSelfValues(a : Class<Any>) : Array<Any> = throw Throwable("")
 
-	static meth getValues(a : Class<Any>) : Array<Any> = throw Throwable()
+	static meth getValues(a : Class<Any>) : Array<Any> = throw Throwable("")
 }
