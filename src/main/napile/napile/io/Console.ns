@@ -1,7 +1,5 @@
 package napile.io
 
-import napile.io.Console.writeLine
-
 /**
  * Created with IntelliJ IDEA.
  * User: VISTALL

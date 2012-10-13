@@ -16,7 +16,7 @@ class MyAnonymousTest
 
 	meth a()
 	{
-		var a = anonym : Me()
+		var b = anonym : Me()
 		{
 			override meth test() : Int
 			{

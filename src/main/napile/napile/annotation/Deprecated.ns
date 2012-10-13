@@ -1,0 +1,16 @@
+package napile.annotation
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 12.10.12
+ * Time: 17:11
+ * To change this template use File | Settings | File Templates.
+ */
+@Annotation(null)
+class Deprecated
+{
+	var message : String
+
+	this(message)
+}

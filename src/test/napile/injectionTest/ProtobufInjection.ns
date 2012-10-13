@@ -1,0 +1,24 @@
+package injectionTest
+
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 12.10.12
+ * Time: 11:16
+ * To change this template use File | Settings | File Templates.
+ */
+class ProtobufInjection
+{
+	static meth main(arg : Array<String>)
+	{
+		var p = .protobuf
+				{
+					/*message Test
+					{} */
+				}
+
+		Console.writeLine(p.getClass().name)
+	}
+}
