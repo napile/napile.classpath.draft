@@ -9,9 +9,9 @@ package napile.awt
  */
 class Color
 {
-	var red : Int = 1
-	var green : Int = 1
-	var blue : Int = 1
+	final var red : Int
+	final var green : Int
+	final var blue : Int
 
 	this(red, green, blue)
 }
