@@ -20,7 +20,7 @@ class Array<E>
 
 	native meth init()
 
-	native meth set(index : Int, value : E)
+	native meth set(index : Int, value : E) : Array<E> //TODO [VISTALL] return 'this' type
 
 	native meth get(index : Int)
 

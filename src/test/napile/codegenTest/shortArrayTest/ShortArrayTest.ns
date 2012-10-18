@@ -1,24 +1,21 @@
-package injectionTest
+package codegenTest.shortArrayTest
 
 import napile.io.Console
 
 /**
  * Created with IntelliJ IDEA.
  * User: VISTALL
- * Date: 12.10.12
- * Time: 11:16
+ * Date: 18.10.12
+ * Time: 13:09
  * To change this template use File | Settings | File Templates.
  */
-class ProtobufInjection
+class ShortArrayTest
 {
 	static meth main(arg : Array<String>)
 	{
-		/*var p = .protobuf
-				{
-					/*message Test
-					{} */
-				}  */
+		var ar = arrayOf(1, 2)
 
-		//Console.writeLine(p.getClass().name)
+		for(a in ar)
+			Console.writeLine(a.toString())
 	}
 }
