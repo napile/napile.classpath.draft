@@ -12,7 +12,7 @@ class Bool
 	final static var TRUE : Bool = Bool("true")
 	final static var FALSE : Bool = Bool("false")
 
-	local var value : String = ""
+	local var value : String
 
 	local this(value)
 

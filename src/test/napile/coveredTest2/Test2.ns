@@ -1,0 +1,18 @@
+package coveredTest2
+
+//import coveredTest.CoveredClass
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 21.10.12
+ * Time: 22:24
+ * To change this template use File | Settings | File Templates.
+ */
+class Test2
+{
+	static meth main(arg : Array<String>)
+	{
+		//var b = CoveredClass()
+	}
+}

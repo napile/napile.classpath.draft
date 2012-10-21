@@ -1,0 +1,16 @@
+package deprecationTest
+
+import napile.annotation.Deprecated
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 20.10.12
+ * Time: 17:20
+ * To change this template use File | Settings | File Templates.
+ */
+@Deprecated("null")
+class DeprecatedElement
+{
+	this()
+}

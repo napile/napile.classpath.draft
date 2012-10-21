@@ -11,13 +11,13 @@ import coveredTest.CoveredClass
  */
 class Test2
 {
-	static var STATIC_PROPERTY : Int = 1
 	var a : Int = 1
 
 	meth test()
 	{
 		var a = CoveredClass()
 
+		a.myVar = 4
 		a.test()
 	}
 }

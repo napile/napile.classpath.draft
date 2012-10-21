@@ -16,9 +16,9 @@ class Any
 {
 	this()
 
-	native meth getClass() : Class<Any>
+	native meth getClass() : Class<Any> //TODO [VISTALL] Class<this>
 
-	native meth getType() : Type<Any>
+	native meth getType() : Type<Any>  //TODO [VISTALL] Type<this>
 
 	meth equals(o : Any?) : Bool = fullyEquals(o)
 

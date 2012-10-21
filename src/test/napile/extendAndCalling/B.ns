@@ -1,0 +1,13 @@
+package extendAndCalling
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 21.10.12
+ * Time: 12:14
+ * To change this template use File | Settings | File Templates.
+ */
+class B<E> : A<E>
+{
+	this() : A<E>()
+}

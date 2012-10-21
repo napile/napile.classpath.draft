@@ -7,12 +7,14 @@ package coveredTest
  * Time: 21:42
  * To change this template use File | Settings | File Templates.
  */
-class CoveredClass
+covered class CoveredClass
 {
+	covered var myVar : Int = 1
+
 	this()
 
 	covered meth test()
 	{
-
+		myVar = 2
 	}
 }
