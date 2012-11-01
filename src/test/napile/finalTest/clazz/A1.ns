@@ -1,0 +1,12 @@
+package finalTest.clazz
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 01.11.12
+ * Time: 14:36
+ * To change this template use File | Settings | File Templates.
+ */
+final class A1
+{
+}

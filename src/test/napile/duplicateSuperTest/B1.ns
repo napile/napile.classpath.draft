@@ -1,0 +1,16 @@
+package duplicateSuperTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 01.11.12
+ * Time: 14:40
+ * To change this template use File | Settings | File Templates.
+ */
+class B1 : A1//, A1
+{
+	meth a()
+	{
+		var b = anonym : A1()//, A1();
+	}
+}
