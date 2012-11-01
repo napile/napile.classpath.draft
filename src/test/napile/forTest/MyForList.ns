@@ -19,7 +19,7 @@ class MyForList<E>
 		{
 			override meth hasNext() : Bool  = false
 
-			override meth next() : E = throw Exception()
+			override meth next() : E = throw Exception("")
 		}
 	}
 }

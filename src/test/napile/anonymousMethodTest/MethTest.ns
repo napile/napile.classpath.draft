@@ -13,6 +13,11 @@ class MethTest
 	{
 		var c = {(a : Int) -> a.toString()}
 
-		c(1,2,3,4)
+		c()
+
+		//d()
 	}
+
+	//meth d(a : Int)
+	//{}
 }

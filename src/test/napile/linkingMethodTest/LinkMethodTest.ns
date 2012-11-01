@@ -1,0 +1,24 @@
+package linkingMethodTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 31.10.12
+ * Time: 13:38
+ * To change this template use File | Settings | File Templates.
+ */
+class LinkMethodTest
+{
+	meth test()
+	{
+		toLink(#linked)
+	}
+
+	meth linked(val : Int) : Int = val;
+	//meth linked(val : Any) : Int = 1;
+
+	meth toLink(a : (val : Int) -> Int)
+	{
+
+	}
+}

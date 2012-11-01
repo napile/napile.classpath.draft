@@ -11,6 +11,9 @@ class XmlInjectionTest
 {
 	meth test0()
 	{
-		//var b = .xml {<list></list>};
+		/*var b = /xml/
+				{
+					<list></list>
+				};   */
 	}
 }

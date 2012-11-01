@@ -11,7 +11,7 @@ import napile.util.Iterator
  */
 class Array<E>
 {
-	var length : Int = 0
+	var length : Int
 
 	this(length)
 	{

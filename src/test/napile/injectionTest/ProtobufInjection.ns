@@ -13,11 +13,19 @@ class ProtobufInjection
 {
 	static meth main(arg : Array<String>)
 	{
-		/*var p = .protobuf
+		var p = /protobuf/
 				{
-					/*message Test
-					{} */
-				}  */
+					message Test
+					{
+						enum En
+						{
+							E = 1;
+							C = 2;
+						}
+
+						optional En a = 1;
+					}
+				}
 
 		//Console.writeLine(p.getClass().name)
 	}
