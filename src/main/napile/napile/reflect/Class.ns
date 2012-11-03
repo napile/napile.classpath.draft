@@ -13,16 +13,11 @@ import napile.annotation.Immutable
  */
 class Class<E>
 {
-	var name : String
+	final var name : String
 
-	var variables : Array<Variable>
+	final var variables : Array<Variable>
 
 	local this(name)
 
 	native meth variables.lazy() : Array<Variable>
-
-	meth isSuper(value : Class<E>) : Bool
-	{
-		return false
-	}
 }

@@ -9,4 +9,7 @@ package napile.reflect
  */
 class Variable
 {
+	final var name : String
+
+	this(name)
 }
