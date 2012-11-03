@@ -2,6 +2,7 @@ package napile.reflect
 
 import napile.reflect.Class
 import napile.io.Console
+import napile.annotation.Immutable
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,12 +15,11 @@ class Class<E>
 {
 	var name : String
 
+	var variables : Array<Variable>
+
 	local this(name)
 
-	meth getEClass() : Class<E>
-	{
-		return classOf(E)
-	}
+	native meth variables.lazy() : Array<Variable>
 
 	meth isSuper(value : Class<E>) : Bool
 	{

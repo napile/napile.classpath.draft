@@ -1,6 +1,7 @@
 package napile.lang
 
 import napile.util.Iterator
+import napile.annotation.ImmutableHide
 
 /**
  * Created with IntelliJ IDEA.

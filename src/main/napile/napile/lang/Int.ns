@@ -17,7 +17,7 @@ class Int
 
 	meth rangeTo(value : Int) : Array<Int>
 	{
-		var array = Array<Int>(value - this + 1)
+		var array = Array<Int>(value - this - 1)
 
 		var index = 0
 		var me = this

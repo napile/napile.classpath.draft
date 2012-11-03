@@ -11,6 +11,6 @@ class PropertySetAGet2 : PropertySetAGet
 {
 	this() : PropertySetAGet()
 
-	/*local meth a.set(a)
-	{}*/
+	//local meth a.set(a)
+	//{}
 }

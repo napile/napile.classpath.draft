@@ -1,0 +1,13 @@
+package enumTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 01.11.12
+ * Time: 15:38
+ * To change this template use File | Settings | File Templates.
+ */
+class EnumSuper
+{
+	this()
+}

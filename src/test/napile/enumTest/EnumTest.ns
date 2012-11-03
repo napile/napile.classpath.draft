@@ -7,33 +7,19 @@ package enumTest
  * Time: 18:21
  * To change this template use File | Settings | File Templates.
  */
-enum EnumTest<T : Int>
+class EnumTest<T : Int>
 {
-	TEST<Int>(1)
-	{
-		override meth a() : Int
-		{
-			return 1
-		}
+	static var TEST : EnumTest<Int> = EnumTest<Int>(1)
 
-		meth test() : Int
-		{
-			return 1
-		}
-	}
-
-	TEST2<Int>(2);
+	static var TEST2: EnumTest<Int> = EnumTest<Int>(2)
 
 	var a : Int = 1;
 
-	this(c : Int)
-	{
-		a = c;
-	}
+	this(a)
 
 	meth a() : Int
 	{
-		return 1
+		return a
 	}
 
 	final meth c()

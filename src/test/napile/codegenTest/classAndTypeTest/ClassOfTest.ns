@@ -20,6 +20,6 @@ class ClassOfTest
 
 		Console.writeLine(c.name)
 
-		Console.writeLine(c.getEClass().name)
+		//Console.writeLine(c.getEClass().name)
 	}
 }

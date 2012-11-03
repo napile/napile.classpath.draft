@@ -7,13 +7,13 @@ package napile.condition
  * Time: 18:18
  * To change this template use File | Settings | File Templates.
  */
-enum CompareResult
+class CompareResult
 {
-	GREATER
+	enum var GREATER : CompareResult = CompareResult()
 
-	EQUAL
+	enum var EQUAL : CompareResult = CompareResult()
 
-	LOWER
+	enum var LOWER : CompareResult = CompareResult()
 
 	this()
 }
