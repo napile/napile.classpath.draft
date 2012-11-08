@@ -8,7 +8,7 @@ package napile.annotation
  * To change this template use File | Settings | File Templates.
  */
 @Annotation(null)
-class Deprecated
+final class Deprecated
 {
 	var message : String
 
