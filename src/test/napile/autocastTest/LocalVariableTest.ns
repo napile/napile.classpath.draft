@@ -1,21 +1,21 @@
-package retellTest
-
-import napile.awt.Color
+package autocastTest
 
 /**
  * Created with IntelliJ IDEA.
  * User: VISTALL
- * Date: 06.09.12
- * Time: 0:48
+ * Date: 05.11.12
+ * Time: 11:22
  * To change this template use File | Settings | File Templates.
  */
-class RetellCallTest
+class LocalVariableTest
 {
 	meth a()
 	{
-		var c : Color = SimpleRetellTest.BLUE;
+		var c : Any = 1
 
-
-
+		if(c is Int)
+		{
+			var a : Int = c
+		}
 	}
 }

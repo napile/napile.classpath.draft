@@ -1,0 +1,21 @@
+package autocastTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 05.11.12
+ * Time: 11:20
+ * To change this template use File | Settings | File Templates.
+ */
+class ClassFinalVariableTest
+{
+	final var b : Any = 0
+
+	meth a()
+	{
+		if (b is Int)
+		{
+			var c : Int = b
+		}
+	}
+}

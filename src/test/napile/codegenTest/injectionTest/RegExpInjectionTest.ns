@@ -1,0 +1,18 @@
+package codegenTest.injectionTest
+
+import codegenTest.injectionTest.RegExpInjectionTest.main
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 08.11.12
+ * Time: 7:30
+ * To change this template use File | Settings | File Templates.
+ */
+class RegExpInjectionTest
+{
+	static meth main(arg : Array<String>)
+	{
+		var i = /regexp/ {([0-9A-Za-z]{2,16})|([0-9\u0410-\u044f]{2,16})}
+	}
+}

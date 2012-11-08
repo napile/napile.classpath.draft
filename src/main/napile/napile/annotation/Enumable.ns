@@ -3,12 +3,12 @@ package napile.annotation
 /**
  * Created with IntelliJ IDEA.
  * User: VISTALL
- * Date: 26.08.12
- * Time: 18:03
+ * Date: 08.11.12
+ * Time: 15:53
  * To change this template use File | Settings | File Templates.
  */
 @Annotation(null)
-final class Repeatable
+final class Enumable
 {
 	this()
 }

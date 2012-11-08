@@ -1,14 +1,13 @@
-package napile.annotation
+package receiverTest
 
 /**
  * Created with IntelliJ IDEA.
  * User: VISTALL
- * Date: 26.08.12
- * Time: 18:03
+ * Date: 04.11.12
+ * Time: 9:44
  * To change this template use File | Settings | File Templates.
  */
-@Annotation(null)
-final class Repeatable
+class B : A
 {
-	this()
+	this() : A()
 }

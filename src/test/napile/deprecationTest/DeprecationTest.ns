@@ -1,5 +1,7 @@
 package deprecationTest
 
+import napile.annotation.Deprecated
+
 /**
  * Created with IntelliJ IDEA.
  * User: VISTALL
@@ -9,6 +11,8 @@ package deprecationTest
  */
 class DeprecationTest
 {
+	var c : Int = 0
+
 	static meth main(arg :Array<String>)
 	{
 		var b : DeprecatedElement? = DeprecatedElement()

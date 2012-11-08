@@ -10,7 +10,7 @@ import napile.condition.Condition
  * To change this template use File | Settings | File Templates.
  */
 @Annotation(null)
-class Annotation
+final class Annotation
 {
 	this(cond : Condition<Any>?)
 }

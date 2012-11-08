@@ -29,6 +29,8 @@ class Int
 
 	native meth inc() : Int
 
+	native meth dec() : Int
+
 	native meth plus(value : Int) : Int
 
 	native meth times(value : Int) : Int

@@ -1,5 +1,7 @@
 package enumTest
 
+import napile.annotation.Enumable
+
 /**
  * Created with IntelliJ IDEA.
  * User: VISTALL
@@ -9,9 +11,11 @@ package enumTest
  */
 class EnumTest<T : Int>
 {
-	static var TEST : EnumTest<Int> = EnumTest<Int>(1)
+	@Enumable
+	static final var TEST : EnumTest<Int> = EnumTest<Int>(1)
 
-	static var TEST2: EnumTest<Int> = EnumTest<Int>(2)
+	@Enumable
+	static final var TEST2: EnumTest<Int> = EnumTest<Int>(2)
 
 	var a : Int = 1;
 

@@ -1,0 +1,18 @@
+package codegenTest.reflectionTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 04.11.12
+ * Time: 15:32
+ * To change this template use File | Settings | File Templates.
+ */
+class ReflectionVarGetTest
+{
+	static meth main(arg : Array<String>)
+	{
+		var b = ReflectTarget()
+
+
+	}
+}

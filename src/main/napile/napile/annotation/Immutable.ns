@@ -8,7 +8,7 @@ package napile.annotation
  * To change this template use File | Settings | File Templates.
  */
 @Annotation(null)
-class Immutable
+final class Immutable
 {
 	this()
 }

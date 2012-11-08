@@ -1,20 +1,18 @@
-package codegenTest
-
-import napile.io.Console
+package receiverTest
 
 /**
  * Created with IntelliJ IDEA.
  * User: VISTALL
- * Date: 05.10.12
- * Time: 11:53
+ * Date: 04.11.12
+ * Time: 9:44
  * To change this template use File | Settings | File Templates.
  */
-class ReceiverCheck
+class ReceiverTest
 {
 	static meth main(arg : Array<String>)
 	{
-		var b : String = ""
+		var b : B? = B()
 
-		Console.writeLine(b.toString())
+		b.fullyEquals(A())
 	}
 }

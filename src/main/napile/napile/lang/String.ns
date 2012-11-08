@@ -10,6 +10,8 @@ package napile.lang
 class String
 {
 	var array : Array<Char>
+	//var count : Int = 0
+	//var offset : Int = 0
 
 	this(array)
 
@@ -28,7 +30,31 @@ class String
 		return c.toString()
 	}
 
-	meth substring(a : Int) : String = this
+	/*override meth equals(final o : Any?) : Bool
+	{
+		if (fullyEquals(o))
+			return true
 
-	override native meth toString() : String
+		if (o is String)
+		{
+			var n = count;
+			if (n == o.count)
+			{
+				var v1 = array
+				var v2 = o.array
+				var i = offset
+				var j = array.offset
+				while (n-- != 0)
+				{
+					if (v1[i++] != v2[j++])
+					return false
+				}
+
+				return true
+			}
+		}
+		return false
+	}*/
+
+	override meth toString() : String = String(array)
 }

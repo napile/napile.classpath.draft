@@ -12,4 +12,6 @@ class Variable
 	final var name : String
 
 	this(name)
+
+	native meth get(object : Any) : Any?
 }
