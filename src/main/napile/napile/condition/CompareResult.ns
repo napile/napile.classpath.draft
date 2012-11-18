@@ -1,5 +1,7 @@
 package napile.condition
 
+import napile.annotation.Enumable
+
 /**
  * Created with IntelliJ IDEA.
  * User: VISTALL
@@ -9,11 +11,14 @@ package napile.condition
  */
 class CompareResult
 {
-	enum var GREATER : CompareResult = CompareResult()
+	//@Enumable
+	static final var GREATER : CompareResult = CompareResult()
 
-	enum var EQUAL : CompareResult = CompareResult()
+	//@Enumable
+	static final var EQUAL : CompareResult = CompareResult()
 
-	enum var LOWER : CompareResult = CompareResult()
+	//@Enumable
+	static final var LOWER : CompareResult = CompareResult()
 
 	this()
 }

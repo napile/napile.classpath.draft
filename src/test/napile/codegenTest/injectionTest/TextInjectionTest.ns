@@ -1,0 +1,39 @@
+package codegenTest.injectionTest
+
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 09.11.12
+ * Time: 20:43
+ * To change this template use File | Settings | File Templates.
+ */
+class TextInjectionTest
+{
+	static var MY_VAR : Int = 1
+
+	static meth main(arg : Array<String>)
+	{
+		var i : String =
+/text/
+{
+				Languages
+	1. XML = <xml att="1234" />
+	2. Java =
+			public class A
+			{
+				public static void main(String... arg)
+				{
+
+				}
+			}
+	3. SQL = SELECT * WHERE `name` = 1 FROM tests
+
+	MY_VAR == #{MY_VAR}
+
+	4. After MY_VAR
+}
+		Console.writeLine(i)
+	}
+}

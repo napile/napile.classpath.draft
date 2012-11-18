@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module>
+	<id>napile.lang</id>
+	<name>napile : lang</name>
+	<build-by>@build-by@</build-by>
+	<version>1.0</version>
+
+	<extension-points>
+		<!--here extension points-->
+	</extension-points>
+
+	<extensions for-id="napile.lang">
+		<!---here extension point usage -->
+	</extensions>
+</module>

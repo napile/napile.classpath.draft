@@ -1,5 +1,7 @@
 package napile.lang
 
+import napile.annotation.Enumable
+
 /**
  * Created with IntelliJ IDEA.
  * User: VISTALL
@@ -9,9 +11,11 @@ package napile.lang
  */
 class Bool
 {
-	enum var TRUE : Bool = Bool("true")
+	//@Enumable
+	static final var TRUE : Bool = Bool("true")
 
-	enum var FALSE : Bool = Bool("false")
+	//@Enumable
+	static final var FALSE : Bool = Bool("false")
 
 	local var value : String
 
