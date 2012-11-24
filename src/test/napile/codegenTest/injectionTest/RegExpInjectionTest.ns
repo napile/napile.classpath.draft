@@ -1,7 +1,5 @@
 package codegenTest.injectionTest
 
-import codegenTest.injectionTest.RegExpInjectionTest.main
-
 /**
  * Created with IntelliJ IDEA.
  * User: VISTALL

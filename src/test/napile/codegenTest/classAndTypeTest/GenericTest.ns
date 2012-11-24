@@ -25,8 +25,6 @@ class GenericTest<E>
 	{
 		var b = GenericTest<Int>()
 
-		//var d : GenericTest<Any> = b
-
 		b.showE()
 	}
 }

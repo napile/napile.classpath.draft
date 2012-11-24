@@ -3,11 +3,7 @@ package codegenTest.multi
 import napile.io.Console
 
 /**
- * Created with IntelliJ IDEA.
- * User: VISTALL
- * Date: 22.09.12
- * Time: 18:17
- * To change this template use File | Settings | File Templates.
+ * @author VISTALL
  */
 class B
 {

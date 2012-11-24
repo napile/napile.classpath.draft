@@ -5,10 +5,10 @@ import napile.io.Console
 /**
  * @author VISTALL
  */
-class A
+class C : B
 {
-	this(a : String)
+	this(a : String) : B("this from B")
 	{
-		Console.writeLine(a);
+		Console.writeLine(a)
 	}
 }

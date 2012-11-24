@@ -3,19 +3,19 @@ package codegenTest.typeParameterTest
 import napile.io.Console
 
 /**
- * Created with IntelliJ IDEA.
- * User: VISTALL
- * Date: 08.10.12
- * Time: 17:10
- * To change this template use File | Settings | File Templates.
+ * @author VISTALL
  */
 class TWithConstructorTest
 {
+	static meth factory<E(value : Int)>(value : Int) : E  = E(value)
+
 	static meth main(arg : Array<String>)
 	{
-		var b = TWithConstructor<TWithTarget>()
+		var c : TWithTarget = factory(1234)
 
-		var c = b.create(1234)
+		Console.writeLine("Class is: " + c.getClass().name + ", length: " + c.length)
+
+		c = factory(1)
 
 		Console.writeLine("Class is: " + c.getClass().name + ", length: " + c.length)
 	}

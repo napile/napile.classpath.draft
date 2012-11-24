@@ -1,15 +1,10 @@
 package codegenTest.classAndTypeTest
 
 import napile.io.Console
-
 import napile.reflect.Class
 
 /**
- * Created with IntelliJ IDEA.
- * User: VISTALL
- * Date: 04.10.12
- * Time: 12:48
- * To change this template use File | Settings | File Templates.
+ * @author VISTALL
  */
 class GenericInMethod
 {

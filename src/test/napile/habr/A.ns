@@ -1,0 +1,9 @@
+package habr
+
+/**
+ * @author VISTALL
+ */
+class A
+{
+	this()
+}

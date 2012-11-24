@@ -1,11 +1,7 @@
 package genericTest
 
 /**
- * Created with IntelliJ IDEA.
- * User: VISTALL
- * Date: 19.08.12
- * Time: 6:05
- * To change this template use File | Settings | File Templates.
+ * @author VISTALL
  */
 class ListTest
 {
@@ -13,11 +9,6 @@ class ListTest
 	{
 		var a = List<Int>()
 
-		test(a)
-	}
-
-	meth test(a : List<Any>)
-	{
-
+		var b : List<Any> = a // valid cast
 	}
 }

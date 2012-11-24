@@ -1,15 +1,11 @@
 package codegenTest.typeParameterTest
 
 /**
- * Created with IntelliJ IDEA.
- * User: VISTALL
- * Date: 08.10.12
- * Time: 19:39
- * To change this template use File | Settings | File Templates.
+ * @author VISTALL
  */
 class TWithTarget
 {
-	var length : Int = 1
+	final var length : Int
 
 	this(length)
 }
