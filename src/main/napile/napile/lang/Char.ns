@@ -6,4 +6,6 @@ package napile.lang
 class Char
 {
 	local this()
+
+	override native meth equals(o : Any?) : Bool
 }

@@ -7,13 +7,19 @@ import napile.annotation.Immutable
 /**
  * @author VISTALL
  */
-class Class<E>
+class Class<E> : Member
 {
-	final var name : String
-
 	final var variables : Array<Variable>
 
-	local this(name)
+	final var methods : Array<Method>
+
+	final var macros : Array<Macro>
+
+	local this(owner : Class<Any>?, name : String) : Member(owner, name)
 
 	native meth variables.lazy() : Array<Variable>
+
+	native meth methods.lazy() : Array<Method>
+
+	native meth macros.lazy() : Array<Macro>
 }

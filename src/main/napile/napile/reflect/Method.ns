@@ -3,6 +3,17 @@ package napile.reflect
 /**
  * @author VISTALL
  */
-class Method
+class Method : Member
 {
+	local this(owner : Class<Any>?, name : String) : Member(owner, name)
+
+	meth invoke(object : Any, arguments : Array<Any?>) : Any?
+	{
+		return null //TODO [VISTALL]
+	}
+
+	meth invokeStatic(object : Any, arguments : Array<Any?>) : Any?
+	{
+		return null //TODO [VISTALL]
+	}
 }

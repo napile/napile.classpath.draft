@@ -1,0 +1,13 @@
+package napile.reflect
+
+/**
+ * @author VISTALL
+ */
+abstract class Member
+{
+	final var ownerClass : Class<Any>?
+
+	final var name : String
+
+	covered this(ownerClass, name)
+}

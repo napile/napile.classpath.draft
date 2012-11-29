@@ -8,4 +8,15 @@
 			<fileset dir="build/classes/" />
 		</nzip>
 	</target>
+
+	<target name="dist-codegen-tests">
+		<delete dir="build/tests/" />
+		<mkdir dir="build/tests/" />
+		<mkdir dir="build/tests/codegenTest" />
+		<napilec srcdir="src/test/napile/codegenTest:src/main/napile" outdir="src/test/napile" />
+
+		<nzip destfile="build/codegenTest.nzip" moduledir="test/main/napile">
+			<fileset dir="build/classes/" />
+		</nzip>
+	</target>
 </project>

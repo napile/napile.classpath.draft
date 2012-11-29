@@ -8,16 +8,14 @@ import napile.annotation.Enumable
 class Bool
 {
 	//@Enumable
-	static final var TRUE : Bool = Bool("true")
+	static final var TRUE : Bool = Bool()
 
 	//@Enumable
-	static final var FALSE : Bool = Bool("false")
+	static final var FALSE : Bool = Bool()
 
-	local var value : String
-
-	local this(value)
+	local this()
 
 	meth not() : Bool = if(this) FALSE else TRUE
 
-	override meth toString() = value
+	override meth toString() = if(this == TRUE) "true" else "false"
 }

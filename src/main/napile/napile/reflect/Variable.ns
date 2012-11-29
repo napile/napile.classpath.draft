@@ -3,11 +3,17 @@ package napile.reflect
 /**
  * @author VISTALL
  */
-class Variable
+class Variable: Member
 {
-	final var name : String
+	local this(owner : Class<Any>?, name : String) : Member(owner, name)
 
-	this(name)
+	meth getStaticValue() : Any?
+	{
+		return null //TODO [VISTALL]
+	}
 
-	native meth get(object : Any) : Any?
+	meth getValue(object : Any) : Any?
+	{
+		return null //TODO [VISTALL]
+	}
 }

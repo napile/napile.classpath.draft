@@ -19,6 +19,8 @@ class Any
 
 	final native meth fullyEquals(o : Any?) : Bool;
 
+	heritable meth clone() : Any = throw Exception() //TODO [VISTALL] this
+
 	meth toString() : String = getClass().name
 
 	meth hashCode() : Int = 0

@@ -16,7 +16,7 @@ class StringBuilder
 	{
 		var str = value.toString()
 
-		var arrayOfString = str.array;
+		var arrayOfString = str.toArray();
 
 		var newCount = arrayOfString.length + count
 		if(newCount > array.length)

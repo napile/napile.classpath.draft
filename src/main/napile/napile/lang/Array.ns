@@ -8,7 +8,7 @@ import napile.annotation.ImmutableHide
  */
 class Array<E>
 {
-	var length : Int
+	final var length : Int
 
 	this(length)
 	{
@@ -22,4 +22,13 @@ class Array<E>
 	native meth get(index : Int)
 
 	meth iterator() : Iterator<E> = ArrayIterator<E>(this)
+
+	override meth clone() : Array<E>
+	{
+		var newArray = Array<E>(length)
+		var i = 0
+		for(it in this)
+			newArray[i++] = it
+		return newArray
+	}
 }

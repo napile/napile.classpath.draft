@@ -1,22 +1,29 @@
 package napile.lang
 
+import napile.io.Console
+
 /**
  * @author VISTALL
  */
 class String
 {
-	var array : Array<Char>
-	//var count : Int = 0
-	//var offset : Int = 0
+	local /*final*/ var array : Array<Char>
+	local /*final*/ var count : Int
+	local /*final*/ var offset : Int
 
-	this(array)
-
-	this(oldArray : Array<Char>, offset : Int, length : Int)
+	this(oldArray : Array<Char>)
 	{
-		//this.offset = 0;
-		//this.count = count;
-		array = ArrayUtil.copyOfRange(oldArray, offset, offset + length);
+		count = oldArray.length
+		offset = 0
+		array = oldArray.clone()
 	}
+
+	this(oldArray : Array<Char>, offset, count)
+	{
+		array = ArrayUtil.copyOfRange(oldArray, offset, offset + count);
+	}
+
+	meth toArray() : Array<Char> = ArrayUtil.copyOfRange(array, offset, offset + count)
 
 	meth plus(a : Any) : String
 	{
@@ -26,7 +33,7 @@ class String
 		return c.toString()
 	}
 
-	/*override meth equals(final o : Any?) : Bool
+	override meth equals(final o : Any?) : Bool
 	{
 		if (fullyEquals(o))
 			return true
@@ -39,18 +46,18 @@ class String
 				var v1 = array
 				var v2 = o.array
 				var i = offset
-				var j = array.offset
+				var j = o.offset
 				while (n-- != 0)
 				{
 					if (v1[i++] != v2[j++])
-					return false
+						return false
 				}
 
 				return true
 			}
 		}
 		return false
-	}*/
+	}
 
-	override meth toString() : String = String(array)
+	override meth toString() : String = String(array, offset, count)
 }

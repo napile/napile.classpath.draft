@@ -1,0 +1,9 @@
+package napile.reflect
+
+/**
+ * @author VISTALL
+ */
+class Macro : Member
+{
+	local this(owner : Class<Any>?, name : String) : Member(owner, name)
+}
