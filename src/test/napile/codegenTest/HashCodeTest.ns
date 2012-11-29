@@ -1,0 +1,20 @@
+package codegenTest
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class HashCodeTest
+{
+	this()
+
+	static meth main(arg : Array<String>)
+	{
+		Console.writeLine(HashCodeTest().toString())
+		Console.writeLine(HashCodeTest().toString())
+		Console.writeLine(HashCodeTest().toString())
+		Console.writeLine(HashCodeTest().toString())
+		Console.writeLine(HashCodeTest().toString())
+	}
+}

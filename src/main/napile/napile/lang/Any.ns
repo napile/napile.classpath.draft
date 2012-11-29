@@ -15,13 +15,13 @@ class Any
 
 	native meth getType() : Type<Any>  //TODO [VISTALL] Type<this>
 
+	native meth hashCode() : Int
+
 	meth equals(o : Any?) : Bool = fullyEquals(o)
 
 	final native meth fullyEquals(o : Any?) : Bool;
 
 	heritable meth clone() : Any = throw Exception() //TODO [VISTALL] this
 
-	meth toString() : String = getClass().name
-
-	meth hashCode() : Int = 0
+	meth toString() : String = getClass().name + "@" + hashCode()
 }
