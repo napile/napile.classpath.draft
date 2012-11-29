@@ -1,5 +1,7 @@
 <project name="napile-lang" default="dist">
 	<target name="dist">
+		<delete dir="build/classes/" />
+		<mkdir dir="build/classes/" />
 		<napilec srcdir="src/main/napile" outdir="build/classes" />
 
 		<nzip destfile="build/napile.lang.nzip" moduledir="src/main/napile">
