@@ -1,0 +1,13 @@
+package napile.util
+
+/**
+ * @author VISTALL
+ */
+abstract class Collection<E>
+{
+	this()
+
+	abstract meth iterator() : Iterator<E>
+
+	abstract meth size() : Int
+}

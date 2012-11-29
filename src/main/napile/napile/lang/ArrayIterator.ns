@@ -4,11 +4,7 @@ import napile.util.Iterator
 import napile.io.Console
 
 /**
- * Created with IntelliJ IDEA.
- * User: VISTALL
- * Date: 27.09.12
- * Time: 20:51
- * To change this template use File | Settings | File Templates.
+ * @author VISTALL
  */
 class ArrayIterator<E> : Iterator<E>
 {

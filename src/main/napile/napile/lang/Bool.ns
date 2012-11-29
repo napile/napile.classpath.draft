@@ -3,11 +3,7 @@ package napile.lang
 import napile.annotation.Enumable
 
 /**
- * Created with IntelliJ IDEA.
- * User: VISTALL
- * Date: 04.08.12
- * Time: 21:23
- * To change this template use File | Settings | File Templates.
+ * @author VISTALL
  */
 class Bool
 {

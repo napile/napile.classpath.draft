@@ -3,11 +3,7 @@ package napile.annotation
 import napile.condition.Condition
 
 /**
- * Created with IntelliJ IDEA.
- * User: VISTALL
- * Date: 21.08.12
- * Time: 18:26
- * To change this template use File | Settings | File Templates.
+ * @author VISTALL
  */
 @Annotation(null)
 final class Annotation

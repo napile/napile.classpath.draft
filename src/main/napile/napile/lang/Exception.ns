@@ -1,11 +1,31 @@
 package napile.lang
 
+import napile.io.Console
+
 /**
  * @author VISTALL
  */
-class Exception : Throwable
+class Exception
 {
-	this () : Throwable()
+	final var message : String?
 
-	this(value : String) : Throwable(value)
+	var stack : Array<StackTraceElement>
+
+	this() : this(null)
+
+	this(message)
+
+	native local meth stack.lazy() : Array<StackTraceElement>
+
+	meth printStackTrace()
+	{
+		Console.writeLine(getClass().name)
+		if(message != null)
+		{
+			Console.writeLine(" : ")
+			Console.writeLine(message)
+		}
+		for(b in stack)
+			Console.writeLine("\tat " + b.name)
+	}
 }

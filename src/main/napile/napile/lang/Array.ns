@@ -4,11 +4,7 @@ import napile.util.Iterator
 import napile.annotation.ImmutableHide
 
 /**
- * Created with IntelliJ IDEA.
- * User: VISTALL
- * Date: 06.09.12
- * Time: 23:58
- * To change this template use File | Settings | File Templates.
+ * @author VISTALL
  */
 class Array<E>
 {

@@ -3,13 +3,8 @@ package napile.lang
 import napile.condition.CompareResult
 
 /**
- * Created with IntelliJ IDEA.
- * User: VISTALL
- * Date: 12.08.12
- * Time: 16:54
- * To change this template use File | Settings | File Templates.
- */
-class Int
+ * @author VISTALL
+ */class Int
 {
 	final static var MAX_VALUE : Int = 0x7fffffff
 

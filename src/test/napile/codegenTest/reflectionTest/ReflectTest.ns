@@ -4,11 +4,7 @@ import napile.reflect.Class
 import napile.io.Console
 
 /**
- * Created with IntelliJ IDEA.
- * User: VISTALL
- * Date: 03.11.12
- * Time: 15:15
- * To change this template use File | Settings | File Templates.
+ * @author VISTALL
  */
 class ReflectTest
 {

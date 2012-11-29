@@ -5,13 +5,8 @@ import napile.reflect.Type
 import napile.io.Console
 
 /**
- * Created with IntelliJ IDEA.
- * User: VISTALL
- * Date: 12.08.12
- * Time: 13:41
- * To change this template use File | Settings | File Templates.
+ * @author VISTALL
  */
-
 class Any
 {
 	this()
