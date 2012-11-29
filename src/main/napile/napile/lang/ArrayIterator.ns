@@ -12,7 +12,7 @@ import napile.io.Console
  */
 class ArrayIterator<E> : Iterator<E>
 {
-	local var index : Int
+	local var index : Int = 0
 	local var array : Array<E>
 
 	this(array) : Iterator<E>()

@@ -1,33 +1,31 @@
 package napile.lang
 
 import napile.io.Console
-import napile.util.Iterator
 
 /**
- * Created with IntelliJ IDEA.
- * User: VISTALL
- * Date: 06.09.12
- * Time: 12:42
- * To change this template use File | Settings | File Templates.
+ * @author VISTALL
  */
 class Throwable
 {
-	var message : String = "no message"
+	final var message : String?
 
 	var stack : Array<StackTraceElement>
 
-	this(message)
-	{
-		stack = getStack0()
-	}
+	this() : this(null)
 
-	native local meth getStack0() : Array<StackTraceElement>
+	this(message)
+
+	native local meth stack.lazy() : Array<StackTraceElement>
 
 	meth printStackTrace()
 	{
-		Console.writeLine("Message: ")
-		Console.writeLine(message)
+		Console.writeLine(getClass().name)
+		if(message != null)
+		{
+			Console.writeLine(" : ")
+			Console.writeLine(message)
+		}
 		for(b in stack)
-			Console.writeLine(b.name)
+			Console.writeLine("\tat " + b.name)
 	}
 }

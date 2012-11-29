@@ -1,13 +1,11 @@
 package napile.lang
 
 /**
- * Created with IntelliJ IDEA.
- * User: VISTALL
- * Date: 13.09.12
- * Time: 21:27
- * To change this template use File | Settings | File Templates.
+ * @author VISTALL
  */
 class Exception : Throwable
 {
+	this () : Throwable()
+
 	this(value : String) : Throwable(value)
 }

@@ -1,0 +1,11 @@
+package napile.lang
+
+/**
+ * @author VISTALL
+ */
+class NullPointerException : Exception
+{
+	this() : Exception()
+
+	this(value : String) : Exception(value)
+}

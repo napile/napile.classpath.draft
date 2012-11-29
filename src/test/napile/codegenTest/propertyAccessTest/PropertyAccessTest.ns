@@ -1,0 +1,17 @@
+package codegenTest.propertyAccessTest
+
+/**
+ * @author VISTALL
+ */
+class PropertyAccessTest
+{
+	var c : Int = 1
+
+	this()
+
+	meth c.get() : Int = value
+
+	meth c.set(a : Int) : Null = value = a
+
+	//meth c.lazy() : Int = 1
+}

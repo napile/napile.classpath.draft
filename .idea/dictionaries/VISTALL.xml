@@ -2,6 +2,7 @@
   <dictionary name="VISTALL">
     <words>
       <w>enumable</w>
+      <w>meth</w>
       <w>protobuf</w>
     </words>
   </dictionary>

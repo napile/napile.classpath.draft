@@ -1,0 +1,20 @@
+package codegenTest.nullableTest
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class NullableTest
+{
+	static meth main(arg : Array<String>)
+	{
+		var myVar : MyObject? = MyObject()
+
+		Console.writeLine(/text/ {myVar is not null:  #{myVar?.call()}})
+
+		myVar = null
+
+		Console.writeLine(/text/ {myVar is null: #{myVar?.call()}})
+	}
+}

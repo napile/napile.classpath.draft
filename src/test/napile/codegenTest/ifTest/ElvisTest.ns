@@ -18,5 +18,9 @@ class ElvisTest
 		b = b ?: "now is not null"
 
 		Console.writeLine(b.toString())
+
+		b = b ?: "this text cant be set"
+
+		Console.writeLine(b.toString())
 	}
 }

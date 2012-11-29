@@ -1,0 +1,14 @@
+package typeParameterTest
+
+/**
+ * @author VISTALL
+ */
+class NonPublicTpConstructor<E()>
+{
+	this()
+
+	static meth main(arg : Array<String>)
+	{
+		//NonPublicTpConstructor<Int>() fail
+	}
+}

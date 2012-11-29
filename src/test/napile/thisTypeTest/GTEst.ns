@@ -1,0 +1,14 @@
+package thisTypeTest
+
+/**
+ * @author VISTALL
+ */
+class GTest<E()>
+{
+	this()
+
+	meth a() : E
+	{
+		return E()
+	}
+}

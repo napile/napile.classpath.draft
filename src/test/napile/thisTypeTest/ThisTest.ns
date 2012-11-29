@@ -13,8 +13,8 @@ class ThisTest
 	{
 		var b : B = B();
 
-		var c : B = b.get()
-		if(c is B)
-		{}
+		b.get()
+		//if(c is B)
+		//{}
 	}
 }

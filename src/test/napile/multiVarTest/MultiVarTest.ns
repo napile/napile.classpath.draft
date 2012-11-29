@@ -1,0 +1,9 @@
+package multiVarTest
+
+/**
+ * @author VISTALL
+ */
+class MultiVarTest
+{
+	var c : (a : String, c : Int) = ("", 1)
+}

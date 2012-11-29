@@ -1,0 +1,14 @@
+package thisTypeTest
+
+/**
+ * @author VISTALL
+ */
+class GTest2
+{
+	static meth main()
+	{
+		var c = GTest<Int>()
+
+		c.a()
+	}
+}

@@ -1,0 +1,13 @@
+package codegenTest.propertyAccessTest
+
+/**
+ * @author VISTALL
+ */
+class GetAndLazyProperty
+{
+	var myVar : Int
+
+	meth myVar.get() : Int = myVar;
+
+	//meth myVar.lazy() : Int = 1;
+}
