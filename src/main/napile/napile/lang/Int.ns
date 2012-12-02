@@ -4,7 +4,8 @@ import napile.condition.CompareResult
 
 /**
  * @author VISTALL
- */class Int
+ */
+class Int
 {
 	final static var MAX_VALUE : Int = 0x7fffffff
 
