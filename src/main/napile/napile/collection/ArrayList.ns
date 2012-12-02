@@ -13,15 +13,29 @@ class ArrayList<E> : List<E>
 		data = Array<E>(predefinedSize)
 	}
 
-	override meth add(e : E)
+	override meth add(e : E) : Bool
 	{
-
+		ensureCapacity(size + 1);
+		data[size++] = e;
+		return true;
 	}
 
-	override meth iterator() : Iterator<E>
+	override meth get(index : Int) : E = data[index]
+
+	local meth ensureCapacity(minCapacity : Int)
 	{
-		throw Exception()
+		var oldCapacity = data.length;
+		if (minCapacity > oldCapacity)
+		{
+			var newCapacity = (oldCapacity * 3) / 2 + 1;
+			if (newCapacity < minCapacity)
+				newCapacity = minCapacity;
+
+			data = ArrayUtil.copyOf(data, newCapacity);
+		}
 	}
+
+	override meth iterator() : Iterator<E> = ListIterator<E>(this)
 
 	override meth size() = size
 }

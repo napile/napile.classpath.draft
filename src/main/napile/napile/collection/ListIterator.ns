@@ -1,0 +1,16 @@
+package napile.collection
+
+/**
+ * @author VISTALL
+ */
+class ListIterator<E> : Iterator<E>
+{
+	local final var list : List<E>
+	local var index : Int = 0
+
+	this(list) : Iterator<E>()
+
+	override meth hasNext() : Bool = list.size() != index
+
+	override meth next() : E = list[index ++]
+}

@@ -34,6 +34,8 @@ import napile.condition.CompareResult
 
 	native meth mod(value : Int) : Int
 
+	native meth div(value : Int) : Int
+
 	native meth compareTo(value : Int) : CompareResult
 
 	override native meth equals(o : Any?) : Bool
