@@ -22,10 +22,5 @@ class ArrayListTest
 		Console.writeLine("size is " + l.size())
 		for(c in 0..7)
 			Console.writeLine(l[c].toString())
-		/*for (i in l)
-		{
-			Console.writeLine(i.getClass().name);
-			Console.writeLine(i.toString())
-		}   */
 	}
 }
