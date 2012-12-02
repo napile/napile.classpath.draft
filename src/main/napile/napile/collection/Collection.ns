@@ -1,13 +1,31 @@
-package napile.util
+package napile.collection
 
 /**
  * @author VISTALL
  */
 abstract class Collection<E>
 {
+	local final var emptyArray = Array<E>(0)
+
 	this()
 
 	abstract meth iterator() : Iterator<E>
 
 	abstract meth size() : Int
+
+	meth isEmpty() : Bool = size() == 0
+
+	meth toArray() : Array<E>
+	{
+		if (isEmpty())
+			return emptyArray
+		else
+		{
+			var array = Array<E>(size())
+			var index = 0
+			for(e in this)
+				array[index ++] = e
+			return array
+		}
+	}
 }

@@ -5,7 +5,5 @@ package napile.lang
  */
 class NullPointerException : Exception
 {
-	this() : Exception()
-
-	this(value : String) : Exception(value)
+	this(value : String? = null) : Exception(value)
 }

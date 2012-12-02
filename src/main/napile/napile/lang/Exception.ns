@@ -11,9 +11,7 @@ class Exception
 
 	var stack : Array<StackTraceElement>
 
-	this() : this(null)
-
-	this(message)
+	this(message = null)
 
 	native local meth stack.lazy() : Array<StackTraceElement>
 

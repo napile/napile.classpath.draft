@@ -1,0 +1,11 @@
+package napile.collection
+
+/**
+ * @author VISTALL
+ */
+abstract class List<E> : Collection<E>
+{
+	this() : Collection<E>()
+
+	abstract meth add(e : E)
+}

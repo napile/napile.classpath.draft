@@ -1,0 +1,27 @@
+package napile.collection
+
+/**
+ * @author VISTALL
+ */
+class ArrayList<E> : List<E>
+{
+	local var data : Array<E>
+	local var size : Int = 0
+
+	this(predefinedSize : Int = 10) : List<E>()
+	{
+		data = Array<E>(predefinedSize)
+	}
+
+	override meth add(e : E)
+	{
+
+	}
+
+	override meth iterator() : Iterator<E>
+	{
+		throw Exception()
+	}
+
+	override meth size() = size
+}

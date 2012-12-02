@@ -1,0 +1,14 @@
+package codegenTest.arrayListTest
+
+import napile.collection.ArrayList
+
+/**
+ * @author VISTALL
+ */
+class ArrayListTest
+{
+	static meth main(arg : Array<String>)
+	{
+		var l = ArrayList<Int>()
+	}
+}
