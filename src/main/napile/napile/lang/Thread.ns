@@ -1,0 +1,32 @@
+package napile.lang
+
+/**
+ * @author VISTALL
+ */
+class Thread
+{
+	local final var target : {Null}
+
+	var state : ThreadState = ThreadState.NEW
+
+	this(target = {})
+
+	local meth run()
+	{
+		target()
+
+		state = ThreadState.FINISHED
+	}
+
+	meth start()
+	{
+		if(state != ThreadState.NEW)
+			throw IllegalStateException()
+
+		state = ThreadState.STARTED
+
+		start0()
+	}
+
+	local native final meth start0();
+}

@@ -1,0 +1,9 @@
+package napile.lang
+
+/**
+ * @author VISTALL
+ */
+class IllegalStateException : Exception
+{
+	this(message : String? = null) : this(message)
+}

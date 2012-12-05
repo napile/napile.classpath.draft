@@ -1,5 +1,6 @@
 package linkingMethodTest
 
+import linkingMethodTest.MethodInClass
 /**
  * Created with IntelliJ IDEA.
  * User: VISTALL
@@ -12,12 +13,13 @@ class LinkMethodTest
 	meth test()
 	{
 		toLink(#linked)
+		toLink(linkingMethodTest.MethodInClass#target)
 	}
 
 	meth linked(val : Int) : Int = val;
 	//meth linked(val : Any) : Int = 1;
 
-	meth toLink(a : (val : Int) -> Int)
+	meth toLink(a : {(val : Int) -> Int})
 	{
 
 	}

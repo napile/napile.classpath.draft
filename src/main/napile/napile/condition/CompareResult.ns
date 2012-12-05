@@ -3,11 +3,7 @@ package napile.condition
 import napile.annotation.Enumable
 
 /**
- * Created with IntelliJ IDEA.
- * User: VISTALL
- * Date: 05.10.12
- * Time: 18:18
- * To change this template use File | Settings | File Templates.
+ * @author VISTALL
  */
 class CompareResult
 {

@@ -1,0 +1,15 @@
+package napile.lang
+
+/**
+ * @author VISTALL
+ */
+class ThreadState
+{
+	static final var NEW : ThreadState = ThreadState()
+
+	static final var STARTED : ThreadState = ThreadState()
+
+	static final var FINISHED : ThreadState = ThreadState()
+
+	this()
+}
