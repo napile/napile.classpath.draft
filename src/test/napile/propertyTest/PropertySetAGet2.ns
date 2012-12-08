@@ -11,6 +11,8 @@ class PropertySetAGet2 : PropertySetAGet
 {
 	this() : PropertySetAGet()
 
-	//local meth a.set(a)
-	//{}
+	override var a : Int
+	{
+		set
+	}
 }

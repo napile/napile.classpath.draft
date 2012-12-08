@@ -5,5 +5,5 @@ package napile.lang
  */
 class IllegalStateException : Exception
 {
-	this(message : String? = null) : this(message)
+	this(val message : String? = null) : this(message)
 }

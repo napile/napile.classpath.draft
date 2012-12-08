@@ -1,0 +1,24 @@
+package codegenTest.stringTest
+
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 04.11.12
+ * Time: 15:43
+ * To change this template use File | Settings | File Templates.
+ */
+class StringTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		var str = "str"
+
+		Console.writeLine((str == "str").toString())
+
+		Console.writeLine((str == str).toString())
+
+		Console.writeLine((str == "equal").toString())
+	}
+}

@@ -5,7 +5,7 @@ package napile.lang
  */
 class StackTraceElement
 {
-	final var name : String
+	val name : String
 
 	this(name)
 }

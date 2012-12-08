@@ -8,13 +8,13 @@ import napile.annotation.Enumable
 class CompareResult
 {
 	//@Enumable
-	static final var GREATER : CompareResult = CompareResult()
+	static val GREATER : CompareResult = CompareResult()
 
 	//@Enumable
-	static final var EQUAL : CompareResult = CompareResult()
+	static val EQUAL : CompareResult = CompareResult()
 
 	//@Enumable
-	static final var LOWER : CompareResult = CompareResult()
+	static val LOWER : CompareResult = CompareResult()
 
 	this()
 }

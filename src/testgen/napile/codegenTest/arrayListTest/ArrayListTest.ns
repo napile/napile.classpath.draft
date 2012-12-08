@@ -1,0 +1,26 @@
+package codegenTest.arrayListTest
+
+import napile.collection.ArrayList
+import napile.io.Console
+import napile.reflect.Class
+
+/**
+ * @author VISTALL
+ */
+class ArrayListTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		var l = ArrayList<Int>()
+		l.add(1)
+		l.add(2)
+		l.add(3)
+		l.add(4)
+		l.add(5)
+		l.add(6)
+
+		Console.writeLine("size is " + l.size())
+		for(c in 0..7)
+			Console.writeLine(l[c].toString())
+	}
+}

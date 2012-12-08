@@ -1,0 +1,39 @@
+package codegenTest.macroTest
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class Macro2Test
+{
+	var a : Int = 0
+
+	this()
+
+	meth test()
+	{
+		a0()
+
+		a0()
+
+		a0()
+
+		Console.writeLine("'test' called")
+	}
+
+	local macro a0()
+	{
+		if(a == 2)
+			return
+
+		a++
+
+		Console.writeLine("a == " + a)
+	}
+
+	static meth main(val arg : Array<String>)
+	{
+		Macro2Test().test()
+	}
+}

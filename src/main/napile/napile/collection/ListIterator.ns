@@ -5,7 +5,7 @@ package napile.collection
  */
 class ListIterator<E> : Iterator<E>
 {
-	local final var list : List<E>
+	local val list : List<E>
 	local var index : Int = 0
 
 	this(list) : Iterator<E>()

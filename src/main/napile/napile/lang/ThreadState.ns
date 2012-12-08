@@ -5,11 +5,11 @@ package napile.lang
  */
 class ThreadState
 {
-	static final var NEW : ThreadState = ThreadState()
+	static val NEW : ThreadState = ThreadState()
 
-	static final var STARTED : ThreadState = ThreadState()
+	static val STARTED : ThreadState = ThreadState()
 
-	static final var FINISHED : ThreadState = ThreadState()
+	static val FINISHED : ThreadState = ThreadState()
 
 	this()
 }

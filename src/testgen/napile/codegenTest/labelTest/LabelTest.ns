@@ -1,0 +1,27 @@
+package codegenTest.labelTest
+
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 03.10.12
+ * Time: 16:21
+ * To change this template use File | Settings | File Templates.
+ */
+class LabelTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		label my
+		{
+			if (Bool.TRUE)
+			{
+				Console.writeLine("break me")
+				break my
+			}
+			Console.writeLine("UnEnter code")
+		}
+		return
+	}
+}

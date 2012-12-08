@@ -7,5 +7,5 @@ class Char
 {
 	local this()
 
-	override native meth equals(o : Any?) : Bool
+	override native meth equals(val o : Any?) : Bool
 }

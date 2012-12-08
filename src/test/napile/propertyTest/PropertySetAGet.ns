@@ -11,17 +11,18 @@ import napile.io.Console
  */
 class PropertySetAGet
 {
-	var a : Int = 1
+	var a : Int
+	{
+		local set
+		get
+	} = 1
 
 	this()
 
 	meth test()
 	{
 		a = 1
-	}
 
-	local meth a.set(a)
-	{
-
+		var c = a
 	}
 }

@@ -1,0 +1,18 @@
+package codegenTest
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 20.09.12
+ * Time: 1:30
+ * To change this template use File | Settings | File Templates.
+ */
+class ArrayTest
+{
+	static meth main(val args : Array<String>)
+	{
+		var c = Array<Int>(5)
+
+		c[0] = 1234567
+	}
+}

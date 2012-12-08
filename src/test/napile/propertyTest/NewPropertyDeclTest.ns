@@ -13,6 +13,9 @@ class NewPropertyDeclTest
 	{
 		var b = PropertySetAGet()
 
-		b.a = 1   // this is need invalid
+		var c = b
+		b = 1
+
+		//b.a = 1   // this is need invalid
 	}
 }

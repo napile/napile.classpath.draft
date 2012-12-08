@@ -6,7 +6,7 @@ package napile.annotation
 @Annotation(null)
 final class Deprecated
 {
-	final var message : String
+	val message : String
 
 	this(message)
 }

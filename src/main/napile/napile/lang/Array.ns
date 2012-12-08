@@ -17,9 +17,9 @@ class Array<E>
 
 	native meth init()
 
-	native meth set(index : Int, value : E) : Array<E> //TODO [VISTALL] return 'this' type
+	native meth set(val index : Int, val value : E) : Array<E> //TODO [VISTALL] return 'this' type
 
-	native meth get(index : Int) : E
+	native meth get(val index : Int) : E
 
 	meth iterator() : Iterator<E> = ArrayIterator<E>(this)
 

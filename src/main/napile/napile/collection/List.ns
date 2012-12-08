@@ -7,7 +7,7 @@ abstract class List<E> : Collection<E>
 {
 	this() : Collection<E>()
 
-	abstract meth add(e : E) : Bool
+	abstract meth add(val e : E) : Bool
 
-	abstract meth get(index : Int) : E
+	abstract meth get(val index : Int) : E
 }

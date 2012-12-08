@@ -1,0 +1,25 @@
+package codegenTest.nullableTest
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class SureTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		try
+		{
+			var myVar : String? = null
+
+			Console.writeLine(myVar!!)
+		}
+		catch(val e : NullPointerException)
+		{
+			e.printStackTrace()
+		}
+
+		Console.writeLine("Test is ended");
+	}
+}

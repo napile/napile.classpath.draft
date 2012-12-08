@@ -1,0 +1,27 @@
+package codegenTest.classAndTypeTest
+
+import napile.io.Console
+import napile.reflect.Class
+
+/**
+ * @author VISTALL
+ */
+class GenericInMethod
+{
+	this()
+
+	meth me<E>(val e : E) : E
+	{
+		Console.writeLine(classOf(E).name);
+		return e
+	}
+
+	static meth main(val arg : Array<String>)
+	{
+		var o = GenericInMethod()
+
+		var b = o.me/*<Int>*/(1)
+
+		Console.writeLine(b.getClass().name)
+	}
+}

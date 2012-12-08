@@ -1,0 +1,36 @@
+package codegenTest.isTest
+
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 04.10.12
+ * Time: 19:09
+ * To change this template use File | Settings | File Templates.
+ */
+class IsTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		var target = Array<Int>(0)
+
+		if(target is Array<Int>)
+			Console.writeLine("Array<Int> is Array<Int>")
+
+		if(target is Array<Any>)
+			Console.writeLine("Array<Int> is Array<Any>")
+
+		if(target is Array<Any?>)
+			Console.writeLine("Array<Int> is Array<Any?>")
+
+		//if(target is Array<String>)
+		//	Console.writeLine("Array<Int> is Array<String>")
+
+		if (target is Any)
+			Console.writeLine("Array<Int> is Any")
+
+		if (target !is Int)
+			Console.writeLine("Array<Int> !is Int")
+	}
+}

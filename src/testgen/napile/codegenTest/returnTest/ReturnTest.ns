@@ -1,0 +1,22 @@
+package codegenTest.returnTest
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class ReturnTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		Console.writeLine("before return");
+
+		if (true)
+		{
+			Console.writeLine("is returned")
+			return
+		}
+
+		Console.writeLine("after return")
+	}
+}

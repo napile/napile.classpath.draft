@@ -1,0 +1,18 @@
+package codegenTest.reflectionTest
+
+import napile.reflect.Class
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class ReflectTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		var clazz = classOf(ReflectTarget);
+
+		for (i in clazz.variables)
+			Console.writeLine(i.name)
+	}
+}

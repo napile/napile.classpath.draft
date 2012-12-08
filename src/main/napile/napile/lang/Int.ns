@@ -11,7 +11,7 @@ class Int
 
 	local this()
 
-	meth rangeTo(value : Int) : Array<Int>
+	meth rangeTo(val value : Int) : Array<Int>
 	{
 		var array = Array<Int>(value - this - 1)
 
@@ -27,19 +27,19 @@ class Int
 
 	native meth dec() : Int
 
-	native meth plus(value : Int) : Int
+	native meth plus(val value : Int) : Int
 
-	native meth times(value : Int) : Int
+	native meth times(val value : Int) : Int
 
-	native meth minus(value : Int) : Int
+	native meth minus(val value : Int) : Int
 
-	native meth mod(value : Int) : Int
+	native meth mod(val value : Int) : Int
 
-	native meth div(value : Int) : Int
+	native meth div(val value : Int) : Int
 
-	native meth compareTo(value : Int) : CompareResult
+	native meth compareTo(val value : Int) : CompareResult
 
-	override native meth equals(o : Any?) : Bool
+	override native meth equals(val o : Any?) : Bool
 
 	override native meth toString() : String
 }

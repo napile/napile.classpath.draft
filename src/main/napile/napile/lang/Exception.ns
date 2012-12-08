@@ -7,13 +7,11 @@ import napile.io.Console
  */
 class Exception
 {
-	final var message : String?
+	final val message : String?
 
-	var stack : Array<StackTraceElement>
+	lazy final val stack : Array<StackTraceElement>
 
 	this(message = null)
-
-	native local meth stack.lazy() : Array<StackTraceElement>
 
 	meth printStackTrace()
 	{

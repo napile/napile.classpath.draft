@@ -5,14 +5,14 @@ package napile.lang
  */
 class ArrayUtil
 {
-	static meth copyOf<E>(oldArray : Array<E>, newSize : Int) : Array<E>
+	static meth copyOf<E>(val oldArray : Array<E>, val newSize : Int) : Array<E>
 	{
 		var c1 = Array<E>(newSize)
 		copy(oldArray, 0, c1, 0, Math.min(oldArray.length, newSize));
 		return c1
 	}
 
-	static meth copyOfRange<E>(original : Array<E>, from : Int, to : Int) : Array<E>
+	static meth copyOfRange<E>(val original : Array<E>, val from : Int, val to : Int) : Array<E>
 	{
 		var newLength = to - from;
 
@@ -23,7 +23,7 @@ class ArrayUtil
 		return c
 	}
 
-	static meth copy<E>(src : Array<E>, srcOffset : Int, desc : Array<E>, descOffset : Int, length : Int)
+	static meth copy<E>(val src : Array<E>, val srcOffset : Int, val desc : Array<E>, val descOffset : Int, val length : Int)
 	{
 		var i = 0
 		while (i < length)

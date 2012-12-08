@@ -1,0 +1,14 @@
+package codegenTest.nullableTest
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class NullToStringTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		Console.writeLine(null.toString())
+	}
+}

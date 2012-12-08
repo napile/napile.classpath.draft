@@ -1,0 +1,18 @@
+package codegenTest
+
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 20.09.12
+ * Time: 14:54
+ * To change this template use File | Settings | File Templates.
+ */
+class HelloWorldTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		Console.writeLine("Hello world!!!");
+	}
+}

@@ -5,14 +5,14 @@ package napile.reflect
  */
 class Method : Member
 {
-	local this(owner : Class<Any>?, name : String) : Member(owner, name)
+	local this(val owner : Class<Any>?, val name : String) : Member(owner, name)
 
-	meth invoke(object : Any, arguments : Array<Any?>) : Any?
+	meth invoke(val object : Any, val arguments : Array<Any?>) : Any?
 	{
 		return null //TODO [VISTALL]
 	}
 
-	meth invokeStatic(object : Any, arguments : Array<Any?>) : Any?
+	meth invokeStatic(val object : Any, val arguments : Array<Any?>) : Any?
 	{
 		return null //TODO [VISTALL]
 	}

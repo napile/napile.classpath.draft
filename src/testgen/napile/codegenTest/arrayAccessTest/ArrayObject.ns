@@ -1,0 +1,11 @@
+package codegenTest.arrayAccessTest
+
+/**
+ * @author VISTALL
+ */
+class ArrayObject
+{
+	this()
+
+	meth get(val a : Int) : Null = null
+}

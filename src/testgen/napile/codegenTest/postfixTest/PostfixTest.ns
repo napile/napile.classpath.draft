@@ -1,0 +1,22 @@
+package codegenTest.postfixTest
+
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 05.10.12
+ * Time: 17:03
+ * To change this template use File | Settings | File Templates.
+ */
+class PostfixTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		var c = 0
+
+		Console.writeLine(c++.toString())
+
+		Console.writeLine(c.toString());
+	}
+}

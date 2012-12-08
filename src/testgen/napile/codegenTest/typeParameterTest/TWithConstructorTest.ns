@@ -1,0 +1,22 @@
+package codegenTest.typeParameterTest
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class TWithConstructorTest
+{
+	static meth factory<E(val e : Int)>(val value : Int) : E  = E(value)
+
+	static meth main(val arg : Array<String>)
+	{
+		var c : TWithTarget = factory(1234)
+
+		Console.writeLine("Class is: " + c.getClass().name + ", length: " + c.length)
+
+		c = factory<TWithTarget>(1)
+
+		Console.writeLine("Class is: " + c.getClass().name + ", length: " + c.length)
+	}
+}

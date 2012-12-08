@@ -6,7 +6,7 @@ package napile.annotation
 @Annotation(null)
 final class DefaultValue
 {
-	final var value : Any
+	val value : Any
 
 	this(value)
 }

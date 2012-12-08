@@ -1,0 +1,25 @@
+package codegenTest.classAndTypeTest
+
+import napile.reflect.Class
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 04.10.12
+ * Time: 11:27
+ * To change this template use File | Settings | File Templates.
+ */
+class ClassOfTest
+{
+	this()
+
+	static meth main(val arg : Array<String>)
+	{
+		var c = classOf(ClassOfTest)
+
+		Console.writeLine(c.name)
+
+		//Console.writeLine(c.getEClass().name)
+	}
+}

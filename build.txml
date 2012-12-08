@@ -9,11 +9,13 @@
 		</nzip>
 	</target>
 
-	<target name="dist-codegen-tests">
+	<target name="dist-with-testget">
 		<delete dir="build/tests/" />
+
 		<mkdir dir="build/tests/" />
 		<mkdir dir="build/tests/codegenTest" />
-		<napilec srcdir="src/test/napile/codegenTest:src/main/napile" outdir="src/test/napile" />
+
+		<napilec srcdir="src/testgen/napile:src/main/napile" outdir="src/test/napile" />
 
 		<nzip destfile="build/codegenTest.nzip" moduledir="test/main/napile">
 			<fileset dir="build/classes/" />

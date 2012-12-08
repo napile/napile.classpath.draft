@@ -1,0 +1,14 @@
+package codegenTest.multi
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class B
+{
+	this(val a : String)
+	{
+		Console.writeLine(a);
+	}
+}

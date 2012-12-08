@@ -1,0 +1,18 @@
+package codegenTest.thisConstructor
+
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 01.11.12
+ * Time: 13:44
+ * To change this template use File | Settings | File Templates.
+ */
+class ThisConstructor0
+{
+	this(val a : String)
+	{
+		Console.writeLine("ThisConstructor0")
+	}
+}

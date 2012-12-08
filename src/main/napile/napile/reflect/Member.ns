@@ -5,9 +5,9 @@ package napile.reflect
  */
 abstract class Member
 {
-	final var ownerClass : Class<Any>?
+	final val ownerClass : Class<Any>?
 
-	final var name : String
+	final val name : String
 
 	covered this(ownerClass, name)
 }

@@ -1,0 +1,33 @@
+package codegenTest.anonymMethodTest
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class AnonymMethTest
+{
+	this()
+
+	meth call()
+	{
+		test {(a : Int) -> Console.writeLine("test " + a.toString())}
+
+		test(#testTarget)
+	}
+
+	meth testTarget(val a : Int)
+	{
+		Console.writeLine("testTarget " + a.toString())
+	}
+
+	meth test(val m : {(val a : Int) -> Null})
+	{
+		m(3444)
+	}
+
+	static meth main(val arg : Array<String>)
+	{
+		AnonymMethTest().call()
+	}
+}

@@ -12,7 +12,7 @@ class StringBuilder
 
 	this()
 
-	meth plus(value : Any) : StringBuilder
+	meth plus(val value : Any) : StringBuilder
 	{
 		var str = value.toString()
 
@@ -31,7 +31,7 @@ class StringBuilder
 		return this
 	}
 
-	meth expandCapacity(minimumCapacity : Int)
+	meth expandCapacity(val minimumCapacity : Int)
 	{
 		var newCapacity = (array.length + 1) * 2;
 		if (newCapacity < 0)

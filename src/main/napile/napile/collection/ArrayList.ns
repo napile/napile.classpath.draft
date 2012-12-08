@@ -8,21 +8,21 @@ class ArrayList<E> : List<E>
 	local var data : Array<E>
 	local var size : Int = 0
 
-	this(predefinedSize : Int = 10) : List<E>()
+	this(val predefinedSize : Int = 10) : List<E>()
 	{
 		data = Array<E>(predefinedSize)
 	}
 
-	override meth add(e : E) : Bool
+	override meth add(val e : E) : Bool
 	{
 		ensureCapacity(size + 1);
 		data[size++] = e;
 		return true;
 	}
 
-	override meth get(index : Int) : E = data[index]
+	override meth get(val index : Int) : E = data[index]
 
-	local meth ensureCapacity(minCapacity : Int)
+	local meth ensureCapacity(val minCapacity : Int)
 	{
 		var oldCapacity = data.length;
 		if (minCapacity > oldCapacity)

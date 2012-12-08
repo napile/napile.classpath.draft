@@ -5,9 +5,9 @@ package napile.gui
  */
 class Color
 {
-	final var red : Int
-	final var green : Int
-	final var blue : Int
+	val red : Int
+	val green : Int
+	val blue : Int
 
 	this(red, green, blue)
 }

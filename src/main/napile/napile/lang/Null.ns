@@ -5,7 +5,7 @@ package napile.lang
  */
 class Null
 {
-	static var INSTANCE : Null = Null()
+	static val INSTANCE : Null = Null()
 
 	local this()
 

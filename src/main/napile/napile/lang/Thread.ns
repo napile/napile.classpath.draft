@@ -5,9 +5,12 @@ package napile.lang
  */
 class Thread
 {
-	local final var target : {}
+	local final val target : {}
 
-	var state : ThreadState = ThreadState.NEW
+	final var state : ThreadState
+	{
+		local set
+	} = ThreadState.NEW
 
 	this(target = {})
 

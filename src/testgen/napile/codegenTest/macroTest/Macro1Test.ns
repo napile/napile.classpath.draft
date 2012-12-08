@@ -1,0 +1,33 @@
+package codegenTest.macroTest
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class Macro1Test
+{
+	static var a : Int = 0
+
+	static meth main(val arg : Array<String>)
+	{
+		a0()
+
+		a0()
+
+		a0()
+
+		Console.writeLine("'main' called")
+	}
+
+
+	local static macro a0()
+	{
+		if(a == 2)
+			return
+
+		a++
+
+		Console.writeLine("a == " + a)
+	}
+}

@@ -5,7 +5,7 @@ package napile.io
  */
 class Console
 {
-	native static meth write(value : String)
+	native static meth write(val value : String)
 
-	native static meth writeLine(value : String)
+	native static meth writeLine(val value : String)
 }

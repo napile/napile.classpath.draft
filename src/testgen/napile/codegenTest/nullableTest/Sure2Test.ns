@@ -1,0 +1,16 @@
+package codegenTest.nullableTest
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class Sure2Test
+{
+	static meth main(val arg : Array<String>)
+	{
+		var myVar : String? = "12345"
+
+		Console.writeLine(myVar!!)
+	}
+}

@@ -11,21 +11,21 @@ class String
 	local /*final*/ var count : Int
 	local /*final*/ var offset : Int
 
-	this(oldArray : Array<Char>)
+	this(val oldArray : Array<Char>)
 	{
 		count = oldArray.length
 		offset = 0
 		array = oldArray.clone()
 	}
 
-	this(oldArray : Array<Char>, offset, count)
+	this(val oldArray : Array<Char>, offset, count)
 	{
 		array = ArrayUtil.copyOfRange(oldArray, offset, offset + count);
 	}
 
 	meth toArray() : Array<Char> = ArrayUtil.copyOfRange(array, offset, offset + count)
 
-	meth plus(a : Any) : String
+	meth plus(val a : Any) : String
 	{
 		var c = StringBuilder();
 		c += toString()
@@ -33,7 +33,7 @@ class String
 		return c.toString()
 	}
 
-	override meth equals(final o : Any?) : Bool
+	override meth equals(val o : Any?) : Bool
 	{
 		if (fullyEquals(o))
 			return true

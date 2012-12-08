@@ -5,7 +5,7 @@ package napile.collection
  */
 abstract class Collection<E>
 {
-	local final var emptyArray = Array<E>(0)
+	local val emptyArray = Array<E>(0)
 
 	this()
 

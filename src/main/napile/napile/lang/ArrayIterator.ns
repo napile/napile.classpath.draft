@@ -9,15 +9,15 @@ import napile.collection.Iterator
 class ArrayIterator<E> : Iterator<E>
 {
 	local var index : Int = 0
-	local var array : Array<E>
+	local val array : Array<E>
 
 	this(array) : Iterator<E>()
 
 	override meth next() : E
 	{
-		var val = array[index];
+		var e = array[index];
 		index = index + 1
-		return val
+		return e
 	}
 
 	override meth hasNext() : Bool

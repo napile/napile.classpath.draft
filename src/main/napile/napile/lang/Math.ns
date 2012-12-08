@@ -5,5 +5,5 @@ package napile.lang
  */
 class Math
 {
-	static meth min(a : Int, b : Int) : Int = if(a <= b) a else b
+	static meth min(val a : Int, val b : Int) : Int = if(a <= b) a else b
 }
