@@ -3,13 +3,13 @@ package napile.collection
 /**
  * @author VISTALL
  */
-abstract class Collection<E>
+abstract class Collection<E> : Iterable<E>
 {
 	local val emptyArray = Array<E>(0)
 
-	this()
+	this() : Iterable<E>()
 
-	abstract meth iterator() : Iterator<E>
+	override abstract meth iterator() : Iterator<E>
 
 	abstract meth size() : Int
 

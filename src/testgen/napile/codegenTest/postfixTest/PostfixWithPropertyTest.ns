@@ -19,7 +19,7 @@ class PostfixWithPropertyTest
 
 		var b = myVar ++
 
-		Console.writeLine(b.toString())
-		Console.writeLine(myVar.toString())
+		//Console.writeLine(b.toString())
+		//Console.writeLine(myVar.toString())
 	}
 }

@@ -1,0 +1,9 @@
+package codegenTest.varOverrideValTest
+
+/**
+ * @author VISTALL
+ */
+class A
+{
+	val myVar : Int = 1
+}

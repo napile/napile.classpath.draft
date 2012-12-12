@@ -1,16 +1,16 @@
 package napile.lang
 
-import napile.annotation.ImmutableHide
 import napile.collection.Iterator
+import napile.collection.Iterable
 
 /**
  * @author VISTALL
  */
-class Array<E>
+final class Array<E> : Iterable<E>
 {
-	final var length : Int
+	val length : Int
 
-	this(length)
+	this(length) : Iterable<E>()
 	{
 		init()
 	}
@@ -21,7 +21,7 @@ class Array<E>
 
 	native meth get(val index : Int) : E
 
-	meth iterator() : Iterator<E> = ArrayIterator<E>(this)
+	override meth iterator() : Iterator<E> = ArrayIterator<E>(this)
 
 	override meth clone() : Array<E>
 	{

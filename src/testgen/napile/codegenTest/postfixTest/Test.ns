@@ -1,0 +1,14 @@
+package codegenTest.postfixTest
+
+/**
+ * @author VISTALL
+ */
+class Test
+{
+	meth a()
+	{
+		var a = Array<Int>(0)
+
+		a[0] ++
+	}
+}
