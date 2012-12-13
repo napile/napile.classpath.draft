@@ -5,9 +5,9 @@ package napile.lang
  */
 class Thread
 {
-	local final val target : {}
+	local val target : {}
 
-	final var state : ThreadState
+	local var state : ThreadState
 	{
 		local set
 	} = ThreadState.NEW
@@ -31,5 +31,5 @@ class Thread
 		start0()
 	}
 
-	local native final meth start0();
+	local native meth start0();
 }

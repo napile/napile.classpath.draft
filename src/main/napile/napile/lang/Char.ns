@@ -3,7 +3,7 @@ package napile.lang
 /**
  * @author VISTALL
  */
-class Char
+final class Char
 {
 	local this()
 

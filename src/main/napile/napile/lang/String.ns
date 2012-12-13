@@ -5,11 +5,11 @@ import napile.io.Console
 /**
  * @author VISTALL
  */
-class String
+final class String
 {
-	local /*final*/ var array : Array<Char>
-	local /*final*/ var count : Int
-	local /*final*/ var offset : Int
+	local val array : Array<Char>
+	local val count : Int
+	local val offset : Int
 
 	this(val oldArray : Array<Char>)
 	{

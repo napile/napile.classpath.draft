@@ -5,9 +5,9 @@ import napile.condition.CompareResult
 /**
  * @author VISTALL
  */
-class Int
+final class Int
 {
-	final static var MAX_VALUE : Int = 0x7fffffff
+	static val MAX_VALUE : Int = 0x7fffffff
 
 	local this()
 

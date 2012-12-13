@@ -3,7 +3,7 @@ package napile.lang
 /**
  * @author VISTALL
  */
-class Null
+final class Null
 {
 	static val INSTANCE : Null = Null()
 

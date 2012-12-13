@@ -5,13 +5,13 @@ import napile.annotation.Enumable
 /**
  * @author VISTALL
  */
-class Bool
+final class Bool
 {
 	//@Enumable
-	static final var TRUE : Bool = Bool()
+	static val TRUE : Bool = Bool()
 
 	//@Enumable
-	static final var FALSE : Bool = Bool()
+	static val FALSE : Bool = Bool()
 
 	local this()
 
