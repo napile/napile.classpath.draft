@@ -13,15 +13,7 @@ class ArrayIterator<E> : Iterator<E>
 
 	this(array)
 
-	override meth next() : E
-	{
-		var e = array[index];
-		index = index + 1
-		return e
-	}
+	override meth next() : E = array[index ++]
 
-	override meth hasNext() : Bool
-	{
-		return index != array.length
-	}
+	override meth hasNext() : Bool = index != array.length
 }
