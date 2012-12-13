@@ -5,5 +5,5 @@ package napile.collection
  */
 abstract class Iterable<E>
 {
-	abstract meth iterator() : Iterator<E>
+	meth iterator() : Iterator<E>
 }

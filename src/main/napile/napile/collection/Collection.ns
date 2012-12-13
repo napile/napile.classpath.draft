@@ -7,9 +7,9 @@ abstract class Collection<E> : Iterable<E>
 {
 	local val emptyArray = Array<E>(0)
 
-	override abstract meth iterator() : Iterator<E>
+	override meth iterator() : Iterator<E>
 
-	abstract meth size() : Int
+	meth size() : Int
 
 	meth isEmpty() : Bool = size() == 0
 
