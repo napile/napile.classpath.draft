@@ -21,8 +21,8 @@ class IsTest
 		if(target is Array<Any>)
 			Console.writeLine("Array<Int> is Array<Any>")
 
-		if(target is Array<Any?>)
-			Console.writeLine("Array<Int> is Array<Any?>")
+		//if(target is Array<Any?>)
+		//	Console.writeLine("Array<Int> is Array<Any?>")
 
 		//if(target is Array<String>)
 		//	Console.writeLine("Array<Int> is Array<String>")
@@ -30,7 +30,7 @@ class IsTest
 		if (target is Any)
 			Console.writeLine("Array<Int> is Any")
 
-		if (target !is Int)
-			Console.writeLine("Array<Int> !is Int")
+		//if (target !is Int)
+		//	Console.writeLine("Array<Int> !is Int")
 	}
 }

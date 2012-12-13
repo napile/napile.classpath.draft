@@ -3,9 +3,9 @@ package napile.io
 /**
  * @author VISTALL
  */
-class Console
+util class Console
 {
-	native static meth write(val value : String)
+	native meth write(val value : String)
 
-	native static meth writeLine(val value : String)
+	native meth writeLine(val value : String)
 }

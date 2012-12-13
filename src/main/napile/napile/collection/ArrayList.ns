@@ -8,7 +8,7 @@ class ArrayList<E> : List<E>
 	local var data : Array<E>
 	local var size : Int = 0
 
-	this(val predefinedSize : Int = 10) : List<E>()
+	this(val predefinedSize : Int = 10)
 	{
 		data = Array<E>(predefinedSize)
 	}

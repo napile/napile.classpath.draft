@@ -5,8 +5,6 @@ package napile.collection
  */
 abstract class List<E> : Collection<E>
 {
-	this() : Collection<E>()
-
 	abstract meth add(val e : E) : Bool
 
 	abstract meth get(val index : Int) : E

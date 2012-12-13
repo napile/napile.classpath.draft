@@ -5,8 +5,6 @@ package napile.collection
  */
 abstract class Iterator<E>
 {
-	this()
-
 	abstract meth hasNext() : Bool
 
 	abstract meth next() : E

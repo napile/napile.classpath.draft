@@ -8,7 +8,7 @@ class ListIterator<E> : Iterator<E>
 	local val list : List<E>
 	local var index : Int = 0
 
-	this(list) : Iterator<E>()
+	this(list)
 
 	override meth hasNext() : Bool = list.size() != index
 

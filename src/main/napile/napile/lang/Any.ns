@@ -9,8 +9,6 @@ import napile.io.Console
  */
 class Any
 {
-	this()
-
 	native meth getClass() : Class<Any> //TODO [VISTALL] Class<this>
 
 	native meth getType() : Type<Any>  //TODO [VISTALL] Type<this>

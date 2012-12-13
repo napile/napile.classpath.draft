@@ -11,7 +11,7 @@ class ArrayIterator<E> : Iterator<E>
 	local var index : Int = 0
 	local val array : Array<E>
 
-	this(array) : Iterator<E>()
+	this(array)
 
 	override meth next() : E
 	{

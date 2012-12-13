@@ -1,11 +1,7 @@
 package napile.condition
 
 /**
- * Created with IntelliJ IDEA.
- * User: VISTALL
- * Date: 06.09.12
- * Time: 12:43
- * To change this template use File | Settings | File Templates.
+ * @author VISTALL
  */
 abstract class Condition<E>
 {

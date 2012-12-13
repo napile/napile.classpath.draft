@@ -3,7 +3,7 @@ package napile.lang
 /**
  * @author VISTALL
  */
-class Math
+util class Math
 {
-	static meth min(val a : Int, val b : Int) : Int = if(a <= b) a else b
+	meth min(val a : Int, val b : Int) : Int = if(a <= b) a else b
 }

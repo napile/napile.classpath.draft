@@ -10,7 +10,7 @@ final class Array<E> : Iterable<E>
 {
 	val length : Int
 
-	this(length) : Iterable<E>()
+	this(length)
 	{
 		init()
 	}
