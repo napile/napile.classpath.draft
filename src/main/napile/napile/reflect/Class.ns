@@ -9,11 +9,21 @@ import napile.annotation.Immutable
  */
 final class Class<E> : Member
 {
-	lazy val variables : Array<Variable>
+	lazy val variables : Array<Variable> = getVariables()
 
-	lazy val methods : Array<Method>
+	lazy val methods : Array<Method> = getMethods()
 
-	lazy val macros : Array<Macro>
+	lazy val macros : Array<Macro> = getMacros()
 
 	local this(val owner : Class<Any>?, val name : String) : Member(owner, name)
+
+	local meth getVariables() : Array<Variable>
+	{
+		//TODO [VISTALL] make it
+		return Array<Variable>(0)
+	}
+
+	local native meth getMethods() : Array<Method>
+
+	local native meth getMacros() : Array<Macro>
 }

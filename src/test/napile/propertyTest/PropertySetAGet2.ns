@@ -7,12 +7,10 @@ package propertyTest
  * Time: 12:01
  * To change this template use File | Settings | File Templates.
  */
-class PropertySetAGet2 : PropertySetAGet
+class PropertySetAGet2
 {
-	this() : PropertySetAGet()
-
-	override var a : Int
+	meth test()
 	{
-		set
+		PropertySetAGet.a = 1
 	}
 }

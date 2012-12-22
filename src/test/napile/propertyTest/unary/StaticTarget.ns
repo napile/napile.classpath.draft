@@ -1,0 +1,14 @@
+package propertyTest.unary
+
+/**
+ * @author VISTALL
+ */
+class StaticTarget
+{
+	static var TEST : Int = 0
+
+	static meth test()
+	{
+		TEST ++
+	}
+}

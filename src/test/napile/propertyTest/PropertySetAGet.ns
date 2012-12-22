@@ -13,7 +13,7 @@ class PropertySetAGet
 {
 	var a : Int
 	{
-		local set
+		/*local*/ set
 		get
 	} = 1
 
@@ -21,8 +21,6 @@ class PropertySetAGet
 
 	meth test()
 	{
-		a = 1
-
-		var c = a
+		a ++
 	}
 }

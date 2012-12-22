@@ -11,10 +11,10 @@ class NullableTest
 	{
 		var myVar : MyObject? = MyObject()
 
-		Console.writeLine(/text/ {myVar is not null:  #{myVar?.call()}})
+		//Console.writeLine(/text/ {myVar is not null:  #{myVar?.call()}})
 
 		myVar = null
 
-		Console.writeLine(/text/ {myVar is null: #{myVar?.call()}})
+		//Console.writeLine(/text/ {myVar is null: #{myVar?.call()}})
 	}
 }

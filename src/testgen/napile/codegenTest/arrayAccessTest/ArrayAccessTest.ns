@@ -12,8 +12,6 @@ class ArrayAccessTest
 		var a = c[0]
 	}
 
-/*	static meth main(val arg : Array<String>)
-	{
-
-	}      */
+	static meth man(val arg : Array<String>)
+	{}
 }

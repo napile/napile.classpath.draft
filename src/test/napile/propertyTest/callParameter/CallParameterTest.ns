@@ -1,0 +1,14 @@
+package propertyTest.callParameter
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class CallParameterTest
+{
+	meth test(val myVar : Int)
+	{
+		var a = myVar
+	}
+}

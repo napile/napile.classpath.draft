@@ -7,7 +7,7 @@ class Thread
 {
 	local val target : {}
 
-	local var state : ThreadState
+	local var state
 	{
 		local set
 	} = ThreadState.NEW

@@ -5,7 +5,7 @@ package codegenTest.typeParameterTest
  */
 class TWithTarget
 {
-	local val length : Int
+	val length : Int
 
 	this(length)
 }

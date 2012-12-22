@@ -9,9 +9,11 @@ class Exception
 {
 	final val message : String?
 
-	lazy final val stack : Array<StackTraceElement>
+	lazy final val stack : Array<StackTraceElement> = generateStack()
 
 	this(message = null)
+
+	local native meth generateStack() : Array<StackTraceElement>
 
 	meth printStackTrace()
 	{

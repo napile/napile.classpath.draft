@@ -1,0 +1,9 @@
+package propertyTest.dotANDdot
+
+/**
+ * @author VISTALL
+ */
+class Target2
+{
+	static var target : Target
+}

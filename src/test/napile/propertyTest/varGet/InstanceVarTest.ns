@@ -1,0 +1,14 @@
+package propertyTest.varGet
+
+/**
+ * @author VISTALL
+ */
+class InstanceVarTest
+{
+	var test : Int = 0
+
+	meth test()
+	{
+		var a : Int = test
+	}
+}

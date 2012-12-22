@@ -1,0 +1,14 @@
+package propertyTest.varGet
+
+/**
+ * @author VISTALL
+ */
+class LocalVarSetInMethod
+{
+	meth a()
+	{
+		var a = 1
+
+		a = 2
+	}
+}

@@ -11,7 +11,7 @@ import napile.io.Console
  */
 class ToStringAndNullTest
 {
-	static meth main(arg : Array<String>)
+	static meth main(val arg : Array<String>)
 	{
 		var str : String? = ""
 

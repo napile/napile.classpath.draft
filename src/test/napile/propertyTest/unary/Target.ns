@@ -1,0 +1,17 @@
+package propertyTest.unary
+
+/**
+ * @author VISTALL
+ */
+class Target
+{
+	var id : Int
+	{
+		local set
+	}
+
+	meth a()
+	{
+		++ id
+	}
+}
