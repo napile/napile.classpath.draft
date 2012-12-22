@@ -16,6 +16,6 @@ class AC : A, C
 
 	static meth main(val arg : Array<String>)
 	{
-		AC("this from AС")
+		AC("this from AC")
 	}
 }

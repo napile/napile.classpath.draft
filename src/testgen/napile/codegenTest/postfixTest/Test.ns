@@ -8,7 +8,6 @@ class Test
 	meth a()
 	{
 		var a = Array<Int>(0)
-
-		a[0] ++
+		//a[0] ++
 	}
 }

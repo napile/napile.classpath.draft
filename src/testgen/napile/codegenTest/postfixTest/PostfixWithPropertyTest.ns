@@ -11,15 +11,17 @@ import napile.io.Console
  */
 class PostfixWithPropertyTest
 {
-	static var myVar : Int = 0
+	var myVar : Int = 0
+
+	this()
+
+	meth test()
+	{
+		myVar ++
+	}
 
 	static meth main(val arg : Array<String>)
 	{
-		//Console.writeLine(myVar.toString())
-
-		var b = myVar ++
-
-		//Console.writeLine(b.toString())
-		//Console.writeLine(myVar.toString())
+		PostfixWithPropertyTest().test()
 	}
 }
