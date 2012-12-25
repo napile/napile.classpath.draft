@@ -1,0 +1,19 @@
+package codegenTest.anonymClassTest
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class AnonymTarget
+{
+	this()
+	{
+		Console.writeLine("'this'")
+	}
+
+	meth call()
+	{
+		Console.writeLine("'call'")
+	}
+}

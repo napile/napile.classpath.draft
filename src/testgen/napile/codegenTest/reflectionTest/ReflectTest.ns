@@ -10,9 +10,15 @@ class ReflectTest
 {
 	static meth main(val arg : Array<String>)
 	{
-		var clazz = classOf(ReflectTarget);
+		val clazz = classOf(ReflectTarget);
 
-		for (i in clazz.variables)
-			Console.writeLine(i.name)
+		for (i in clazz.methods)
+			Console.writeLine("method: " + i.name)
+
+		for (i in clazz.constructors)
+			Console.writeLine("constructor: " + i.name)
+
+		for (i in clazz.macros)
+			Console.writeLine("macro: " + i.name)
 	}
 }

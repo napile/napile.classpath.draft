@@ -7,7 +7,7 @@
  */
 class GenericClass<T, T>
 {
-	meth test(a: Int)
+	meth test(val a: Int)
 	{
 
 	}

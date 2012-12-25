@@ -23,6 +23,16 @@ final class String
 
 	meth toArray() : Array<Char> = ArrayUtil.copyOfRange(array, offset, offset + count)
 
+	meth startsWith(val prefix : String) : Bool = startsWith(prefix, 0);
+
+	meth endsWith(val suffix : String) : Bool = startsWith(suffix, count - suffix.count);
+
+	meth indexOf(val str : String) : Int = indexOf(str, 0)
+
+	meth indexOf(val str : String, val fromIndex : Int) : Int = indexOf(array, offset, count, str.array, str.offset, str.count, fromIndex)
+
+	meth contains(val s : String) : Bool = indexOf(s.toString()) > -1;
+
 	meth plus(val a : Any) : String
 	{
 		var c = StringBuilder();
@@ -58,4 +68,67 @@ final class String
 	}
 
 	override meth toString() : String = String(array, offset, count)
+
+	static meth indexOf(val source : Array<Char>,
+						val sourceOffset : Int,
+						val sourceCount : Int,
+						val target : Array<Char>,
+						val targetOffset : Int,
+						val targetCount : Int,
+						val fromIndex : Int) : Int
+	{
+		if (fromIndex >= sourceCount)
+			return if(targetCount == 0)  sourceCount else -1;
+
+		if (fromIndex < 0)
+			fromIndex = 0;
+
+		if (targetCount == 0)
+			return fromIndex;
+
+		var first  = target[targetOffset];
+		var max = sourceOffset + (sourceCount - targetCount);
+
+		var i = sourceOffset + fromIndex;
+		while(i <= max)
+		{
+			if (source[i] != first)
+				while (++i <= max && source[i] != first);
+
+			if (i <= max)
+			{
+				var j = i + 1;
+				var end = j + targetCount - 1;
+				var k = targetOffset + 1;
+				while (j < end && source[j] == target[k])
+				{
+					j++
+					k++
+				}
+
+				if (j == end)
+					return i - sourceOffset;
+			}
+			i++
+		}
+		return -1;
+	}
+
+	local meth startsWith(val prefix : String, val toffset : Int) : Bool
+	{
+		var ta = array;
+		var to = offset + toffset;
+		var pa = prefix.array;
+		var po = prefix.offset;
+		var pc = prefix.count;
+
+		if (toffset < 0 || (toffset > count - pc))
+			return false;
+
+		while (--pc >= 0)
+			if (ta[to++] != pa[po++])
+				return false;
+
+		return true;
+	}
 }

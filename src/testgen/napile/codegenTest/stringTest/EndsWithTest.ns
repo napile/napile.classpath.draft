@@ -1,0 +1,18 @@
+package codegenTest.stringTest
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class EndsWithTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		var str = "endsWith"
+
+		Console.writeLine("str: " + str + " : result(With): " + str.endsWith("With"))
+
+		Console.writeLine("str: " + str + " : result(ends): " + str.endsWith("ends"))
+	}
+}

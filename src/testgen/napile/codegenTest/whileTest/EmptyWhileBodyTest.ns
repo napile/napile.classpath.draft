@@ -1,0 +1,12 @@
+package codegenTest.whileTest
+
+/**
+ * @author VISTALL
+ */
+class EmptyWhileBodyTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		while (true);
+	}
+}

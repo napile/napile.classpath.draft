@@ -1,10 +1,12 @@
 package napile.lang
 
 import napile.condition.CompareResult
+import napile.annotation.DefaultValue
 
 /**
  * @author VISTALL
  */
+@DefaultValue(0)
 final class Int
 {
 	static val MAX_VALUE : Int = 0x7fffffff
@@ -22,6 +24,10 @@ final class Int
 
 		return array
 	}
+
+	native meth plus() : Int
+
+	native meth minus() : Int
 
 	native meth inc() : Int
 

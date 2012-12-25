@@ -1,0 +1,11 @@
+package napile.ref
+
+/**
+ * @author VISTALL
+ */
+class Ref<E>
+{
+	var data : E
+
+	this(data)
+}

@@ -11,6 +11,8 @@ final class Class<E> : Member
 {
 	lazy val variables : Array<Variable> = getVariables()
 
+	lazy val constructors : Array<Constructor> = getConstructors()
+
 	lazy val methods : Array<Method> = getMethods()
 
 	lazy val macros : Array<Macro> = getMacros()
@@ -19,11 +21,12 @@ final class Class<E> : Member
 
 	local meth getVariables() : Array<Variable>
 	{
-		//TODO [VISTALL] make it
-		return Array<Variable>(0)
+		throw Exception("unsupported")
 	}
+
+	local native meth getMacros() : Array<Macro>
 
 	local native meth getMethods() : Array<Method>
 
-	local native meth getMacros() : Array<Macro>
+	local native meth getConstructors() : Array<Constructor>
 }

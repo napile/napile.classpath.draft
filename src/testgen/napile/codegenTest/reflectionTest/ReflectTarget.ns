@@ -14,4 +14,12 @@ class ReflectTarget
 	var myVar2 : String = "myValue"
 
 	this()
+
+	meth test()
+	{
+	}
+
+	local macro testIt()
+	{
+	}
 }

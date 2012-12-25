@@ -1,0 +1,12 @@
+package codegenTest.anonymClassTest
+
+/**
+ * @author VISTALL
+ */
+class AnonymClassTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		AnonymClass().testIt()
+	}
+}
