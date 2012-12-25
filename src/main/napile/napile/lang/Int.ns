@@ -7,8 +7,9 @@ import napile.annotation.DefaultValue
  * @author VISTALL
  */
 @DefaultValue(0)
-final class Int
+final class Int : Number
 {
+	static val MIN_VALUE : Int = 0x80000000
 	static val MAX_VALUE : Int = 0x7fffffff
 
 	local this()
@@ -24,6 +25,18 @@ final class Int
 
 		return array
 	}
+
+	override native meth toByte() : Byte
+
+	override native meth toShort() : Short
+
+	override meth toInt() : Int = this
+
+	override native meth toLong() : Long
+
+	override native meth toFloat() : Float
+
+	override native meth toDouble() : Double
 
 	native meth plus() : Int
 

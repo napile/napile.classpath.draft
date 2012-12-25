@@ -1,10 +1,12 @@
 package napile.lang
 
+import napile.annotation.DefaultValue
 import napile.annotation.Enumable
 
 /**
  * @author VISTALL
  */
+@DefaultValue(Bool.FALSE)
 final class Bool
 {
 	//@Enumable

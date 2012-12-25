@@ -1,5 +1,7 @@
 package napile.collection
 
+import napile.annotation.ImmutableHide
+
 /**
  * @author VISTALL
  */
@@ -13,6 +15,7 @@ class ArrayList<E> : List<E>
 		data = Array<E>(predefinedSize)
 	}
 
+	@ImmutableHide
 	override meth add(val e : E) : Bool
 	{
 		ensureCapacity(size + 1);

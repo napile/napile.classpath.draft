@@ -1,10 +1,12 @@
 package napile.collection
 
+import napile.annotation.ImmutableHide
 /**
  * @author VISTALL
  */
 abstract class List<E> : Collection<E>
 {
+	@ImmutableHide
 	meth add(val e : E) : Bool
 
 	meth get(val index : Int) : E

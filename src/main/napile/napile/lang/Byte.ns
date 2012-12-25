@@ -1,8 +1,11 @@
 package napile.lang
 
+import napile.annotation.DefaultValue
+
 /**
  * @author VISTALL
  */
+@DefaultValue(0.toByte())
 final class Byte
 {
 	local this()
