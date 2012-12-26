@@ -1,0 +1,14 @@
+package napile.lang
+
+/**
+ * @author VISTALL
+ */
+class Multi
+{
+	local val data : Array<Any?>
+
+	this(val length : Int)
+	{
+		data = Array<Any?>(length)
+	}
+}

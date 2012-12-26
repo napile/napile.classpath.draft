@@ -1,0 +1,15 @@
+package multiTypeTest
+
+/**
+ * @author VISTALL
+ */
+class TypeTest
+{
+	var myVar : [val key : String, var value : String]
+
+	meth test()
+	{
+		myVar = ["", ""]
+		myVar.value = ""
+	}
+}

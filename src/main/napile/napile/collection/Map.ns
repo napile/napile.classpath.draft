@@ -1,0 +1,9 @@
+package napile.collection
+
+/**
+ * @author VISTALL
+ */
+abstract class Map<K, V>
+{
+	meth entrySet() : Set<[val key : K, var value : V]>
+}
