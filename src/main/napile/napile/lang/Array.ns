@@ -17,13 +17,13 @@ final class Array<E> : Iterable<E>
 
 	native meth init()
 
-	native meth set(val index : Int, val value : E) : Array<E> //TODO [VISTALL] return 'this' type
+	native meth set(val index : Int, val value : E) : this
 
 	native meth get(val index : Int) : E
 
 	override meth iterator() : Iterator<E> = ArrayIterator<E>(this)
 
-	override meth clone() : Array<E>
+	override meth clone() : this
 	{
 		var newArray = Array<E>(length)
 		var i = 0

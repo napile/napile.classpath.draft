@@ -11,4 +11,9 @@ class Multi
 	{
 		data = Array<Any?>(length)
 	}
+
+	meth set(val index : Int, val value : Any?)
+	{
+		//TODO [VISTALL]
+	}
 }

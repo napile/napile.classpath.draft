@@ -1,0 +1,13 @@
+package anonymMethTest
+
+/**
+ * @author VISTALL
+ */
+class AnonymMethTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		val a = {""}
+
+	}
+}

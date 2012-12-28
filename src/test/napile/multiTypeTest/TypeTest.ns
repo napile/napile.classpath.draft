@@ -10,6 +10,5 @@ class TypeTest
 	meth test()
 	{
 		myVar = ["", ""]
-		myVar.value = ""
 	}
 }

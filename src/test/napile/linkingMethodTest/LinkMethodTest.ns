@@ -16,10 +16,10 @@ class LinkMethodTest
 		toLink(linkingMethodTest.MethodInClass#target)
 	}
 
-	meth linked(val : Int) : Int = val;
-	//meth linked(val : Any) : Int = 1;
+	meth linked(val v: Int) : Int = v;
+	//meth linked(val v : Any) : Int = 1;
 
-	meth toLink(a : {(val : Int) -> Int})
+	meth toLink(val a : {(val v: Int) -> Int})
 	{
 
 	}

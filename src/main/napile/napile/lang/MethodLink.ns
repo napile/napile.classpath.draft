@@ -1,0 +1,14 @@
+package napile.lang
+
+/**
+ * @author VISTALL
+ */
+class MethodLink
+{
+	local this()
+
+	meth invoke(val arg : Array<Any?>)
+	{
+		//TODO [VISTALL]
+	}
+}
