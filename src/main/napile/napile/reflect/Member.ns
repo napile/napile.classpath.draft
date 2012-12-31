@@ -10,7 +10,7 @@ abstract class Member
 
 	final val name : String
 
-	final val modifiers : /*@Immutable*/ Array<Modifier>
+	final val modifiers : @Immutable Array<Modifier>
 
 	covered this(ownerClass, name, modifiers)
 
