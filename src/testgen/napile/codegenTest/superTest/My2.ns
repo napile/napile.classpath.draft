@@ -1,0 +1,14 @@
+package codegenTest.superTest
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class My2
+{
+	meth test()
+	{
+		Console.writeLine("'test' from 'My2'")
+	}
+}

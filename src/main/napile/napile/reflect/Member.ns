@@ -1,5 +1,6 @@
 package napile.reflect
 
+import napile.annotation.Immutable
 /**
  * @author VISTALL
  */
@@ -9,5 +10,9 @@ abstract class Member
 
 	final val name : String
 
-	covered this(ownerClass, name)
+	final val modifiers : /*@Immutable*/ Array<Modifier>
+
+	covered this(ownerClass, name, modifiers)
+
+	meth isStatic() : Bool = ArrayUtil.contains(modifiers, Modifier.STATIC)
 }

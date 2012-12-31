@@ -7,7 +7,7 @@ package typeParameterTest
  * Time: 23:33
  * To change this template use File | Settings | File Templates.
  */
-class TypeParameterMultiDecl<E[A, B], C[A]>
+class TypeParameterMultiDecl<E : A & B, C : A>
 {
 	this()
 

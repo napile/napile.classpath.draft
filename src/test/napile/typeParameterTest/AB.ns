@@ -7,6 +7,6 @@ package typeParameterTest
  * Time: 23:56
  * To change this template use File | Settings | File Templates.
  */
-class AB : A, B
+class AB : A & B
 {
 }

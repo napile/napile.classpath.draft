@@ -17,7 +17,7 @@ final class Class<E> : Member
 
 	lazy val macros : Array<Macro> = getMacros()
 
-	local this(val owner : Class<Any>?, val name : String) : Member(owner, name)
+	local this(val owner : Class<Any>?, val name : String, val modifiers : Array<Modifier>) : Member(owner, name, modifiers)
 
 	local meth getVariables() : Array<Variable>
 	{
@@ -29,4 +29,12 @@ final class Class<E> : Member
 	local native meth getMethods() : Array<Method>
 
 	local native meth getConstructors() : Array<Constructor>
+
+	meth findMethod(val name : String) : Method?
+	{
+		for (m in methods)
+			if (m.name.equals(name))
+				return m
+		return null;
+	}
 }

@@ -1,0 +1,24 @@
+package codegenTest.superTest
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class MyAll : My1 & My2
+{
+	this()
+
+	override meth test()
+	{
+		super<My1>.test()
+		super<My2>.test()
+
+		Console.writeLine("'test' from MyAll")
+	}
+
+	static meth main(val arg : Array<String>)
+	{
+		MyAll().test()
+	}
+}

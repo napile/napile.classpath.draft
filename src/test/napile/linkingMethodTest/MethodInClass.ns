@@ -5,5 +5,5 @@ package linkingMethodTest
  */
 class MethodInClass
 {
-	static meth target(val : napile.lang.Int) : Int = val
+	static meth target(val v : napile.lang.Int) : Int = v
 }

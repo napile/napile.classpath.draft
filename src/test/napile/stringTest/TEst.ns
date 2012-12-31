@@ -9,7 +9,7 @@ package stringTest
  */
 class Test
 {
-	static meth main(arg : Array<String>)
+	static meth main(val arg : Array<String>)
 	{
 		var b : String = ""
 	}

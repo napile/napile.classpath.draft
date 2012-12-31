@@ -32,4 +32,12 @@ util class ArrayUtil
 			i++
 		}
 	}
+
+	meth contains<E>(val src : Array<E>, val object : E) : Bool
+	{
+		for(e in src)
+			if(e == object)
+				return true;
+		return false;
+	}
 }

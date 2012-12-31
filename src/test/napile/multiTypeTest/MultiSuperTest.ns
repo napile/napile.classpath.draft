@@ -1,0 +1,21 @@
+package multiTypeTest
+
+/**
+ * @author VISTALL
+ */
+class MultiSuperTest
+{
+	val A1 : [val name : String, val age : Int] = ["VISTALL", 1]
+
+	val A2 : [val name : Any, val age : Any] = A1    // true
+
+	val A3 : [var name : Any, val age : Any] = A1    // fail (var cant be val)
+
+	val A4 : [val name : Any, val age : Short] = A1    // fail (Short cant be Int)
+
+	//
+
+	val B1 : [val name : String] = ["1", "2"]    // fail (need only one argument)
+
+	val B2 : [val name : String, val family : String] = B1 // need [name, family] found [name]
+}

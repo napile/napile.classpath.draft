@@ -3,7 +3,7 @@ package napile.lang
 /**
  * @author VISTALL
  */
-class IllegalStateException : Exception
+class IllegalArgumentException : Exception
 {
 	this(val message : String? = null) : Exception(message)
 }

@@ -5,11 +5,11 @@ import napile.io.Console
 /**
  * @author VISTALL
  */
-class AC : A, C
+class AC : A & C
 {
 	this() : this("this from AС(single)")
 
-	this(val a : String) : A("this from A"), C("this from C")
+	this(val a : String) : A("this from A") & C("this from C")
 	{
 		Console.writeLine(a)
 	}

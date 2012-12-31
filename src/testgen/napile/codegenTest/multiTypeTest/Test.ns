@@ -1,0 +1,14 @@
+package codegenTest.multiTypeTest
+
+/**
+ * @author VISTALL
+ */
+class Test
+{
+	static val ENTRY : [var key : String, var value : String]
+
+	static meth main(val arg : Array<String>)
+	{
+	//	ENTRY = ["" , ""]
+	}
+}

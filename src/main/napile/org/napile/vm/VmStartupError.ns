@@ -1,0 +1,9 @@
+package org.napile.vm
+
+/**
+ * @author VISTALL
+ */
+class VmStartupError : Error
+{
+	this(val message : String? = null) : Error(message)
+}
