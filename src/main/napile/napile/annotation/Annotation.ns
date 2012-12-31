@@ -8,5 +8,5 @@ import napile.condition.Condition
 @Annotation(null)
 final class Annotation
 {
-	this(val cond : Condition<Any>?)
+	this(val cond : Condition<Any>? = null)
 }

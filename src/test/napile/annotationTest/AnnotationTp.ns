@@ -12,7 +12,7 @@ import napile.annotation.Annotation
 @Annotation(null)
 class AnnotationTp<T>
 {
-	this(t : T)
+	this(val t : T)
 
 
 }

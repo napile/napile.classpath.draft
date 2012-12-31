@@ -1,0 +1,9 @@
+package napile.lang
+
+/**
+ * @author VISTALL
+ */
+abstract class Runnable
+{
+	meth run();
+}
