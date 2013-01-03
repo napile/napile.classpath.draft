@@ -15,10 +15,10 @@
 		<mkdir dir="build/tests/" />
 		<mkdir dir="build/tests/codegenTest" />
 
-		<napilec srcdir="src/testgen/napile:src/main/napile" outdir="build/classes" />
+		<napilec srcdir="src/testgen/napile:src/main/napile" outdir="build/tests" />
 
 		<nzip destfile="build/codegenTest.nzip" moduledir="src/main/napile">
-			<fileset dir="build/classes/" />
+			<fileset dir="build/tests/" />
 		</nzip>
 	</target>
 </project>

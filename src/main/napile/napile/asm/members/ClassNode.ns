@@ -1,0 +1,8 @@
+package napile.asm.members
+
+/**
+ * @author VISTALL
+ */
+class ClassNode
+{
+}

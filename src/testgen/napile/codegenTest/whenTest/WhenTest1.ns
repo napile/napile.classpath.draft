@@ -1,0 +1,35 @@
+package codegenTest.whenTest
+
+import napile.io.Console
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: VISTALL
+ * Date: 06.09.12
+ * Time: 20:15
+ * To change this template use File | Settings | File Templates.
+ */
+class WhenTest1
+{
+	this()
+
+	meth test1()
+	{
+		var c : Any = 1
+
+		Console.writeLine(c.equals(1).toString())
+
+		when(c)
+		{
+			1 -> c = 2
+			else -> c = 3
+		}
+
+		Console.writeLine(c.toString())
+	}
+
+	static meth main(val arg : Array<String>)
+	{
+		WhenTest1().test1()
+	}
+}

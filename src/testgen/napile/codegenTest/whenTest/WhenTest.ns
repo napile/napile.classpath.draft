@@ -21,5 +21,17 @@ class WhenTest
 			2 -> Console.writeLine("i == 2")
 			else -> Console.writeLine("i - else")
 		}
+
+		Console.writeLine("center")
+		i = 99
+
+		when(i)
+		{
+			1 -> Console.writeLine("i == 1")
+			2 -> Console.writeLine("i == 2")
+			else -> Console.writeLine("i - else")
+		}
+
+		Console.writeLine("after")
 	}
 }

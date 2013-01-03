@@ -1,0 +1,21 @@
+package codegenTest.whenTest
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class WhenExpTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		val i : Any = 1
+
+		when
+		{
+			i == 2 -> Console.writeLine("i == 2")
+			i == 1 -> Console.writeLine("i == 1")
+			else -> Console.writeLine("error")
+		}
+	}
+}

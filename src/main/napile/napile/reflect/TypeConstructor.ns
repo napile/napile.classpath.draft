@@ -1,9 +1,0 @@
-package napile.reflect
-
-/**
- * @author VISTALL
- */
-abstract class TypeConstructor
-{
-
-}

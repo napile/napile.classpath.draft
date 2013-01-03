@@ -7,7 +7,7 @@ class MethodLike : Member
 {
 	val parameters : Array<CallParameter>
 
-	val returnType : TypeInfo
+	//val returnType : TypeInfo
 
 	covered this(
 			val owner : Class<Any>?,

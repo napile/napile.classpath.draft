@@ -1,0 +1,20 @@
+package codegenTest.whenTest
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class WhenIsTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		val i : Any = 1
+
+		when (i)
+		{
+			is Int -> Console.writeLine("i is Int")
+			else -> Console.writeLine("error")
+		}
+	}
+}

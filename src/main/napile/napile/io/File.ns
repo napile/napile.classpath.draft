@@ -1,0 +1,11 @@
+package napile.io
+
+/**
+ * @author VISTALL
+ */
+class File
+{
+	val name : String
+
+	this(name)
+}
