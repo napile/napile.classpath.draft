@@ -1,0 +1,10 @@
+package napile.reflect.constructor
+
+import napile.reflect.TypeConstructor
+
+/**
+ * @author VISTALL
+ */
+class MethodTypeConstructor : TypeConstructor
+{
+}

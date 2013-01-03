@@ -3,21 +3,15 @@ package napile.reflect
 /**
  * @author VISTALL
  */
-class Variable: Member
+class MethodLike : Member
 {
+	val parameters : Array<CallParameter>
+
+	val returnType : TypeInfo
+
 	covered this(
 			val owner : Class<Any>?,
 			val name : String,
 			val modifiers : Array<Modifier>,
 			val annotations : Array<Any>) : Member(owner, name, modifiers, annotations)
-
-	meth getStaticValue() : Any?
-	{
-		return null //TODO [VISTALL]
-	}
-
-	meth getValue(val object : Any) : Any?
-	{
-		return null //TODO [VISTALL]
-	}
 }

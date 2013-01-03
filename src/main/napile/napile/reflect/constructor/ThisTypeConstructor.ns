@@ -1,0 +1,11 @@
+package napile.reflect.constructor
+
+import napile.reflect.TypeConstructor
+
+/**
+ * @author VISTALL
+ */
+final class ThisTypeConstructor : TypeConstructor
+{
+	local this()
+}

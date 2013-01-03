@@ -1,0 +1,14 @@
+package typeTest
+
+/**
+ * @author VISTALL
+ */
+class Test
+{
+	meth a()
+	{
+		/*var l : L<String> = L()
+
+		var a : String = l.a()   */
+	}
+}

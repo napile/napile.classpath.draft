@@ -1,0 +1,17 @@
+package codegenTest.varargsTest
+
+import napile.annotation.VarArgs
+
+/**
+ * @author VISTALL
+ */
+class VarArgTest
+{
+	meth testMe()
+	{
+		//test("1", "a", "b")
+	}
+
+	meth test(val arg : @VarArgs Array<String>)
+	{}
+}

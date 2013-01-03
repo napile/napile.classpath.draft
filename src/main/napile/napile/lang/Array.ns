@@ -2,6 +2,7 @@ package napile.lang
 
 import napile.collection.Iterator
 import napile.collection.Iterable
+import napile.reflect.Type
 
 /**
  * @author VISTALL
@@ -13,6 +14,11 @@ final class Array<E> : Iterable<E>
 	this(length)
 	{
 		init()
+
+		//val defaultValue : E = typeOf(E).defaultValue
+		//var i = 0
+		//while(i < length)
+		//	set(i++, defaultValue)
 	}
 
 	native meth init()

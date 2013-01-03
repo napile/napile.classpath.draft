@@ -3,7 +3,11 @@ package napile.reflect
 /**
  * @author VISTALL
  */
-class Constructor : Member
+class Constructor : MethodLike
 {
-	local this(val owner : Class<Any>?, val name : String, val modifiers : Array<Modifier>) : Member(owner, name, modifiers)
+	local this(
+			val owner : Class<Any>?,
+			val name : String,
+			val modifiers : Array<Modifier>,
+			val annotations : Array<Any>) : MethodLike(owner, name, modifiers, annotations)
 }

@@ -14,7 +14,7 @@ util class MainCaller
 
 		val clazz = ReflectUtil.findClass(arg[0])
 
-		val mainMethod = clazz.findMethod("main")
+		val mainMethod = clazz.findMethod("main", false)
 		if(mainMethod == null || !mainMethod.isStatic())
 			throw VmStartupError("'static meth main(val arg : Array<String>)' method expected")
 

@@ -1,0 +1,14 @@
+package napile.reflect.constructor
+
+import napile.reflect.TypeConstructor
+import napile.reflect.Class
+
+/**
+ * @author VISTALL
+ */
+final class ClassTypeConstructor : TypeConstructor
+{
+	val classOf : Class<Any>
+
+	local this(classOf)
+}

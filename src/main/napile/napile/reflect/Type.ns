@@ -1,11 +1,25 @@
 package napile.reflect
 
+import napile.annotation.DefaultValue
+
 /**
  * @author VISTALL
  */
-class Type<E>
+class Type<E> : AnnotationOwner
 {
 	var typeClass : Class<E>
 
-	local this(typeClass)
+	lazy val defaultValue : E = findDefaultValue()
+
+	local this(typeClass, val annotations : Array<Any>) : AnnotationOwner(annotations)
+
+	local meth findDefaultValue() : E
+	{
+		//val annotation : DefaultValue? = findAnnotation()
+		//if(annotation != null)
+		//	return annotation.value as E
+
+		//TODO [VISTALL] search in class
+		throw IllegalArgumentException("cant find default value")
+	}
 }
