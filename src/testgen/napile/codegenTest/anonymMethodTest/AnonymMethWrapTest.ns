@@ -1,0 +1,21 @@
+package codegenTest.anonymMethodTest
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+class AnonymMethWrapTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		val myVar = 1
+
+		call{Console.writeLine("myVar is " + myVar)}
+	}
+
+	static meth call(val c : {})
+	{
+		c()
+	}
+}

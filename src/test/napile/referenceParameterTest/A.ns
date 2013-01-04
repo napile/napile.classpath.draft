@@ -1,0 +1,12 @@
+package referenceParameterTest
+
+/**
+ * @author VISTALL
+ */
+class A
+{
+	var a : Int = 1
+
+	meth a(a)
+	{}
+}

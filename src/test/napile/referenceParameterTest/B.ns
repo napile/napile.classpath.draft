@@ -1,0 +1,10 @@
+package referenceParameterTest
+
+/**
+ * @author VISTALL
+ */
+class B : A
+{
+	//meth a(a)
+	//{}
+}

@@ -8,7 +8,7 @@ import napile.reflect.ReflectUtil
 util class MainCaller
 {
 	meth main(val arg : Array<String>)
-	{ /*
+	{
 		if(arg.length == 0)
 			throw VmStartupError("Class name - expected")
 
@@ -20,6 +20,6 @@ util class MainCaller
 
 		val thread = Thread{mainMethod!!.invokeStatic(ArrayUtil.copyOfRange(arg, 1, arg.length))}
 
-		thread.start()  */
+		thread.start()
 	}
 }
