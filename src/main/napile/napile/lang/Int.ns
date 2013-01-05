@@ -46,6 +46,21 @@ final class Int : Number
 
 	native meth dec() : Int
 
+	// bit operators
+	native meth bitNot() : Int
+
+	native meth bitXor(val value : Int) : Int
+
+	native meth bitOr(val value : Int) : Int
+
+	native meth bitAnd(val value : Int) : Int
+
+	native meth bitShiftLeft(val value : Int) : Int
+
+	native meth bitShiftRight(val value : Int) : Int
+
+	native meth bitShiftRightZ(val value : Int) : Int
+
 	native meth plus(val value : Int) : Int
 
 	native meth times(val value : Int) : Int

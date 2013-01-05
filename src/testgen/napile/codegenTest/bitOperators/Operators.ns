@@ -1,0 +1,52 @@
+package codegenTest.bitOperators
+
+import codegenTest.bitOperators.Operators.assertEquals
+
+/**
+ * @author VISTALL
+ */
+class Operators
+{
+	static meth assertEquals(val v1 : Any, val v2 : Any)
+	{
+		if(v1 != v2)
+			throw IllegalArgumentException(v1.toString() + " is not equal " + v2.toString())
+	}
+
+	static meth main(val arg : Array<String>)
+	{
+		assertEquals(~1, -2)
+		assertEquals(10 ^ 2, 8)
+		assertEquals(10 | 1, 11)
+		assertEquals(10 & 2, 2)
+		assertEquals(1 << 10, 1024)
+		assertEquals(1024 >> 2, 256)
+		assertEquals(1024 >>> 2, 256)
+
+		var a : Int
+
+		a = 10
+		a ^= 2
+		assertEquals(a, 8)
+
+		a = 10
+		a |= 1
+		assertEquals(a, 11)
+
+		a = 10
+		a &= 2
+		assertEquals(a, 2)
+
+		a = 1
+		a <<= 10
+		assertEquals(a, 1024)
+
+		a = 1024
+		a >>= 2
+		assertEquals(a, 256)
+
+		a = 1024
+		a >>>= 2
+		assertEquals(a, 256)
+	}
+}
