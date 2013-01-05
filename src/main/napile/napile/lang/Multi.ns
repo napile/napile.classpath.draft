@@ -14,6 +14,25 @@ class Multi
 
 	meth set(val index : Int, val value : Any?)
 	{
-		//TODO [VISTALL]
+		data[index] = value
+	}
+
+	meth get(val index : Int) : Any? = data[index]
+
+	override meth toString() : String
+	{
+		var i = 0
+		var b = StringBuilder()
+		b += "["
+
+		for (c in data)
+		{
+			if(i != 0)
+				b += ", "
+			i ++
+			b += c.toString()
+		}
+		b += "]"
+		return b.toString()
 	}
 }

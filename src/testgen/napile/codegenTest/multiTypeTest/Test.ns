@@ -1,14 +1,25 @@
 package codegenTest.multiTypeTest
 
+import napile.io.Console
+
 /**
  * @author VISTALL
  */
 class Test
 {
-	static val ENTRY : [var key : String, var value : String]
+	static var ENTRY : [var key : String, var value : String]
 
 	static meth main(val arg : Array<String>)
 	{
-	//	ENTRY = ["" , ""]
+		ENTRY = ["Key", "Value"]
+
+		Console.writeLine("key is " + ENTRY.key)
+		Console.writeLine("value is " + ENTRY.value)
+
+		ENTRY.key = "NewKey"
+		ENTRY.value = "NewValue"
+
+		Console.writeLine("key is " + ENTRY.key)
+		Console.writeLine("value is " + ENTRY.value)
 	}
 }
