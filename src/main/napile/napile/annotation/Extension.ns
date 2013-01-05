@@ -4,7 +4,7 @@ package napile.annotation
  * @author VISTALL
  */
 @Annotation
-class Extension
+final class Extension
 {
 	this()
 }

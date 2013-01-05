@@ -1,0 +1,17 @@
+package codegenTest.extensionTest
+
+import napile.lang.ArrayUtil.contains
+
+/**
+ * @author VISTALL
+ */
+class ArrayUtilExtension
+{
+	static meth main(val arg : Array<String>)
+	{
+		val myArray = Array<String>(1)
+		myArray[0] = "123456789"
+
+		//myArray.contains("123456789")
+	}
+}

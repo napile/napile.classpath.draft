@@ -59,7 +59,7 @@ final class Class<E> : Member
 	meth findMethod(val name : String, val parent : Bool) : Method?
 	{
 		for (m in methods)
-			if (m.name.equals(name))
+			if (m.name == name)
 				return m
 
 		if(parent)

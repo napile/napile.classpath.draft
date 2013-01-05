@@ -1,0 +1,8 @@
+package napile.io
+
+/**
+ * @author VISTALL
+ */
+class FileDescriptor
+{
+}
