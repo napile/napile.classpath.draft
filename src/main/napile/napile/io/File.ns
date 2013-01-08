@@ -8,4 +8,9 @@ class File
 	val name : String
 
 	this(name)
+
+	covered meth properPath(val internal : Bool) : Array<Byte>
+	{
+		throw IllegalArgumentException() //TODO [VISTALL]
+	}
 }

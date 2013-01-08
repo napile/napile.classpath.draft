@@ -1,0 +1,15 @@
+package compareTest
+
+/**
+ * @author VISTALL
+ */
+class IntCompateTest
+{
+	meth a()
+	{
+		var m = 1
+
+		if(m < 123456789)
+		{}
+	}
+}

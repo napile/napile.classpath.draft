@@ -5,4 +5,9 @@ package napile.io
  */
 class FileDescriptor
 {
+	covered var readOnly : Bool = false
+
+	covered var descriptor : Long = -1.toLong()
+
+	this()
 }

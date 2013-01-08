@@ -1,0 +1,19 @@
+package napile.module
+
+import napile.resource.ResourceBundle
+
+/**
+ * @author VISTALL
+ */
+class Module
+{
+	static meth getModule() : Module
+	{
+		throw IllegalArgumentException() // TODO [VISTALL]
+	}
+
+	static meth getBundle() : ResourceBundle
+	{
+		throw IllegalArgumentException() // TODO [VISTALL]
+	}
+}

@@ -1,11 +1,13 @@
 package napile.reflect
 
+import napile.annotation.Immutable
+
 /**
  * @author VISTALL
  */
 class MethodLike : Member
 {
-	val parameters : Array<CallParameter>
+	val parameters : @Immutable Array<CallParameter>
 
 	//val returnType : TypeInfo
 

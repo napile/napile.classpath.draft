@@ -1,0 +1,8 @@
+package napile.nio.channels
+
+/**
+ * @author VISTALL
+ */
+class FileChannel
+{
+}

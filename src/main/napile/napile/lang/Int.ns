@@ -71,7 +71,13 @@ final class Int : Number
 
 	native meth div(val value : Int) : Int
 
+	native meth compareTo(val value : Byte) : CompareResult
+
+	native meth compareTo(val value : Short) : CompareResult
+
 	native meth compareTo(val value : Int) : CompareResult
+
+	native meth compareTo(val value : Long) : CompareResult
 
 	override native meth equals(val o : Any?) : Bool
 

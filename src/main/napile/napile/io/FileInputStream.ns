@@ -1,0 +1,28 @@
+package napile.io
+
+import org.apache.harmony.luni.platform.IFileSystem
+import napile.nio.channels.FileChannel
+import org.apache.harmony.luni.platform.Platform
+import org.apache.harmony.nio.FileChannelFactory
+
+/**
+ * @author VISTALL
+ */
+class FileInputStream : InputStream
+{
+	local val fd : FileDescriptor
+	local val channel : FileChannel
+
+	this(val file : File)
+	{
+		fd = FileDescriptor()
+		fd.readOnly = true;
+		fd.descriptor = Platform.getFileSystem().open(file.properPath(true), IFileSystem.O_RDONLY);
+		channel = FileChannelFactory.getFileChannel(this, fd.descriptor, IFileSystem.O_RDONLY);
+	}
+
+	override meth read(): Int
+	{
+		throw UnsupportedOperationException()
+	}
+}
