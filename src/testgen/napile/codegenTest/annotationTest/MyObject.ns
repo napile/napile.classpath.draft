@@ -1,0 +1,26 @@
+package codegenTest.annotationTest
+
+import napile.reflect.Class
+import napile.io.Console
+import napile.annotation.DefaultValue
+
+/**
+ * @author VISTALL
+ */
+@MyAnnotation(27091990)
+class MyObject
+{
+	this()
+
+	static meth main(val arg : Array<String>)
+	{
+		val clazz = classOf(MyObject)
+
+		val myAnnotation : MyAnnotation? = clazz.findAnnotation()
+
+		if(myAnnotation == null)
+			Console.writeLine("MyValue is null")
+		else
+			Console.writeLine("MyValue is " + myAnnotation.intValue.toString())
+	}
+}

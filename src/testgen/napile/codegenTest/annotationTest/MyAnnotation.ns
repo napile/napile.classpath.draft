@@ -1,0 +1,14 @@
+package codegenTest.annotationTest
+
+import napile.annotation.Annotation
+
+/**
+ * @author VISTALL
+ */
+@Annotation
+class MyAnnotation
+{
+	val intValue : Int
+
+	this(intValue)
+}
