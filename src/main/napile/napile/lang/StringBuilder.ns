@@ -5,14 +5,14 @@ import napile.io.Console
 /**
  * @author VISTALL
  */
-class StringBuilder
+final class StringBuilder
 {
 	local var array : Array<Char> = Array<Char>(10)
 	local var count : Int = 0
 
 	this()
 
-	meth plus(val value : Any) : StringBuilder
+	meth plus(val value : Any) : this
 	{
 		var str = value.toString()
 
