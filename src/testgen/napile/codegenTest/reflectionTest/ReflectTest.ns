@@ -13,12 +13,12 @@ class ReflectTest
 		val clazz = classOf(ReflectTarget);
 
 		for (i in clazz.methods)
-			Console.writeLine("method: " + i.name)
+			Console.writeLine("method: " + i.name + "|" + i.isStatic())
 
 		for (i in clazz.constructors)
 			Console.writeLine("constructor: " + i.name)
 
 		for (i in clazz.macros)
-			Console.writeLine("macro: " + i.name)
+			Console.writeLine("macro: " + i.name + "|" + i.isStatic())
 	}
 }

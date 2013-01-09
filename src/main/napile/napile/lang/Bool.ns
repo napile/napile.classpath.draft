@@ -1,7 +1,6 @@
 package napile.lang
 
 import napile.annotation.DefaultValue
-import napile.annotation.Enumable
 
 /**
  * @author VISTALL
@@ -9,10 +8,9 @@ import napile.annotation.Enumable
 @DefaultValue(Bool.FALSE)
 final class Bool
 {
-	//@Enumable
+	// enum val ?
 	static val TRUE : Bool = Bool()
 
-	//@Enumable
 	static val FALSE : Bool = Bool()
 
 	local this()

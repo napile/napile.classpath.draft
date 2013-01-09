@@ -17,7 +17,7 @@ class ContinueTest
 
 		while (b != 10)
 		{
-			b = b + 1
+			b ++
 
 			if(b % 2 == 0)
 			{

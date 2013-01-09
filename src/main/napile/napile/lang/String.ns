@@ -33,11 +33,11 @@ final class String
 
 	meth contains(val s : String) : Bool = indexOf(s.toString()) > -1;
 
-	meth plus(val a : Any) : String
+	meth plus(val a : Any?) : String
 	{
 		var c = StringBuilder();
 		c += toString()
-		c += a
+		c += a.toString()
 		return c.toString()
 	}
 

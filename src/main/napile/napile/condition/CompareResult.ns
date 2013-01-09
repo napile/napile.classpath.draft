@@ -1,20 +1,15 @@
 package napile.condition
 
-import napile.annotation.Enumable
-
 /**
  * @author VISTALL
  */
 class CompareResult
 {
-	//@Enumable
-	static val GREATER : CompareResult = CompareResult()
+	enum val GREATER : CompareResult()
 
-	//@Enumable
-	static val EQUAL : CompareResult = CompareResult()
+	enum val EQUAL : CompareResult()
 
-	//@Enumable
-	static val LOWER : CompareResult = CompareResult()
+	enum val LOWER : CompareResult()
 
 	this()
 }

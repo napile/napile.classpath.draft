@@ -1,0 +1,13 @@
+package codegenTest.safeAccessTest
+
+/**
+ * @author VISTALL
+ */
+class MyObject
+{
+	var myVar : String? = "test"
+
+	this()
+
+	meth test() : String = "aaa"
+}

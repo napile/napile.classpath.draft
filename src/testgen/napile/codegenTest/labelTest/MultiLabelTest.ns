@@ -27,6 +27,5 @@ class MultiLabelTest
 
 			Console.writeLine("Enter code 'A'")
 		}
-		return
 	}
 }

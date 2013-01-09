@@ -1,0 +1,24 @@
+package napile.collection
+
+/**
+ * @author VISTALL
+ */
+util class IterableUtil
+{
+	meth select<E>(val iterable : Iterable<Any?>, val filter : {(val arg : E) -> Bool}) : E?
+	{
+		//for (c in iterable)
+		//	if(filter(c as E))
+		//		return c as E
+		return null
+	}
+
+	meth filter<E>(val iterable : Iterable<Any?>, val filter : {(val arg : E) -> Bool}) : List<E>
+	{
+		val list = ArrayList<E>(5)
+		//for (c in iterable)
+		//	if(filter(c as E))
+		//		list.add(c as E)
+		return list
+	}
+}

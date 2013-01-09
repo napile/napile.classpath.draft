@@ -18,9 +18,6 @@ class MyObject
 
 		val myAnnotation : MyAnnotation? = clazz.findAnnotation()
 
-		if(myAnnotation == null)
-			Console.writeLine("MyValue is null")
-		else
-			Console.writeLine("MyValue is " + myAnnotation.intValue.toString())
+		Console.writeLine("MyValue is " + myAnnotation?.intValue)
 	}
 }

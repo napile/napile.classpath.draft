@@ -1,0 +1,16 @@
+package codegenTest.safeAccessTest
+
+import napile.io.Console
+
+/**
+ * @author VISTALL
+ */
+util class MySafeAccessTest
+{
+	meth main(val arg : Array<String>)
+	{
+		val a : MyObject? = null
+
+		Console.writeLine(a?.myVar.toString())
+	}
+}
