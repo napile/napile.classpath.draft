@@ -23,6 +23,16 @@ final class String
 
 	meth toArray() : Array<Char> = ArrayUtil.copyOfRange(array, offset, offset + count)
 
+	meth getBytes() : Array<Byte>
+	{
+		//TODO [VISTALL] stub
+		var byteArray = Array<Byte>(count)
+		var i = offset
+		while (i < count)
+			byteArray[i] = array[i ++].toByte()
+		return byteArray
+	}
+
 	meth startsWith(val prefix : String) : Bool = startsWith(prefix, 0);
 
 	meth endsWith(val suffix : String) : Bool = startsWith(suffix, count - suffix.count);

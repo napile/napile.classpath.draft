@@ -29,12 +29,5 @@ final class Array<E> : Iterable<E>
 
 	override meth iterator() : Iterator<E> = ArrayIterator<E>(this)
 
-	override meth clone() : this
-	{
-		var newArray = Array<E>(length)
-		var i = 0
-		for(it in this)
-			newArray[i++] = it
-		return newArray
-	}
+	override meth clone() : this = ArrayUtil.copyOfRange(this, 0, length)
 }

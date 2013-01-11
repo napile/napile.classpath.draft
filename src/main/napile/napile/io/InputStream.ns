@@ -36,7 +36,7 @@ import napile.module.Module
  *
  * @see OutputStream
  */
-abstract class InputStream
+abstract class InputStream : Closeable
 {
 	static local var skipBuf : Array<Byte>?
 
@@ -58,7 +58,7 @@ abstract class InputStream
 	 * @throws IOException
 	 *             if an error occurs while closing this stream.
 	 */
-	meth close()
+	override meth close()
 	{
 	}
 
@@ -135,18 +135,18 @@ abstract class InputStream
 	 * @throws IOException
 	 *             if the stream is closed or another IOException occurs.
 	 */
-	meth read(var b : Array<Byte>, var offset : Int, var length : Int) : Int
+	meth read(var buffer : Array<Byte>, var offset : Int, var count : Int) : Int
 	{
 		// Force null check for b first!
-		if (offset > b.length || offset < 0)
+		if (offset > buffer.length || offset < 0)
 			throw ArrayIndexOutOfBoundsException(Module.getBundle().getString("luni.12", arrayOf(offset)));
 
-		if (length < 0 || length > b.length - offset)
-			throw ArrayIndexOutOfBoundsException(Module.getBundle().getString("luni.18", arrayOf(length)));
+		if (count < 0 || count > buffer.length - offset)
+			throw ArrayIndexOutOfBoundsException(Module.getBundle().getString("luni.18", arrayOf(count)));
 
 
 		var i = 0;
-		while(i < length)
+		while(i < count)
 		{
 
 			var c : Int
@@ -165,10 +165,10 @@ abstract class InputStream
 				throw e;
 			}
 
-			b[offset + i] = c.toByte();
+			buffer[offset + i] = c.toByte();
 			i++
 		}
-		return length;
+		return count;
 	}
 
 	/**

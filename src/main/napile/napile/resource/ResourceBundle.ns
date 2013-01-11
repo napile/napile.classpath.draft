@@ -6,7 +6,7 @@ import napile.annotation.VarArgs
  */
 class ResourceBundle
 {
-	meth getString(val key : String, val arg : @VarArgs Array<Any>) : String
+	meth getString(val key : String, val arg : /*@VarArgs*/ Array<Any>? = null) : String
 	{
 		throw IllegalArgumentException() // TODO [VISTALL]
 	}

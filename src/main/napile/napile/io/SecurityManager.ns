@@ -19,9 +19,17 @@ package napile.io
 /**
  * @author VISTALL
  */
-util class Console
+class SecurityManager
 {
-	native meth write(val value : String)
+	static val INSTANCE : SecurityManager? = null
 
-	native meth writeLine(val value : String)
+	meth checkRead(val path : String)
+	{
+		//TODO [VISTALL]
+	}
+
+	meth checkWrite(val path : String)
+	{
+		//TODO [VISTALL]
+	}
 }

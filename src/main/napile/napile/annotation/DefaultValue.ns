@@ -3,7 +3,7 @@ package napile.annotation
 /**
  * @author VISTALL
  */
-@Annotation(null)
+@Annotation
 final class DefaultValue
 {
 	val value : Any

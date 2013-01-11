@@ -14,14 +14,20 @@
  * limitations under the License.
  */
 
-package napile.io
+package codegenTest.ioTest
+
+import napile.io.File
+import napile.io.Console
 
 /**
  * @author VISTALL
  */
-util class Console
+class FileExistsTest
 {
-	native meth write(val value : String)
+	static meth main(val arg : Array<String>)
+	{
+		val file = File("F:/napile.test")
 
-	native meth writeLine(val value : String)
+		Console.writeLine(file.exists().toString())
+	}
 }

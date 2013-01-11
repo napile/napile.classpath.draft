@@ -1,0 +1,17 @@
+package codegenTest.autoCastTest
+
+/**
+ * @author VISTALL
+ */
+class AutoCastTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		val a : Any = 1
+
+		if (a is Int || a is Byte)
+		{
+			//var c : Number = a
+		}
+	}
+}

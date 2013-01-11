@@ -3,9 +3,21 @@ package napile.lang
 /**
  * @author VISTALL
  */
-final class Char
+final class Char : Number
 {
 	local this()
+
+	native override meth toByte() : Byte
+
+	native override meth toShort() : Short
+
+	native override meth toInt() : Int
+
+	native override meth toLong() : Long
+
+	native override meth toFloat() : Float
+
+	native override meth toDouble() : Double
 
 	override native meth equals(val o : Any?) : Bool
 }

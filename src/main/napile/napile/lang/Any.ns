@@ -9,6 +9,17 @@ import napile.io.Console
  */
 class Any
 {
+	static meth synchronized(val obj : Any?, val fun : {})
+	{
+		fun()
+	}
+
+	static meth assert(val cond : Bool, val message : String? = null)
+	{
+		if(!cond)
+			throw AssertionError(message)
+	}
+
 	native meth getClass() : Class<this>
 
 	native meth getType() : Type<this>

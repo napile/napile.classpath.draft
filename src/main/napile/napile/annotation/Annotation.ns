@@ -5,7 +5,7 @@ import napile.condition.Condition
 /**
  * @author VISTALL
  */
-@Annotation(null)
+@Annotation
 final class Annotation
 {
 	this(val cond : Condition<Any>? = null)

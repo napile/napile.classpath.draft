@@ -19,9 +19,7 @@ package napile.io
 /**
  * @author VISTALL
  */
-util class Console
+abstract class Closeable
 {
-	native meth write(val value : String)
-
-	native meth writeLine(val value : String)
+	meth close()
 }

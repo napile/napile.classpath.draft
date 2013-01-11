@@ -10,6 +10,8 @@ import org.apache.harmony.nio.FileChannelFactory
  */
 class FileInputStream : InputStream
 {
+	static local val fileSystem = Platform.getFileSystem()
+
 	local val fd : FileDescriptor
 	local val channel : FileChannel
 
@@ -21,8 +23,36 @@ class FileInputStream : InputStream
 		channel = FileChannelFactory.getFileChannel(this, fd.descriptor, IFileSystem.O_RDONLY);
 	}
 
-	override meth read(): Int
+	override meth read() : Int
 	{
-		throw UnsupportedOperationException()
+		val readed = Array<Byte>(0)
+		val result = read(readed, 0, 1);
+		return if (result == -1) -1 else readed[0] & 0xff;
+	}
+
+	override meth read(var buffer : Array<Byte>, var offset : Int, var count : Int) : Int
+	{
+		if (count > buffer.length - offset || count < 0 || offset < 0)
+			throw IndexOutOfBoundsException();
+
+		if (count == 0)
+			return 0;
+
+		openCheck()
+
+		//synchronized (repositioningLock)
+		//{
+			// stdin requires special handling
+			//if (fd == FileDescriptor.in) {
+			//	return fileSystem.ttyRead(buffer, offset, count);
+			//}
+			return fileSystem.read(fd.descriptor, buffer, offset, count).toInt();
+		//}
+	}
+
+	local meth openCheck()
+	{
+		if (fd.descriptor < 0)
+			throw IOException()
 	}
 }
