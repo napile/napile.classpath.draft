@@ -14,15 +14,15 @@ class AnonymClass
 		//var a = 1
 	/*	var myVar = anonym : AnonymTarget()
 		{
-			meth call2()
+			/*meth call2()
 			{
 				call()
 
 				//a = 2
 				Console.writeLine("test")
-			}
+			}  */
 		}
 
-		myVar.call2()   */
+		myVar.call2()  */
 	}
 }

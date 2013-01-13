@@ -1,0 +1,9 @@
+package codegenTest.anonymClassTest
+
+/**
+ * @author VISTALL
+ */
+class AnonymClassWithTpTest<E, S>
+{
+
+}
