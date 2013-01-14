@@ -18,7 +18,7 @@ util class MainCaller
 		if(mainMethod == null)
 			throw VmStartupError("'static meth main(val arg : Array<String>)' method expected")
 
-		val thread = Thread{mainMethod!!.invokeStatic(arrayOf())}
+		val thread = Thread{mainMethod!!.invokeStatic(ArrayUtil.copyOfRange(arg, 1, arg.length))}
 
 		thread.start()
 	}
