@@ -21,6 +21,8 @@ class Method : MethodLike
 		if (!isStatic())
 			throw IllegalArgumentException("Use 'invoke' for instance method call")
 
-		return null //TODO [VISTALL]
+		return invokeStatic0(arguments)
 	}
+
+	local native meth invokeStatic0(val arguments : Array<Any?>) : Any?
 }

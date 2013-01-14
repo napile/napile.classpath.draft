@@ -20,6 +20,8 @@ util class ArrayUtil
 		var newLength = to - from;
 
 		var c = Array<E>(newLength)
+		if(newLength == 0)
+			return c
 
 		copy(original, from, c, 0, to)
 

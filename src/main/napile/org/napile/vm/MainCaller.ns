@@ -1,6 +1,7 @@
 package org.napile.vm
 
 import napile.reflect.ReflectUtil
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -13,12 +14,11 @@ util class MainCaller
 			throw VmStartupError("Class name - expected")
 
 		val clazz = ReflectUtil.findClass(arg[0])
-
-		val mainMethod = clazz.findMethod("main", false)
-		if(mainMethod == null || !mainMethod.isStatic())
+		val mainMethod = clazz.findStaticMethod("main")
+		if(mainMethod == null)
 			throw VmStartupError("'static meth main(val arg : Array<String>)' method expected")
 
-		val thread = Thread{mainMethod!!.invokeStatic(ArrayUtil.copyOfRange(arg, 1, arg.length))}
+		val thread = Thread{mainMethod!!.invokeStatic(arrayOf())}
 
 		thread.start()
 	}

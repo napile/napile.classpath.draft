@@ -58,7 +58,7 @@ final class Class<E> : Member
 	meth findMethod(val name : String, val parent : Bool) : Method?
 	{
 		for (m in methods)
-			if (m.name == name)
+			if (!m.isStatic() && m.name == name)
 				return m
 
 		if(parent)
@@ -68,6 +68,17 @@ final class Class<E> : Member
 				if(m != null)
 					return m
 			}
+		return null;
+	}
+
+	/**
+	 * Searching static method by name
+	 */
+	meth findStaticMethod(val name : String) : Method?
+	{
+		for (m in methods)
+			if (m.isStatic() && m.name == name)
+				return m
 		return null;
 	}
 }

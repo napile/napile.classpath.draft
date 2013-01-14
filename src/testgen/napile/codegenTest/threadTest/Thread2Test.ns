@@ -1,0 +1,51 @@
+/*
+ * Copyright 2010-2013 napile.org
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package codegenTest.threadTest
+
+import napile.logging.Logger
+
+/**
+ * @author VISTALL
+ */
+class Thread2Test
+{
+	static meth to100()
+	{
+		b = !b
+
+		val c = b
+		val i = 0
+		while(true)
+		{
+			i++
+			if(i == 10)
+				break
+			else
+			{
+				Logger.System.info(i.toString() + " " + c)
+			}
+		}
+	}
+
+	static val b : Bool = false
+
+	static meth main(val arg : Array<String>)
+	{
+		Thread(null, null, #to100).start()
+		Thread(null, null, #to100).start()
+	}
+}
