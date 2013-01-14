@@ -1,6 +1,6 @@
 package codegenTest.superTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -9,6 +9,6 @@ class My2
 {
 	meth test()
 	{
-		Console.writeLine("'test' from 'My2'")
+		Logger.System.info("'test' from 'My2'")
 	}
 }

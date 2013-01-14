@@ -1,6 +1,6 @@
 package codegenTest.isTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,21 +16,21 @@ class IsTest
 		var target = Array<Int>(0)
 
 		if(target is Array<Int>)
-			Console.writeLine("Array<Int> is Array<Int>")
+			Logger.System.info("Array<Int> is Array<Int>")
 
 		if(target is Array<Any>)
-			Console.writeLine("Array<Int> is Array<Any>")
+			Logger.System.info("Array<Int> is Array<Any>")
 
 		//if(target is Array<Any?>)
-		//	Console.writeLine("Array<Int> is Array<Any?>")
+		//	Logger.System.info("Array<Int> is Array<Any?>")
 
 		//if(target is Array<String>)
-		//	Console.writeLine("Array<Int> is Array<String>")
+		//	Logger.System.info("Array<Int> is Array<String>")
 
 		if (target is Any)
-			Console.writeLine("Array<Int> is Any")
+			Logger.System.info("Array<Int> is Any")
 
 		//if (target !is Int)
-		//	Console.writeLine("Array<Int> !is Int")
+		//	Logger.System.info("Array<Int> !is Int")
 	}
 }

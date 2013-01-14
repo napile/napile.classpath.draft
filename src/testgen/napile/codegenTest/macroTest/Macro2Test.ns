@@ -1,6 +1,6 @@
 package codegenTest.macroTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -19,7 +19,7 @@ class Macro2Test
 
 		a0()
 
-		Console.writeLine("'test' called")
+		Logger.System.info("'test' called")
 	}
 
 	local macro a0()
@@ -29,7 +29,7 @@ class Macro2Test
 
 		a++
 
-		Console.writeLine("a == " + a)
+		Logger.System.info("a == " + a)
 	}
 
 	static meth main(val arg : Array<String>)

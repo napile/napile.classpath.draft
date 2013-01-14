@@ -14,20 +14,33 @@
  * limitations under the License.
  */
 
-package codegenTest.ioTest
+package napile.logging.impl
 
-import napile.io.File
 import napile.logging.Logger
+import napile.logging.LoggingLevel
+import napile.collection.List
+import napile.logging.LoggingHandler
+import napile.collection.ArrayList
+import napile.logging.handlers.ConsoleLoggingHandler
+import napile.logging.LoggingMessage
 
 /**
  * @author VISTALL
  */
-class FileExistsTest
+class LoggerImpl : Logger
 {
-	static meth main(val arg : Array<String>)
-	{
-		val file = File("F:/napile.test")
+	local val handlers : List<LoggingHandler> = ArrayList<LoggingHandler>()
 
-		Logger.System.info(file.exists().toString())
+	this(val name : String)
+	{
+		handlers.add(ConsoleLoggingHandler())
+	}
+
+	override meth log(val level : LoggingLevel, val message : Any?, val exception : Exception?)
+	{
+		val loggingMessage = LoggingMessage(level, message.toString(), exception)
+
+		for(h in handlers)
+			h.log(loggingMessage)
 	}
 }

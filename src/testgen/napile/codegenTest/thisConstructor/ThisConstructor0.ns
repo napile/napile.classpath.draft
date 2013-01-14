@@ -1,6 +1,6 @@
 package codegenTest.thisConstructor
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,6 +13,6 @@ class ThisConstructor0
 {
 	this(val a : String)
 	{
-		Console.writeLine("ThisConstructor0")
+		Logger.System.info("ThisConstructor0")
 	}
 }

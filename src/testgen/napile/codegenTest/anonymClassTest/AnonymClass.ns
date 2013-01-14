@@ -1,6 +1,6 @@
 package codegenTest.anonymClassTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -19,7 +19,7 @@ class AnonymClass
 				call()
 
 				//a = 2
-				Console.writeLine("test")
+				Logger.System.info("test")
 			}  */
 		}
 

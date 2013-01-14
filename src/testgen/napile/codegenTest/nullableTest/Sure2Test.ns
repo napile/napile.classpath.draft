@@ -1,6 +1,6 @@
 package codegenTest.nullableTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -11,6 +11,6 @@ class Sure2Test
 	{
 		var myVar : String? = "12345"
 
-		Console.writeLine(myVar!!)
+		Logger.System.info(myVar!!)
 	}
 }

@@ -1,6 +1,6 @@
 package codegenTest.anonymClassTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -9,11 +9,11 @@ class AnonymTarget
 {
 	this()
 	{
-		Console.writeLine("'this'")
+		Logger.System.info("'this'")
 	}
 
 	meth call()
 	{
-		Console.writeLine("'call'")
+		Logger.System.info("'call'")
 	}
 }

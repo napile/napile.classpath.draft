@@ -1,6 +1,6 @@
 package codegenTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,6 +13,6 @@ class HelloWorldTest
 {
 	static meth main(val arg : Array<String>)
 	{
-		Console.writeLine("Hello world!!!");
+		Logger.System.info("Hello world!!!");
 	}
 }

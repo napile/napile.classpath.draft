@@ -1,6 +1,6 @@
 package codegenTest.postfixTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -23,7 +23,7 @@ class PostfixInArrayAndPropertyTest
 			b[index ++] = index.toString()
 
 		for(a in b)
-			Console.writeLine(a)
+			Logger.System.info(a)
 	}
 
 	static meth main(val arg : Array<String>)

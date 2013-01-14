@@ -17,6 +17,7 @@
 package napile.logging
 
 import napile.reflect.Class
+import napile.logging.impl.LoggerImpl
 
 /**
  * @author VISTALL
@@ -27,14 +28,17 @@ abstract class Logger
 
 	static meth getLogger(val name : String) : Logger
 	{
-		throw UnsupportedOperationException()
+		//TODO [VISTALL] make better
+		return LoggerImpl(name)
 	}
 
 	static meth getLogger(val clazz : Class<Any?>) : Logger = getLogger(clazz.name)
 
-	meth info(val message : Any? = null, val exception : Exception? = null)
+	meth info(val message : Any? = null, val exception : Exception? = null) : Null = log(LoggingLevel.INFO, message, exception)
 
-	meth warn(val message : Any? = null, val exception : Exception? = null)
+	meth warn(val message : Any? = null, val exception : Exception? = null) : Null = log(LoggingLevel.WARN, message, exception)
 
-	meth error(val message : Any? = null, val exception : Exception? = null)
+	meth error(val message : Any? = null, val exception : Exception? = null) : Null = log(LoggingLevel.ERROR, message, exception)
+
+	meth log(val level : LoggingLevel, val message : Any? = null, val exception : Exception? = null)
 }

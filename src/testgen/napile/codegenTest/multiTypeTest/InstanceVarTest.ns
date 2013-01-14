@@ -1,6 +1,6 @@
 package codegenTest.multiTypeTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -13,10 +13,10 @@ class InstanceVarTest
 
 	meth change()
 	{
-		Console.writeLine(myVar.toString())
+		Logger.System.info(myVar.toString())
 		myVar.arg1 = "3"
 		myVar.arg2 = "4"
-		Console.writeLine(myVar.toString())
+		Logger.System.info(myVar.toString())
 	}
 
 	static meth main(val arg : Array<String>)

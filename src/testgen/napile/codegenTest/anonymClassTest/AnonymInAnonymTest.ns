@@ -16,7 +16,7 @@
 
 package codegenTest.anonymClassTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -40,7 +40,7 @@ class AnonymInAnonymTest
 			}
 		}.toString()
 
-		Console.writeLine(a)
+		Logger.System.info(a)
 	}
 
 	static meth main(val arg : Array<String>)

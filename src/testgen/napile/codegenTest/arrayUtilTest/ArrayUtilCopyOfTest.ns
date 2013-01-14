@@ -1,6 +1,7 @@
 package codegenTest.arrayUtilTest
 
-import napile.io.Console
+import napile.io.NativeConsole
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -20,18 +21,18 @@ class ArrayUtilCopyOfTest
 
 		for (c in b)
 		{
-			Console.write(c)
-			Console.write("-")
+			NativeConsole.write(c)
+			NativeConsole.write("-")
 		}
 
-		Console.writeLine("")
-		Console.writeLine("After copyOfRange")
+		Logger.System.info("")
+		Logger.System.info("After copyOfRange")
 
 		var newArray = ArrayUtil.copyOf(b, 7)
 		for (c in newArray)
 		{
-			Console.write(c)
-			Console.write("-")
+			NativeConsole.write(c)
+			NativeConsole.write("-")
 		}
 	}
 }

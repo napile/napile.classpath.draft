@@ -1,7 +1,7 @@
 package codegenTest.classAndTypeTest
 
-import napile.io.Console
 import napile.reflect.Class
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -18,7 +18,7 @@ class GenericTest<E>
 	{
 		var c = classOf(E);
 
-		Console.writeLine(c.name)
+		Logger.System.info(c.name)
 	}
 
 	static meth main(val arg : Array<String>)

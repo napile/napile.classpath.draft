@@ -1,6 +1,6 @@
 package codegenTest.multi
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -11,7 +11,7 @@ class AC : A & C
 
 	this(val a : String) : A("this from A") & C("this from C")
 	{
-		Console.writeLine(a)
+		Logger.System.info(a)
 	}
 
 	static meth main(val arg : Array<String>)

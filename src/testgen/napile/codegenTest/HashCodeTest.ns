@@ -1,6 +1,6 @@
 package codegenTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -11,10 +11,10 @@ class HashCodeTest
 
 	static meth main(val arg : Array<String>)
 	{
-		Console.writeLine(HashCodeTest().toString())
-		Console.writeLine(HashCodeTest().toString())
-		Console.writeLine(HashCodeTest().toString())
-		Console.writeLine(HashCodeTest().toString())
-		Console.writeLine(HashCodeTest().toString())
+		Logger.System.info(HashCodeTest().toString())
+		Logger.System.info(HashCodeTest().toString())
+		Logger.System.info(HashCodeTest().toString())
+		Logger.System.info(HashCodeTest().toString())
+		Logger.System.info(HashCodeTest().toString())
 	}
 }

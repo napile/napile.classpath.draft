@@ -1,7 +1,7 @@
 package codegenTest.reflectionTest
 
 import napile.reflect.Class
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -13,12 +13,12 @@ class ReflectTest
 		val clazz = classOf(ReflectTarget);
 
 		for (i in clazz.methods)
-			Console.writeLine("method: " + i.name + "|" + i.isStatic())
+			Logger.System.info("method: " + i.name + "|" + i.isStatic())
 
 		for (i in clazz.constructors)
-			Console.writeLine("constructor: " + i.name)
+			Logger.System.info("constructor: " + i.name)
 
 		for (i in clazz.macros)
-			Console.writeLine("macro: " + i.name + "|" + i.isStatic())
+			Logger.System.info("macro: " + i.name + "|" + i.isStatic())
 	}
 }

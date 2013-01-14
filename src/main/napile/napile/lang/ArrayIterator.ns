@@ -1,6 +1,5 @@
 package napile.lang
 
-import napile.io.Console
 import napile.collection.Iterator
 
 /**

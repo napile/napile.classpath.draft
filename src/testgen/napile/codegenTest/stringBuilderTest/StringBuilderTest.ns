@@ -1,6 +1,6 @@
 package codegenTest.stringBuilderTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -19,8 +19,8 @@ class StringBuilderTest
 		b += 1
 		b += " end task"
 
-		Console.writeLine(b.toString())
+		Logger.System.info(b.toString())
 
-		Console.writeLine("test plus one " + 1 + " after")
+		Logger.System.info("test plus one " + 1 + " after")
 	}
 }

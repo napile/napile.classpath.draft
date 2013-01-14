@@ -8,9 +8,10 @@
 
 	<extension-points>
 		<!--here extension points-->
+		<!--<loggingHandler  /> -->
 	</extension-points>
 
 	<extensions for-id="napile.lang">
-		<!---here extension point usage -->
+		<!-- <loggingHandler id="System" impl="napile.logging.handlers.ConsoleLoggingHandler" />-->
 	</extensions>
 </module>

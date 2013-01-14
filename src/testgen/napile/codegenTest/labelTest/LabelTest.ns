@@ -1,6 +1,6 @@
 package codegenTest.labelTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,10 +17,10 @@ class LabelTest
 		{
 			if (Bool.TRUE)
 			{
-				Console.writeLine("break me")
+				Logger.System.info("break me")
 				break my
 			}
-			Console.writeLine("UnEnter code")
+			Logger.System.info("UnEnter code")
 		}
 		return
 	}

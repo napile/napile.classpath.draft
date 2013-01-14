@@ -1,6 +1,5 @@
 package codegenTest.labelTest
-
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -19,13 +18,13 @@ class MultiLabelTest
 			{
 				if (Bool.TRUE)
 				{
-					Console.writeLine("break B")
+					Logger.System.info("break B")
 					break B
 				}
-				Console.writeLine("UnEnter code 'B'")
+				Logger.System.info("UnEnter code 'B'")
 			}
 
-			Console.writeLine("Enter code 'A'")
+			Logger.System.info("Enter code 'A'")
 		}
 	}
 }

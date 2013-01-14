@@ -1,6 +1,6 @@
 package codegenTest.shortArrayTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,6 +16,6 @@ class ShortArrayTest
 		var ar = arrayOf(1, 2)
 
 		for(val a in ar)
-			Console.writeLine(a.toString())
+			Logger.System.info(a.toString())
 	}
 }

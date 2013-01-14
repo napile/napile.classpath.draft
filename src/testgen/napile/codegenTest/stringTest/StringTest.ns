@@ -1,6 +1,6 @@
 package codegenTest.stringTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,10 +15,10 @@ class StringTest
 	{
 		var str = "str"
 
-		Console.writeLine((str == "str").toString())
+		Logger.System.info(str == "str")
 
-		Console.writeLine((str == str).toString())
+		Logger.System.info(str == str)
 
-		Console.writeLine((str == "equal").toString())
+		Logger.System.info(str == "equal")
 	}
 }

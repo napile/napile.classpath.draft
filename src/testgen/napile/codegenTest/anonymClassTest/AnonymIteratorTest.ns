@@ -17,7 +17,7 @@
 package codegenTest.anonymClassTest
 
 import napile.collection.Iterator
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -41,14 +41,14 @@ class AnonymIteratorTest
 
 			override meth hasNext(): Bool
 			{
-				Console.writeLine(insideVar)
+				Logger.System.info(insideVar)
 				index ++
-				Console.writeLine(index.toString())
+				Logger.System.info(index.toString())
 				return false
 			}
 		}
 
-		Console.writeLine(a.hasNext().toString())
+		Logger.System.info(a.hasNext().toString())
 	}
 
 	static meth main(val arg : Array<String>)

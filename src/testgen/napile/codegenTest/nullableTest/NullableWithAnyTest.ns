@@ -1,6 +1,6 @@
 package codegenTest.nullableTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -15,12 +15,12 @@ class NullableWithAnyTest
 		var c : MyObject? = a
 
 		if(b == null)
-			Console.writeLine("b is null")
+			Logger.System.info("b is null")
 
 		if (c != null)
-			Console.writeLine("c is not null")
+			Logger.System.info("c is not null")
 
 		if(c.equals(a))
-			Console.writeLine("a is fullyEquals c")
+			Logger.System.info("a is equals c")
 	}
 }

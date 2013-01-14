@@ -1,6 +1,6 @@
 package codegenTest.safeAccessTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -11,6 +11,6 @@ util class MySafeAccessTest
 	{
 		val a : MyObject? = null
 
-		Console.writeLine(a?.myVar.toString())
+		Logger.System.info(a?.myVar.toString())
 	}
 }

@@ -1,6 +1,6 @@
 package codegenTest.nullableTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -9,6 +9,6 @@ class NullToStringTest
 {
 	static meth main(val arg : Array<String>)
 	{
-		Console.writeLine(null.toString())
+		Logger.System.info(null.toString())
 	}
 }

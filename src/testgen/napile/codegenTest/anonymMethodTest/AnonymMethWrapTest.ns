@@ -1,6 +1,6 @@
 package codegenTest.anonymMethodTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -11,7 +11,7 @@ class AnonymMethWrapTest
 	{
 		val myVar = 1
 
-		call{Console.writeLine("myVar is " + myVar)}
+		call{Logger.System.info("myVar is " + myVar)}
 	}
 
 	static meth call(val c : {})

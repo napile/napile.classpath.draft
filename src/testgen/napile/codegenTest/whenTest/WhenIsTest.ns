@@ -1,6 +1,6 @@
 package codegenTest.whenTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -13,8 +13,8 @@ class WhenIsTest
 
 		when (i)
 		{
-			is Int -> Console.writeLine("i is Int")
-			else -> Console.writeLine("error")
+			is Int -> Logger.System.info("i is Int")
+			else -> Logger.System.info("error")
 		}
 	}
 }

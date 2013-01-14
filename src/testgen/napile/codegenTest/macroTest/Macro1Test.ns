@@ -1,6 +1,6 @@
 package codegenTest.macroTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -17,7 +17,7 @@ class Macro1Test
 
 		a0()
 
-		Console.writeLine("'main' called")
+		Logger.System.info("'main' called")
 	}
 
 
@@ -28,6 +28,6 @@ class Macro1Test
 
 		a++
 
-		Console.writeLine("a == " + a)
+		Logger.System.info("a == " + a)
 	}
 }

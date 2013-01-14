@@ -14,14 +14,22 @@
  * limitations under the License.
  */
 
-package napile.io
+package napile.logging.handlers
+
+import napile.logging.LoggingHandler
+import napile.logging.LoggingMessage
+import napile.io.NativeConsole
 
 /**
  * @author VISTALL
  */
-util class Console
+class ConsoleLoggingHandler : LoggingHandler
 {
-	native meth write(val value : String)
+	this()
 
-	native meth writeLine(val value : String)
+	override meth log(val message: LoggingMessage)
+	{
+		if(message.message != null)
+			NativeConsole.writeLine(message.message!!)
+	}
 }

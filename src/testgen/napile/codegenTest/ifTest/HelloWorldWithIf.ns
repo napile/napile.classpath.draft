@@ -1,6 +1,6 @@
 package codegenTest.ifTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,12 +16,12 @@ class HelloWorldWithIf
 		var b = false
 
 		if(!b)
-			Console.writeLine("Hello world!!! : FALSE");
+			Logger.System.info("Hello world!!! : FALSE");
 
-		Console.writeLine("Hello world!!!");
+		Logger.System.info("Hello world!!!");
 
 		b = true
 		if(b)
-			Console.writeLine("Hello world!!! : TRUE");
+			Logger.System.info("Hello world!!! : TRUE");
 	}
 }

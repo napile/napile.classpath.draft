@@ -1,6 +1,6 @@
 package codegenTest.whileTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -19,16 +19,15 @@ class BreakWhileTest
 		{
 			if(b == 10)
 			{
-				Console.writeLine("10 break")
+				Logger.System.info("10 break")
 				break
 			}
 
-			Console.writeLine(b.toString())
+			Logger.System.info(b.toString())
 
 			b = b + 1
 		}
 
-		Console.writeLine("End")
-		return
+		Logger.System.info("End")
 	}
 }

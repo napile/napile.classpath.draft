@@ -1,6 +1,6 @@
 package codegenTest.multi
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -9,6 +9,6 @@ class C : B
 {
 	this(val a : String) : B("this from B")
 	{
-		Console.writeLine(a)
+		Logger.System.info(a)
 	}
 }

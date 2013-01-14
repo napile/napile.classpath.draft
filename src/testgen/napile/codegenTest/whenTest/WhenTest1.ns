@@ -1,6 +1,6 @@
 package codegenTest.whenTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,7 +17,7 @@ class WhenTest1
 	{
 		var c : Any = 1
 
-		Console.writeLine(c.equals(1).toString())
+		Logger.System.info(c.equals(1))
 
 		when(c)
 		{
@@ -25,7 +25,7 @@ class WhenTest1
 			else -> c = 3
 		}
 
-		Console.writeLine(c.toString())
+		Logger.System.info(c)
 	}
 
 	static meth main(val arg : Array<String>)

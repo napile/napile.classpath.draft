@@ -1,6 +1,6 @@
 package codegenTest.injectionTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,7 +15,7 @@ class TextInjection2Test
 	{
 		var i : String =  /text/ {this call of method: #{callTo()}()}
 
-		Console.writeLine(i)
+		Logger.System.info(i)
 	}
 
 	static meth callTo() : String

@@ -1,6 +1,6 @@
 package codegenTest.nullableTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -13,13 +13,13 @@ class SureTest
 		{
 			var myVar : String? = null
 
-			Console.writeLine(myVar!!)
+			Logger.System.info(myVar!!)
 		}
 		catch(val e : NullPointerException)
 		{
 			e.printStackTrace()
 		}
 
-		Console.writeLine("Test is ended");
+		Logger.System.info("Test is ended");
 	}
 }

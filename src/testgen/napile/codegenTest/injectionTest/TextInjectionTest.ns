@@ -1,6 +1,6 @@
 package codegenTest.injectionTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -34,6 +34,6 @@ class TextInjectionTest
 
 	4. After MY_VAR
 }
-		Console.writeLine(i)
+		Logger.System.info(i)
 	}
 }

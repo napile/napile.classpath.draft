@@ -2,7 +2,6 @@ package napile.lang
 
 import napile.reflect.Class
 import napile.reflect.Type
-import napile.io.Console
 
 /**
  * @author VISTALL

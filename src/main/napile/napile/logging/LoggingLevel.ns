@@ -19,7 +19,13 @@ package napile.logging
 /**
  * @author VISTALL
  */
-abstract class LoggingHandler
+class LoggingLevel
 {
-	meth log(val message : LoggingMessage)
+	enum val INFO : LoggingLevel()
+
+	enum val WARN : LoggingLevel()
+
+	enum val ERROR : LoggingLevel()
+
+	local this()
 }

@@ -1,6 +1,6 @@
 package codegenTest.forTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -21,6 +21,6 @@ class ForTest
 		b[4] = "b4"
 
 		for(val c in b)
-			Console.writeLine(c.toString())
+			Logger.System.info(c.toString())
 	}
 }

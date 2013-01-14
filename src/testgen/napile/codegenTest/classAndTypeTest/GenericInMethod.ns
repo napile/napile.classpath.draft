@@ -1,7 +1,7 @@
 package codegenTest.classAndTypeTest
 
-import napile.io.Console
 import napile.reflect.Class
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -12,7 +12,7 @@ class GenericInMethod
 
 	meth me<E>(val e : E) : E
 	{
-		Console.writeLine(classOf(E).name);
+		Logger.System.info(classOf(E).name);
 		return e
 	}
 
@@ -22,6 +22,6 @@ class GenericInMethod
 
 		var b = o.me/*<Int>*/(1)
 
-		Console.writeLine(b.getClass().name)
+		Logger.System.info(b.getClass().name)
 	}
 }

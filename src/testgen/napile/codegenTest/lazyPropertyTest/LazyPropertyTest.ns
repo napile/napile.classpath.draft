@@ -1,6 +1,6 @@
 package codegenTest.lazyPropertyTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -20,6 +20,6 @@ class LazyPropertyTest
 		var b = LazyPropertyTest()
 
 		for (val i in 0..10)
-			Console.writeLine(b.value)
+			Logger.System.info(b.value)
 	}
 }

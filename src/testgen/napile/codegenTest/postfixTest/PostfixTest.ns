@@ -1,6 +1,6 @@
 package codegenTest.postfixTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,8 +15,8 @@ class PostfixTest
 	{
 		var c = 0
 
-		Console.writeLine(c++.toString())
+		Logger.System.info(c++.toString())
 
-		Console.writeLine(c.toString());
+		Logger.System.info(c.toString());
 	}
 }

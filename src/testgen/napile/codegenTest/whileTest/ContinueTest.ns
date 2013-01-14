@@ -1,6 +1,6 @@
 package codegenTest.whileTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -21,12 +21,12 @@ class ContinueTest
 
 			if(b % 2 == 0)
 			{
-				Console.writeLine(b.toString())
+				Logger.System.info(b)
 				continue
 			}
 		}
 
-		Console.writeLine("End")
+		Logger.System.info("End")
 		return
 	}
 }

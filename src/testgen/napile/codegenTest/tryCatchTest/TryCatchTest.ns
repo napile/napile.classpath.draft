@@ -1,6 +1,6 @@
 package codegenTest.tryCatchTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,12 +13,12 @@ class TryCatchTest
 {
 	static meth main(val arg : Array<String>)
 	{
-		Console.writeLine("Before throw")
+		Logger.System.info("Before throw")
 
 		var b = TryCatchObject()
 
 		b.b()
 
-		Console.writeLine("After throw")
+		Logger.System.info("After throw")
 	}
 }

@@ -1,8 +1,8 @@
 package codegenTest.arrayListTest
 
 import napile.collection.ArrayList
-import napile.io.Console
 import napile.reflect.Class
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -19,8 +19,8 @@ class ArrayListTest
 		l.add(5)
 		l.add(6)
 
-		Console.writeLine("size is " + l.size())
+		Logger.System.info("size is " + l.size())
 		for(c in 0..7)
-			Console.writeLine(l[c].toString())
+			Logger.System.info(l[c].toString())
 	}
 }

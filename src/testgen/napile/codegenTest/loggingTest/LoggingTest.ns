@@ -14,12 +14,21 @@
  * limitations under the License.
  */
 
-package napile.logging
+package codegenTest.loggingTest
+
+import napile.logging.Logger
 
 /**
  * @author VISTALL
  */
-abstract class LoggingHandler
+class LoggingTest
 {
-	meth log(val message : LoggingMessage)
+	static meth main(val arg : Array<String>)
+	{
+		Logger.System.info("test")
+
+		Logger.System.warn("test")
+
+		Logger.System.error("test")
+	}
 }

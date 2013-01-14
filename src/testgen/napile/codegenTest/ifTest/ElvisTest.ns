@@ -1,6 +1,6 @@
 package codegenTest.ifTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,10 +17,10 @@ class ElvisTest
 
 		b = b ?: "now is not null"
 
-		Console.writeLine(b.toString())
+		Logger.System.info(b.toString())
 
 		b = b ?: "this text cant be set"
 
-		Console.writeLine(b.toString())
+		Logger.System.info(b.toString())
 	}
 }

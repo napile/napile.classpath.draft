@@ -1,6 +1,6 @@
 package codegenTest.multiTypeTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -13,13 +13,13 @@ class Test
 	{
 		ENTRY = ["Key", "Value"]
 
-		Console.writeLine("key is " + ENTRY.key)
-		Console.writeLine("value is " + ENTRY.value)
+		Logger.System.info("key is " + ENTRY.key)
+		Logger.System.info("value is " + ENTRY.value)
 
 		ENTRY.key = "NewKey"
 		ENTRY.value = "NewValue"
 
-		Console.writeLine("key is " + ENTRY.key)
-		Console.writeLine("value is " + ENTRY.value)
+		Logger.System.info("key is " + ENTRY.key)
+		Logger.System.info("value is " + ENTRY.value)
 	}
 }

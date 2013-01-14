@@ -1,6 +1,6 @@
 package codegenTest.equalsTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,14 +15,13 @@ class EqualTest
 	{
 		val b = 1
 		if(b == 1)
-			Console.writeLine("equals");
+			Logger.System.info("equals");
 		else
-			Console.writeLine("fail equals");
+			Logger.System.info("fail equals");
 
 		if(b.fullyEquals(1))
-			Console.writeLine("fullyEquals");
+			Logger.System.info("fullyEquals");
 		else
-			Console.writeLine("fail fullyEquals");
-		return
+			Logger.System.info("fail fullyEquals");
 	}
 }

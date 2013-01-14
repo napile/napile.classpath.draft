@@ -14,12 +14,17 @@
  * limitations under the License.
  */
 
-package napile.logging
+package napile.io
+
+import napile.annotation.Deprecated
 
 /**
  * @author VISTALL
  */
-abstract class LoggingHandler
+@Deprecated("Need rework")
+util class NativeConsole
 {
-	meth log(val message : LoggingMessage)
+	native meth write(val value : String)
+
+	native meth writeLine(val value : String)
 }

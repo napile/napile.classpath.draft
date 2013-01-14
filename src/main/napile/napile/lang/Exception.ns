@@ -1,6 +1,5 @@
 package napile.lang
-
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -17,13 +16,13 @@ class Exception
 
 	meth printStackTrace()
 	{
-		Console.writeLine(getClass().name)
+		Logger.System.info(getClass().name)
 		if(message != null)
 		{
-			Console.writeLine(" : ")
-			Console.writeLine(message)
+			Logger.System.info(" : ")
+			Logger.System.info(message)
 		}
 		for(b in stack)
-			Console.writeLine("\tat " + b.name)
+			Logger.System.info("\tat " + b.name)
 	}
 }

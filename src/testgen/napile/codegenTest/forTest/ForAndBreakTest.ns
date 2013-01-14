@@ -1,6 +1,6 @@
 package codegenTest.forTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -18,9 +18,9 @@ class ForAndBreakTest
 			if(a == 10)
 				break;
 
-			Console.writeLine(a.toString())
+			Logger.System.info(a.toString())
 		}
 
-		Console.writeLine("End");
+		Logger.System.info("End");
 	}
 }

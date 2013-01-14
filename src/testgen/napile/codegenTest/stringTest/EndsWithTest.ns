@@ -1,6 +1,6 @@
 package codegenTest.stringTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -11,8 +11,8 @@ class EndsWithTest
 	{
 		var str = "endsWith"
 
-		Console.writeLine("str: " + str + " : result(With): " + str.endsWith("With"))
+		Logger.System.info("str: " + str + " : result(With): " + str.endsWith("With"))
 
-		Console.writeLine("str: " + str + " : result(ends): " + str.endsWith("ends"))
+		Logger.System.info("str: " + str + " : result(ends): " + str.endsWith("ends"))
 	}
 }

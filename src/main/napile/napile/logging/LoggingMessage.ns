@@ -21,4 +21,9 @@ package napile.logging
  */
 class LoggingMessage
 {
+	val level : LoggingLevel
+	val message : String?
+	val exception : Exception?
+
+	this(level, message, exception)
 }

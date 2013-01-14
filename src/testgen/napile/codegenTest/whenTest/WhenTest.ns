@@ -1,6 +1,6 @@
 package codegenTest.whenTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,21 +17,21 @@ class WhenTest
 
 		when(i)
 		{
-			1 -> Console.writeLine("i == 1")
-			2 -> Console.writeLine("i == 2")
-			else -> Console.writeLine("i - else")
+			1 -> Logger.System.info("i == 1")
+			2 -> Logger.System.info("i == 2")
+			else -> Logger.System.info("i - else")
 		}
 
-		Console.writeLine("center")
+		Logger.System.info("center")
 		i = 99
 
 		when(i)
 		{
-			1 -> Console.writeLine("i == 1")
-			2 -> Console.writeLine("i == 2")
-			else -> Console.writeLine("i - else")
+			1 -> Logger.System.info("i == 1")
+			2 -> Logger.System.info("i == 2")
+			else -> Logger.System.info("i - else")
 		}
 
-		Console.writeLine("after")
+		Logger.System.info("after")
 	}
 }

@@ -1,6 +1,6 @@
 package codegenTest.typeParameterTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -13,10 +13,10 @@ class TWithConstructorTest
 	{
 		var c : TWithTarget = factory(1234)
 
-		Console.writeLine("Class is: " + c.getClass().name + ", length: " + c.length)
+		Logger.System.info("Class is: " + c.getClass().name + ", length: " + c.length)
 
 		c = factory<TWithTarget>(1)
 
-		Console.writeLine("Class is: " + c.getClass().name + ", length: " + c.length)
+		Logger.System.info("Class is: " + c.getClass().name + ", length: " + c.length)
 	}
 }

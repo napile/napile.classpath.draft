@@ -1,6 +1,6 @@
 package codegenTest.whileTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
@@ -18,17 +18,16 @@ class WhileTest
 		while (b != 3)
 		{
 			if (b == 0)
-				Console.writeLine("b = 0")
+				Logger.System.info("b = 0")
 			if (b == 1)
-				Console.writeLine("b = 1")
+				Logger.System.info("b = 1")
 			if (b == 2)
-				Console.writeLine("b = 2")
+				Logger.System.info("b = 2")
 			if (b == 3)
-				Console.writeLine("b = 3")
+				Logger.System.info("b = 3")
 			b = b + 1
 		}
 
-		Console.writeLine("End")
-		return
+		Logger.System.info("End")
 	}
 }

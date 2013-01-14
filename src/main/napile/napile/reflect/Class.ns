@@ -1,7 +1,6 @@
 package napile.reflect
 
 import napile.reflect.Class
-import napile.io.Console
 import napile.annotation.Immutable
 
 /**

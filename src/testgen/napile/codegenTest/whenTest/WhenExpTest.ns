@@ -1,6 +1,6 @@
 package codegenTest.whenTest
 
-import napile.io.Console
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -13,9 +13,9 @@ class WhenExpTest
 
 		when
 		{
-			i == 2 -> Console.writeLine("i == 2")
-			i == 1 -> Console.writeLine("i == 1")
-			else -> Console.writeLine("error")
+			i == 2 -> Logger.System.info("i == 2")
+			i == 1 -> Logger.System.info("i == 1")
+			else -> Logger.System.info("error")
 		}
 	}
 }
