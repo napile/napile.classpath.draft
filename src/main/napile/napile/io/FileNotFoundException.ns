@@ -19,22 +19,7 @@ package napile.io
 /**
  * @author VISTALL
  */
-class SecurityManager
+class FileNotFoundException : Exception
 {
-	static val INSTANCE : SecurityManager? = null
-
-	meth checkRead(val path : String)
-	{
-		//TODO [VISTALL]
-	}
-
-	meth checkWrite(val path : String)
-	{
-		//TODO [VISTALL]
-	}
-
-	meth checkWrite(val fd : FileDescriptor)
-	{
-		//TODO [VISTALL]
-	}
+	this(val message : String? = null) : Exception(message)
 }

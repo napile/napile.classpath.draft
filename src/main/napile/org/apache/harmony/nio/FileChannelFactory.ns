@@ -9,6 +9,6 @@ class FileChannelFactory
 {
 	static meth getFileChannel(val stream : Any, val fd : Long, val mode : Int) : FileChannel
 	{
-		throw IllegalArgumentException()//TODO [VISTALL]
+		return FileChannel()
 	}
 }

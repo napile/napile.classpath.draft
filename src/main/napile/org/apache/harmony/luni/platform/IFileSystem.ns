@@ -56,9 +56,9 @@ abstract class IFileSystem
 
 	static val O_TRUNC : Int = 0x10000000
 
-	meth read(var fileDescriptor : Long, var bytes : Array<Byte>?, var offset : Int, var length : Int) : Long
+	meth read(var fileDescriptor : Long, var bytes : Array<Byte>, var offset : Int, var length : Int) : Long
 
-	meth write(var fileDescriptor : Long, var bytes : Array<Byte>?, var offset : Int, var length : Int) : Long
+	meth write(var fileDescriptor : Long, var bytes : Array<Byte>, var offset : Int, var length : Int) : Long
 
 	meth readv(var fileDescriptor : Long, var addresses : Array<Long>?, var offsets : Array<Int>?, var lengths : Array<Int>?, var size : Int) : Long
 
@@ -85,7 +85,7 @@ abstract class IFileSystem
 	 */
 	meth getAllocGranularity() : Int
 
-	meth open(var fileName : Array<Byte>?, var mode : Int) : Long
+	meth open(var fileName : Array<Byte>, var mode : Int) : Long
 
 	meth transfer(var fileHandler : Long, var socketDescriptor : FileDescriptor?, var offset : Long, var count : Long) : Long
 

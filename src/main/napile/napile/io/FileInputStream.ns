@@ -1,7 +1,7 @@
 package napile.io
 
-import org.apache.harmony.luni.platform.IFileSystem
 import napile.nio.channels.FileChannel
+import org.apache.harmony.luni.platform.IFileSystem
 import org.apache.harmony.luni.platform.Platform
 import org.apache.harmony.nio.FileChannelFactory
 
@@ -12,6 +12,7 @@ class FileInputStream : InputStream
 {
 	static local val fileSystem = Platform.getFileSystem()
 
+	//local val repositioningLock = anonym : Any
 	local val fd : FileDescriptor
 	local val channel : FileChannel
 
@@ -43,9 +44,8 @@ class FileInputStream : InputStream
 		//synchronized (repositioningLock)
 		//{
 			// stdin requires special handling
-			//if (fd == FileDescriptor.in) {
-			//	return fileSystem.ttyRead(buffer, offset, count);
-			//}
+			if (fd == FileDescriptor.systemIn)
+				return fileSystem.ttyRead(buffer, offset, count).toInt();
 			return fileSystem.read(fd.descriptor, buffer, offset, count).toInt();
 		//}
 	}

@@ -5,8 +5,5 @@ package org.apache.harmony.luni.platform
  */
 class Platform
 {
-	static meth getFileSystem() : IFileSystem
-	{
-		throw IllegalArgumentException() //TODO [VISTALL]
-	}
+	static meth getFileSystem() : IFileSystem = OSFileSystem.INSTANCE
 }

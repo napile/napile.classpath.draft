@@ -10,7 +10,7 @@ class Any
 {
 	static meth synchronized(val obj : Any?, val fun : {})
 	{
-		fun()
+		fun()  //FIXME [VISTALL] stub - need discuss
 	}
 
 	static meth assert(val cond : Bool, val message : String? = null)

@@ -5,4 +5,10 @@ package napile.nio.channels
  */
 class FileChannel
 {
+	// TODO [VISTALL] dummy
+	this()
+
+	meth isOpened() : Bool = false
+
+	meth close() {}
 }
