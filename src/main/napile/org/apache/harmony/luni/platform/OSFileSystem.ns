@@ -18,6 +18,7 @@ package org.apache.harmony.luni.platform
 
 import napile.io.FileDescriptor
 import napile.io.FileNotFoundException
+import napile.io.IOException
 
 /**
  * @author VISTALL
@@ -67,9 +68,17 @@ covered class OSFileSystem : IFileSystem
 	override meth available(var fileDescriptor: Long): Long {
 		throw UnsupportedOperationException()
 	}
-	override meth write(var fileDescriptor: Long, var bytes: Array<Byte>, var offset: Int, var length: Int): Long {
-		throw UnsupportedOperationException()
+
+	override meth write(var fileDescriptor: Long, var bytes: Array<Byte>, var offset: Int, var length: Int): Long
+	{
+		val fd = writeImpl(fileDescriptor, bytes, offset, length)
+		if(fd < 0)
+			throw IOException()
+		return fd
 	}
+
+	native meth writeImpl(var fileDescriptor: Long, var bytes: Array<Byte>, var offset: Int, var length: Int): Long;
+
 	override meth ttyRead(var bytes: Array<Byte>?, var offset: Int, var length: Int): Long {
 		throw UnsupportedOperationException()
 	}
