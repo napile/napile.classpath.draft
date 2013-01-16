@@ -1,6 +1,7 @@
 package napile.lang
 
 import napile.collection.Iterator
+import napile.annotation.ImmutableTarget
 
 /**
  * @author VISTALL
@@ -15,4 +16,10 @@ class ArrayIterator<E> : Iterator<E>
 	override meth next() : E = array[index ++]
 
 	override meth hasNext() : Bool = index != array.length
+
+	@ImmutableTarget
+	override meth remove()
+	{
+		throw UnsupportedOperationException()
+	}
 }

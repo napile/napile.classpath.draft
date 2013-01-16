@@ -14,50 +14,22 @@
  * limitations under the License.
  */
 
-package codegenTest.anonymClassTest
+package codegenTest.immutableTest
 
-import napile.collection.Iterator
-import napile.logging.Logger
+import napile.annotation.Immutable
+import napile.collection.ArrayList
 
 /**
  * @author VISTALL
  */
-class AnonymIteratorTest
+class ImmutableTest1
 {
-	var insideVar : String = "Inside Var"
-
-	this()
-
-	meth test()
-	{
-		val a = anonym : Iterator<String>
-		{
-			var index : Int = 1
-
-			override meth next(): String
-			{
-				throw UnsupportedOperationException()
-			}
-
-			override meth hasNext(): Bool
-			{
-				Logger.System.info(insideVar)
-				index ++
-				Logger.System.info(index.toString())
-				return false
-			}
-
-			override meth remove()
-			{
-				throw UnsupportedOperationException()
-			}
-		}
-
-		Logger.System.info(a.hasNext().toString())
-	}
+	static val list : @Immutable ArrayList<String> =  ArrayList<String>()
 
 	static meth main(val arg : Array<String>)
 	{
-		AnonymIteratorTest().test()
+		//list.add("test")
+
+		//list.iterator().remove();
 	}
 }

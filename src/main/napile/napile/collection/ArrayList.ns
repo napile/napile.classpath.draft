@@ -1,6 +1,7 @@
 package napile.collection
 
-import napile.annotation.ImmutableHide
+import napile.annotation.ImmutableTarget
+import napile.annotation.InheritImmutable
 
 /**
  * @author VISTALL
@@ -15,7 +16,7 @@ class ArrayList<E> : List<E>
 		data = Array<E>(predefinedSize)
 	}
 
-	@ImmutableHide
+	@ImmutableTarget
 	override meth add(val e : E) : Bool
 	{
 		ensureCapacity(size + 1);
@@ -38,7 +39,7 @@ class ArrayList<E> : List<E>
 		}
 	}
 
-	override meth iterator() : Iterator<E> = ListIterator<E>(this)
+	override meth iterator() : @InheritImmutable Iterator<E> = ListIterator<E>(this)
 
 	override meth size() = size
 }

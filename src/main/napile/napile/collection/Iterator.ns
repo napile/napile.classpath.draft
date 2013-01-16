@@ -1,5 +1,7 @@
 package napile.collection
 
+import napile.annotation.ImmutableTarget
+
 /**
  * @author VISTALL
  */
@@ -8,4 +10,7 @@ abstract class Iterator<E>
 	meth hasNext() : Bool
 
 	meth next() : E
+
+	@ImmutableTarget
+	meth remove()
 }

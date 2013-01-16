@@ -4,7 +4,7 @@ package napile.annotation
  * @author VISTALL
  */
 @Annotation(null)
-final class ImmutableHide
+final class ImmutableTarget
 {
 	this()
 }
