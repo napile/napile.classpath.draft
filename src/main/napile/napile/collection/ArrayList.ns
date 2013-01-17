@@ -24,6 +24,11 @@ class ArrayList<E> : List<E>
 		return true;
 	}
 
+	override meth set(val index : Int, val e : E)
+	{
+		data[index] = e
+	}
+
 	override meth get(val index : Int) : E = data[index]
 
 	local meth ensureCapacity(val minCapacity : Int)

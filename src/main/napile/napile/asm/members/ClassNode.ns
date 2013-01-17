@@ -1,8 +1,22 @@
 package napile.asm.members
 
+import xml.annotation.DomElement
+import napile.reflect.Modifier
+import xml.annotation.DomAttributeValue
+import napile.annotation.LazyType
+import napile.annotation.Lazy
+
 /**
  * @author VISTALL
  */
+@DomElement("class")
 class ClassNode
 {
+	@DomAttributeValue("name")
+	@Lazy(LazyType.INJECTION)
+	lazy val name : String = "this is need rework"
+
+	this()
+
+	this(name)
 }

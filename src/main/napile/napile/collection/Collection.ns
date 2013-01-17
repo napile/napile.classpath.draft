@@ -3,11 +3,9 @@ package napile.collection
 /**
  * @author VISTALL
  */
-abstract class Collection<E> : Iterable<E>
+abstract class Collection<E> : Iterable<E> & Sizeable
 {
 	local val emptyArray = Array<E>(0)
-
-	meth size() : Int
 
 	meth isEmpty() : Bool = size() == 0
 

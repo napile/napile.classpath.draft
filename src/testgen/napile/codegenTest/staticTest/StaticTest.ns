@@ -1,0 +1,12 @@
+package codegenTest.staticTest
+
+/**
+ * @author VISTALL
+ */
+class StaticTest
+{
+	static meth main()
+	{
+
+	}
+}

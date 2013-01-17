@@ -52,6 +52,8 @@ final class Class<E> : Member
 
 	local native meth getSuperClasses() : Array<Class<Any>>
 
+	native meth getXmlDoc() : String
+
 	/**
 	 * Searching method by name
 	 */

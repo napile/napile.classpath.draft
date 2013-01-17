@@ -1,8 +1,11 @@
 package napile.lang
 
+import napile.annotation.DefaultValue
+
 /**
  * @author VISTALL
  */
+@DefaultValue("")
 final class String
 {
 	local val array : Array<Char>

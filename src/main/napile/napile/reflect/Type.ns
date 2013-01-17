@@ -7,19 +7,57 @@ import napile.annotation.DefaultValue
  */
 class Type<E> : AnnotationOwner
 {
-	var typeClass : Class<E>
+	val constructorClass : Class<E>
 
-	lazy val defaultValue : E = findDefaultValue()
+	val nullable : Bool
 
-	local this(typeClass, val annotations : Array<Any>) : AnnotationOwner(annotations)
+	val parameters : Array<Type<Any>>
 
-	local meth findDefaultValue() : E
+	lazy val defaultValue : E? = findDefaultValue()
+
+	local this(constructorClass, parameters, nullable, val annotations : Array<Any>) : AnnotationOwner(annotations)
+
+	local meth findDefaultValue() : E?
 	{
-		//val annotation : DefaultValue? = findAnnotation()
-		//if(annotation != null)
-		//	return annotation.value as E
+		if(nullable)
+			return null
+
+		val annotation : DefaultValue? = findAnnotation()
+		if(annotation != null)
+			return annotation.value as E
 
 		//TODO [VISTALL] search in class
 		throw IllegalArgumentException("cant find default value")
+	}
+
+	local meth findDefaultValueInAnnotable<E>(val annotationOwner : AnnotationOwner) : E?
+	{
+		//FIXME [VISTALL] return findAnnotation<DefaultValue>()?.value as E
+		val annotation : DefaultValue? = findAnnotation()
+		if(annotation != null)
+			return annotation.value as E
+		else
+			return null
+	}
+
+	override meth toString() : String
+	{
+		val builder = StringBuilder()
+		builder += constructorClass.name
+		if(parameters.length > 0)
+		{
+			builder += "<"
+			var i = 0
+			while(i < parameters.length)
+			{
+				if(i != 0)
+					builder += ", "
+				builder += parameters[i ++]
+			}
+			builder += ">"
+		}
+		if(nullable)
+			builder += "?"
+		return builder.toString()
 	}
 }

@@ -9,5 +9,8 @@ abstract class List<E> : Collection<E>
 	@ImmutableTarget
 	meth add(val e : E) : Bool
 
+	@ImmutableTarget
+	meth set(val index : Int, val e : E)
+
 	meth get(val index : Int) : E
 }

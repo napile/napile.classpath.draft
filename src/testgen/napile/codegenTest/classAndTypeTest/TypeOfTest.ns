@@ -18,10 +18,6 @@ class TypeOfTest<E>
 	{
 		var c = typeOf(TypeOfTest<Int>)
 
-		Logger.System.info(c.typeClass.name)
-
-	//	var b = ClassOfTest()
-
-		//Logger.System.info(b.getClass().name)
+		Logger.System.info(c)
 	}
 }
