@@ -17,6 +17,7 @@
 package codegenTest.typeTest
 
 import napile.collection.List
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -28,5 +29,7 @@ class TypeTest
 		val a = TypeTarget<List<String?>>()
 
 		a.showT()
+
+		Logger.System.info(a.getType())
 	}
 }
