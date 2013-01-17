@@ -27,5 +27,7 @@ class DomAttributeValue
 {
 	val name : String
 
-	this(name)
+	val converter : {(val arg : String) -> String}
+
+	this(name, converter = {value})
 }
