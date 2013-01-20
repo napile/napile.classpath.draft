@@ -18,6 +18,7 @@ package napile.collection
 
 import napile.reflect.Class
 import napile.annotation.DefaultValue
+import napile.annotation.InheritImmutable
 
 /**
  * @author VISTALL
@@ -31,7 +32,7 @@ class HashMap<K, V> : Map<K, V>
 
 	this()
 
-	override meth entrySet(): Set<[val key: K,var value: V]>
+	override meth entrySet(): @InheritImmutable Set<[val key: K, val value: V]>
 	{
 		throw UnsupportedOperationException()
 	}
