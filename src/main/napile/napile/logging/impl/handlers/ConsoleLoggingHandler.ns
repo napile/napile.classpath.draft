@@ -18,18 +18,43 @@ package napile.logging.handlers
 
 import napile.logging.LoggingHandler
 import napile.logging.LoggingMessage
-import napile.io.NativeConsole
+import napile.io.FileOutputStream
+import napile.io.FileDescriptor
+import napile.logging.LoggingLevel
 
 /**
  * @author VISTALL
  */
 class ConsoleLoggingHandler : LoggingHandler
 {
+	local val info = FileOutputStream(FileDescriptor.systemOut)
+	local val error = FileOutputStream(FileDescriptor.systemErr)
+
 	this()
 
 	override meth log(val message: LoggingMessage)
 	{
-		if(message.message != null)
-			NativeConsole.writeLine(message.message!!)
+		if(message.message != null) {
+			writeBytes(message, message.message!!)
+		}
+
+		if(message.exception != null) {
+			val b = StringBuilder()
+
+			message.exception!!.printStackTrace(b)
+
+			writeBytes(message, b.toString())
+		}
+	}
+
+	local meth writeBytes(val message : LoggingMessage, val str : String)
+	{
+		val m = str + "\n"
+		val bytes = m.getBytes()
+		when(message.level)
+		{
+			LoggingLevel.ERROR -> error.write(bytes)
+			else -> info.write(bytes)
+		}
 	}
 }

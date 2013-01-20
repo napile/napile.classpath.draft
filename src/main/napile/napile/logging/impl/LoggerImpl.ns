@@ -38,7 +38,7 @@ class LoggerImpl : Logger
 
 	override meth log(val level : LoggingLevel, val message : Any?, val exception : Exception?)
 	{
-		val loggingMessage = LoggingMessage(level, message.toString(), exception)
+		val loggingMessage = LoggingMessage(level, if(message == null) null else message.toString(), exception)
 
 		for(h in handlers)
 			h.log(loggingMessage)

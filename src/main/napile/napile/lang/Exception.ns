@@ -8,21 +8,31 @@ class Exception
 {
 	final val message : String?
 
-	lazy final val stack : Array<StackTraceElement> = generateStack()
+	final val stack : Array<StackTraceElement>
 
 	this(message = null)
+	{
+		stack = generateStack();
+	}
 
 	local native meth generateStack() : Array<StackTraceElement>
 
-	meth printStackTrace()
+	meth printStackTrace(val b : StringBuilder)
 	{
-		Logger.System.info(getClass().name)
+		b += getClass().name
 		if(message != null)
 		{
-			Logger.System.info(" : ")
-			Logger.System.info(message)
+			b += " : "
+			b += message
 		}
-		for(b in stack)
-			Logger.System.info("\tat " + b.name)
+
+		b += "\n"
+		for(i in stack)
+			b += "\tat " + i.name + "\n"
+	}
+
+	meth printStackTrace()
+	{
+		Logger.System.error(exception = this)
 	}
 }
