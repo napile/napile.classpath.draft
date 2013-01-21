@@ -16,7 +16,7 @@ class AnonymMethTest
 		test(#testTarget)
 	}
 
-	meth testTarget(val a : Int)
+	static meth testTarget(val a : Int)
 	{
 		Logger.System.info("testTarget " + a.toString())
 	}

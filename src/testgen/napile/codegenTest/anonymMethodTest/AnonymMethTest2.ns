@@ -1,0 +1,19 @@
+package codegenTest.anonymMethodTest
+
+import napile.logging.Logger
+
+/**
+ * @author VISTALL
+ */
+class AnonymMethTest2
+{
+	this()
+	{
+		{(a : Int) -> Logger.System.info("test " + a)}(1)
+	}
+
+	static meth main(val arg : Array<String>)
+	{
+		AnonymMethTest2()
+	}
+}
