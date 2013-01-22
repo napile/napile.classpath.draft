@@ -1,9 +1,9 @@
-package napile.gui
+package napile.ui
 
 /**
  * @author VISTALL
  */
-class Color
+class RgbColor
 {
 	val red : Int
 	val green : Int

@@ -95,5 +95,5 @@ abstract class IFileSystem
 
 	meth size(var fileDescriptor : Long) : Long
 
-	meth ttyRead(var bytes : Array<Byte>?, var offset : Int, var length : Int) : Long
+	meth ttyRead(var bytes : Array<Byte>, var offset : Int, var length : Int) : Long
 }

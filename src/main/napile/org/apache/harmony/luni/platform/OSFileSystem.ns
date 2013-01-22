@@ -79,7 +79,7 @@ covered class OSFileSystem : IFileSystem
 
 	native meth writeImpl(var fileDescriptor: Long, var bytes: Array<Byte>, var offset: Int, var length: Int): Long;
 
-	override meth ttyRead(var bytes: Array<Byte>?, var offset: Int, var length: Int): Long {
+	override meth ttyRead(var bytes: Array<Byte>, var offset: Int, var length: Int): Long {
 		throw UnsupportedOperationException()
 	}
 	override meth readv(var fileDescriptor: Long, var addresses: Array<Long>?, var offsets: Array<Int>?, var lengths: Array<Int>?, var size: Int): Long {
