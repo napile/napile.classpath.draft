@@ -1,0 +1,17 @@
+package codegenTest.completionTest
+
+/**
+ * @author VISTALL
+ */
+class CompletionTestInMethod
+{
+	meth test(val a : Int)
+	{
+
+	}
+
+	static meth a(val a : Int)
+	{
+
+	}
+}

@@ -1,7 +1,7 @@
 package codegenTest.iterableUtilTest
 
-import napile.collection.IterableUtil.*
 import napile.logging.Logger
+import napile.collection.IterableUtil.select
 
 /**
  * @author VISTALL
