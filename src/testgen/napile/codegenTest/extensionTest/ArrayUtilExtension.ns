@@ -1,6 +1,7 @@
 package codegenTest.extensionTest
 
 import napile.lang.ArrayUtil.contains
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -12,6 +13,7 @@ class ArrayUtilExtension
 		val myArray = Array<String>(1)
 		myArray[0] = "123456789"
 
-		//myArray.contains("123456789")
+		Logger.System.info(myArray.contains("1"))
+		Logger.System.info(myArray.contains("123456789"))
 	}
 }

@@ -1,6 +1,6 @@
 package codegenTest.iterableUtilTest
 
-import napile.collection.IterableUtil
+import napile.collection.IterableUtil.*
 import napile.logging.Logger
 
 /**
@@ -12,7 +12,7 @@ util class IterableTest
 	{
 		val intArray : Array<Int> = arrayOf(1,2,3,4,5,6)
 
-		val result = IterableUtil.select/*<Int?>*/(intArray, {(a) -> a == 1})
+		val result = intArray.select {(a) -> a == 1}
 
 		Logger.System.info(result)
 	}
