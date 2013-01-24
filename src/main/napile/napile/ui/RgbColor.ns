@@ -3,11 +3,18 @@ package napile.ui
 /**
  * @author VISTALL
  */
-class RgbColor
+class RgbColor : Color
 {
 	val red : Int
 	val green : Int
 	val blue : Int
 
 	this(red, green, blue)
+
+	override meth toCmykColor() : CmykColor
+	{
+		throw UnsupportedOperationException()
+	}
+
+	override meth toRgbColor() : RgbColor = this
 }

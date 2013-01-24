@@ -14,12 +14,14 @@
  * limitations under the License.
  */
 
-package org.napile.vm
+package napile.ui
 
 /**
  * @author VISTALL
  */
-class VmStartupError : Error
+abstract class Color
 {
-	this(val message : String? = null) : Error(message)
+	meth toRgbColor() : RgbColor
+
+	meth toCmykColor() : CmykColor
 }

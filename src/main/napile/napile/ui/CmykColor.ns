@@ -14,12 +14,17 @@
  * limitations under the License.
  */
 
-package org.napile.vm
+package napile.ui
 
 /**
  * @author VISTALL
  */
-class VmStartupError : Error
+class CmykColor : Color
 {
-	this(val message : String? = null) : Error(message)
+	override meth toRgbColor(): RgbColor
+	{
+		throw UnsupportedOperationException()
+	}
+
+	override meth toCmykColor(): CmykColor = this
 }

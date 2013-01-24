@@ -27,12 +27,12 @@ class AnonymWithWrapTest
 
 	meth test()
 	{
-		var myVar = 1
-		var a = anonym : Any
-		{
-			override meth toString() : String = myVar.toString()
-		}
-		Logger.System.info(a.toString())
+		//var myVar = 1
+		//var a = anonym : Any
+		//{
+		//	override meth toString() : String = myVar.toString()
+		//}
+		//Logger.System.info(a.toString())
 	}
 
 	static meth main(val arg : Array<String>)
