@@ -14,20 +14,19 @@
  * limitations under the License.
  */
 
-package xml.annotation
+package napile.logging
 
-import napile.annotation.Annotation
+import xml.annotation.DomAttribute
 
 /**
  * @author VISTALL
- * @date 11:00/17.01.13
  */
-@Annotation
-class DomAttributeValue
+class LoggingHandlerDescriptor<T()>
 {
-	val name : String
+	@DomAttribute("id")
+	val id : String = ""
 
-	val converter : {(val arg : String) -> String}
+	val impl : T = T()
 
-	this(name, converter = {value})
+	this()
 }

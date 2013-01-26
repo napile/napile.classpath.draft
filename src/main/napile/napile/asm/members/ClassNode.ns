@@ -2,7 +2,7 @@ package napile.asm.members
 
 import xml.annotation.DomElement
 import napile.reflect.Modifier
-import xml.annotation.DomAttributeValue
+import xml.annotation.DomAttribute
 import napile.annotation.LazyType
 import napile.annotation.Lazy
 
@@ -12,7 +12,7 @@ import napile.annotation.Lazy
 @DomElement("class")
 class ClassNode
 {
-	@DomAttributeValue("name")
+	@DomAttribute("name")
 	@Lazy(LazyType.INJECTION)
 	lazy val name : String = "this is need rework"
 

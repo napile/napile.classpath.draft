@@ -7,11 +7,12 @@
 	<version>1.0</version>
 
 	<extension-points>
-		<!--here extension points-->
-		<!--<loggingHandler  /> -->
+		<extension-point name="loggingHandler" descriptor="napile.logging.LoggingHandlerDescriptor">
+			<ref-attribute-to-type-parameter attribute="impl" type-parameter="T" />
+		</extension-point>
 	</extension-points>
 
 	<extensions for-id="napile.lang">
-		<!-- <loggingHandler id="System" impl="napile.logging.handlers.ConsoleLoggingHandler" />-->
+		<loggingHandler id="System" impl="napile.logging.handlers.ConsoleLoggingHandler" />
 	</extensions>
 </module>
