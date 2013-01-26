@@ -24,7 +24,7 @@ import napile.module.extension.ExtensionPointName
  */
 class LoggingHandlerDescriptor<T() : LoggingHandler>
 {
-	static val EP : ExtensionPointName<LoggingHandlerDescriptor<LoggingHandler>> = ExtensionPointName("napile.lang", "loggingHandler")
+	//static val EP : ExtensionPointName<LoggingHandlerDescriptor<LoggingHandler>> = ExtensionPointName("napile.lang", "loggingHandler")
 
 	@DomAttribute("id")
 	val id : String = ""
