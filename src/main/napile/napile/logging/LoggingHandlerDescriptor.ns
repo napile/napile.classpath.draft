@@ -21,7 +21,7 @@ import xml.annotation.DomAttribute
 /**
  * @author VISTALL
  */
-class LoggingHandlerDescriptor<T()>
+class LoggingHandlerDescriptor<T() : LoggingHandler>
 {
 	@DomAttribute("id")
 	val id : String = ""
