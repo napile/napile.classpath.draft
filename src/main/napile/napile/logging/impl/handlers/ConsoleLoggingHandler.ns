@@ -30,7 +30,7 @@ class ConsoleLoggingHandler : LoggingHandler
 	local val info = FileOutputStream(FileDescriptor.systemOut)
 	local val error = FileOutputStream(FileDescriptor.systemErr)
 
-	this()
+	this() : LoggingHandler()
 
 	override meth log(val message: LoggingMessage)
 	{

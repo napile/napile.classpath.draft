@@ -14,22 +14,24 @@
  * limitations under the License.
  */
 
-package napile.logging
+package napile.logging.impl.handlers
 
-import xml.annotation.DomAttribute
-import napile.module.extension.ExtensionPointName
+import napile.logging.LoggingHandler
+import napile.logging.LoggingMessage
+import napile.collection.Iterable
 
 /**
  * @author VISTALL
  */
-class LoggingHandlerDescriptor<T() : LoggingHandler>
+class CombinedLoggingHandler : LoggingHandler
 {
-	static val EP : ExtensionPointName<LoggingHandlerDescriptor<LoggingHandler>> = ExtensionPointName("napile.lang", "loggingHandler")
+	local val items : Iterable<LoggingHandler>
 
-	@DomAttribute("id")
-	val id : String = ""
+	this(items) : LoggingHandler()
 
-	val impl : T = T()
-
-	this()
+	override meth log(val message: LoggingMessage)
+	{
+		for(i in items)
+			i.log(message)
+	}
 }

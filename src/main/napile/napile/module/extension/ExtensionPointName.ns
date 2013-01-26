@@ -14,22 +14,15 @@
  * limitations under the License.
  */
 
-package napile.logging
-
-import xml.annotation.DomAttribute
-import napile.module.extension.ExtensionPointName
+package napile.module.extension
 
 /**
  * @author VISTALL
  */
-class LoggingHandlerDescriptor<T() : LoggingHandler>
+class ExtensionPointName<T>
 {
-	static val EP : ExtensionPointName<LoggingHandlerDescriptor<LoggingHandler>> = ExtensionPointName("napile.lang", "loggingHandler")
+	val id : String
+	val name : String
 
-	@DomAttribute("id")
-	val id : String = ""
-
-	val impl : T = T()
-
-	this()
+	this(id, name)
 }
