@@ -16,7 +16,10 @@ class Method : MethodLike
 		return null //TODO [VISTALL]
 	}
 
-	meth invokeStatic(val arguments : Array<Any?>) : Any?
+	/**
+	 * @return returnValues, last value if return value, others if values to ref parameters
+	 */
+	meth invokeStatic(val arguments : Array<Any?>) : Array<Any?>
 	{
 		if (!isStatic())
 			throw IllegalArgumentException("Use 'invoke' for instance method call")
@@ -24,5 +27,5 @@ class Method : MethodLike
 		return invokeStatic0(arguments)
 	}
 
-	local native meth invokeStatic0(val arguments : Array<Any?>) : Any?
+	local native meth invokeStatic0(val arguments : Array<Any?>) : Array<Any?>
 }
