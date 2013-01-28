@@ -1,0 +1,25 @@
+package codegenTest.refTest
+
+import napile.logging.Logger
+
+/**
+ * @author VISTALL
+ */
+class RefTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		var c : Int = 1
+		var d : Int = 1
+
+		refTest(c, d)
+
+		Logger.System.info(c.toString() + " " + d)
+	}
+
+	static meth refTest(ref var c : Int, ref var d : Int)
+	{
+		c = 2
+		d = 3
+	}
+}
