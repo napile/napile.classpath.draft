@@ -11,7 +11,12 @@ class AnonymMethWrapTest
 	{
 		val myVar = 1
 
-		call{Logger.System.info("myVar is " + myVar)}
+		call {
+			myVar = 2
+			Logger.System.info("myVar is " + myVar)
+		}
+
+		Logger.System.info(myVar)
 	}
 
 	static meth call(val c : {})
