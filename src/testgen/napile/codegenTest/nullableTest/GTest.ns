@@ -1,0 +1,21 @@
+package codegenTest.nullableTest
+
+import napile.logging.Logger
+
+/**
+ * @author VISTALL
+ */
+class GTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		/*var a : String? = null
+
+		var c : Array<Byte> = a!!.getBytes()
+
+		Logger.System.info(c.toString())   */
+
+		Logger.System.info(null.toString())
+		Logger.System.info(null.hashCode())
+	}
+}

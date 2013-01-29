@@ -10,7 +10,7 @@ import napile.annotation.Lazy
  * @author VISTALL
  */
 @DomElement("class")
-class ClassNode
+class AsmClass
 {
 	@DomAttribute("name")
 	@Lazy(LazyType.INJECTION)

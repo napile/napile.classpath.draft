@@ -34,17 +34,17 @@ class ConsoleLoggingHandler : LoggingHandler
 
 	override meth log(val message: LoggingMessage)
 	{
-		if(message.message != null) {
-			writeBytes(message, message.message!!)
-		}
+		val b = StringBuilder()
 
-		if(message.exception != null) {
-			val b = StringBuilder()
+		b += message.message.toString()
 
+		if(message.exception != null)
+		{
+			b += " "
 			message.exception!!.printStackTrace(b)
-
-			writeBytes(message, b.toString())
 		}
+
+		writeBytes(message, b.toString())
 	}
 
 	local meth writeBytes(val message : LoggingMessage, val str : String)

@@ -14,12 +14,17 @@
  * limitations under the License.
  */
 
-package napile.asm.members
+package napile.asm.members.typeConstructor
+
+import napile.asm.members.AsmTypeConstructor
 
 /**
  * @author VISTALL
- * @date 10:46/17.01.13
+ * @date 10:58/17.01.13
  */
-class TypeNode
+class AsmClassType : AsmTypeConstructor
 {
+	val qualifiedName : String
+
+	this(qualifiedName)
 }

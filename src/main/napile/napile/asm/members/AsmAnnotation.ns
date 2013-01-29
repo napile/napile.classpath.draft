@@ -18,8 +18,7 @@ package napile.asm.members
 
 /**
  * @author VISTALL
- * @date 10:46/17.01.13
  */
-abstract class TypeConstructorNode
+class AsmAnnotation
 {
 }

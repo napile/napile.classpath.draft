@@ -14,14 +14,20 @@
  * limitations under the License.
  */
 
-package napile.asm.members.typeConstructor
+package codegenTest.notNullTest
 
-import napile.asm.members.TypeConstructorNode
+import napile.logging.Logger
 
 /**
  * @author VISTALL
- * @date 10:58/17.01.13
  */
-class ClassTypeNode : TypeConstructorNode
+class ArrayNotNullTest
 {
+	static meth main(val arg : Array<String>)
+	{
+		val array = Array<Int>(10)
+
+		for(c in array)
+			Logger.System.info(c)
+	}
 }
