@@ -1,0 +1,19 @@
+package codegenTest.napileDoc
+
+/~
+ ~ ## Header
+ ~
+ ~ This is class is super class of all objects in napile
+ ~
+ ~ Example for usage. This is line :
+ ~
+ ~ 	val a = Array<String<0>()
+ ~
+ ~ Or this code span `Array<Int>(0)`
+ ~
+ ~ Authors
+ ~ * VISTALL
+ ~/
+class DocTest
+{
+}
