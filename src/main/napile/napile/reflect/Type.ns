@@ -14,31 +14,24 @@ class Type<E> : AnnotationOwner
 
 	val parameters : @Immutable Array<Type<Any>>
 
-	lazy val defaultValue : E? = findDefaultValue()
+	lazy val defaultValue : E = findDefaultValue()
 
 	local this(constructorClass, parameters, nullable, val annotations : Array<Any>) : AnnotationOwner(annotations)
 
-	local meth findDefaultValue() : E?
+	local meth findDefaultValue() : E
 	{
 		if(nullable)
-			return null
+			throw IllegalArgumentException("Type is nullable")
 
-		val annotation : DefaultValue? = findAnnotation()
+		var annotation : DefaultValue? = findAnnotation()
 		if(annotation != null)
 			return annotation.value as E
 
-		//TODO [VISTALL] search in class
+		annotation = constructorClass.findAnnotation<DefaultValue>()
+		if(annotation != null)
+			return annotation.value as E
+
 		throw IllegalArgumentException("cant find default value")
-	}
-
-	local meth findDefaultValueInAnnotable<E>(val annotationOwner : AnnotationOwner) : E?
-	{
-		//FIXME [VISTALL] return findAnnotation<DefaultValue>()?.value as E
-		val annotation : DefaultValue? = findAnnotation()
-		if(annotation != null)
-			return annotation.value as E
-		else
-			return null
 	}
 
 	override meth toString() : String

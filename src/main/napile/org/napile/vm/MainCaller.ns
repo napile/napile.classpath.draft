@@ -19,6 +19,7 @@ package org.napile.vm
 import napile.reflect.ReflectUtil
 import napile.logging.Logger
 import napile.reflect.Method
+import napile.asm.AsmUtil.toAsmType
 
 /**
  * @author VISTALL
@@ -31,7 +32,7 @@ util class MainCaller
 			throw VmStartupError("Class name - expected")
 
 		val clazz = ReflectUtil.findClass(arg[0])
-		val mainMethod = clazz.findStaticMethod("main")
+		val mainMethod = clazz.findStaticMethod("main", arrayOf(toAsmType<Array<String>>()))
 		if(mainMethod == null)
 			throw VmStartupError("'static meth main(val arg : Array<String>)' method expected")
 

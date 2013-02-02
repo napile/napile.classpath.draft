@@ -14,24 +14,14 @@
  * limitations under the License.
  */
 
-package napile.asm.members.typeConstructor
+package napile.annotation
 
-import napile.asm.members.AsmTypeConstructor
-import napile.annotation.Equality
-
-/**
- * @author VISTALL
- */
-class AsmTypeParameterType : AsmTypeConstructor
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
+@Annotation
+final class Equality
 {
-	@Equality
-	val name : String
-
-	this(name)
-
-	//FIXME [VISTALL] remove it
-	override meth equals(val o : Any?) : Bool
-	{
-		return if(o is AsmTypeParameterType) name == o.name else false
-	}
+	this()
 }

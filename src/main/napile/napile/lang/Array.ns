@@ -5,11 +5,12 @@ import napile.collection.Iterable
 import napile.reflect.Type
 import napile.annotation.InheritImmutable
 import napile.annotation.ImmutableTarget
+import napile.collection.Sizeable
 
 /**
  * @author VISTALL
  */
-final class Array<E> : Iterable<E>
+final class Array<E> : Iterable<E> & Sizeable
 {
 	val length : Int
 
@@ -22,6 +23,8 @@ final class Array<E> : Iterable<E>
 		//while(i < length)
 		//	set(i++, defaultValue)
 	}
+
+	override meth size() : Int = length
 
 	native meth init()
 

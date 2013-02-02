@@ -17,6 +17,7 @@
 package napile.asm.members
 
 import napile.annotation.Immutable
+import napile.util.EqualUtil
 
 /**
  * @author VISTALL
@@ -32,5 +33,21 @@ class AsmType
 
 	val nullable : Bool
 
-	this(annotations, nullable, constructor, parameters)
+	this(annotations, constructor, parameters, nullable)
+
+	override meth equals(val o : Any?) : Bool
+	{
+		if(o is AsmType)
+		{
+			if(nullable != o.nullable)
+				return false
+
+			if(!EqualUtil.equals(parameters, o.parameters))
+				return false;
+
+			return constructor == o.constructor
+		}
+		else
+			return false
+	}
 }

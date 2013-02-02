@@ -27,4 +27,12 @@ class AsmClassType : AsmTypeConstructor
 	val qualifiedName : String
 
 	this(qualifiedName)
+
+	override meth equals(val o : Any?) : Bool
+	{
+		if(o is String)
+			return qualifiedName == o
+		else
+			return false
+	}
 }
