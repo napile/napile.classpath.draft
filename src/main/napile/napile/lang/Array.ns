@@ -6,6 +6,7 @@ import napile.reflect.Type
 import napile.annotation.InheritImmutable
 import napile.annotation.ImmutableTarget
 import napile.collection.Sizeable
+import napile.util.TypeUtil
 
 /**
  * @author VISTALL
@@ -18,7 +19,7 @@ final class Array<E> : Iterable<E> & Sizeable
 	{
 		init()
 
-		//val defaultValue : E = typeOf(E).defaultValue
+		//val defaultValue : E = TypeUtil.getDefaultValue();
 		//var i = 0
 		//while(i < length)
 		//	set(i++, defaultValue)

@@ -14,26 +14,23 @@
  * limitations under the License.
  */
 
-package napile.asm.members.typeConstructor
+package codegenTest.arrayTest
 
-import napile.asm.members.AsmTypeConstructor
-import napile.annotation.Equality
+import napile.logging.Logger
 
-/**
- * @author VISTALL
- */
-class AsmTypeParameterType : AsmTypeConstructor
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
+class ArrayTest0
 {
-	@Equality
-	val name : String
-
-	this(name)
-
-	//FIXME [VISTALL] remove it
-	override meth equals(val o : Any?) : Bool
+	static meth main(val arg : Array<String>)
 	{
-		return if(o is AsmTypeParameterType) name == o.name else false
-	}
+		val a = Array<Int>(5)
 
-	override meth toString() : String = name
+		for(c in 0..a.size())
+			Logger.System.info(a[c])
+
+
+	}
 }

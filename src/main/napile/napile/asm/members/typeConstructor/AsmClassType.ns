@@ -17,6 +17,7 @@
 package napile.asm.members.typeConstructor
 
 import napile.asm.members.AsmTypeConstructor
+import napile.annotation.Equality
 
 /**
  * @author VISTALL
@@ -24,15 +25,18 @@ import napile.asm.members.AsmTypeConstructor
  */
 class AsmClassType : AsmTypeConstructor
 {
+	@Equality
 	val qualifiedName : String
 
 	this(qualifiedName)
 
 	override meth equals(val o : Any?) : Bool
 	{
-		if(o is String)
-			return qualifiedName == o
+		if(o is AsmClassType)
+			return qualifiedName == o.qualifiedName
 		else
 			return false
 	}
+
+	override meth toString() : String = qualifiedName
 }
