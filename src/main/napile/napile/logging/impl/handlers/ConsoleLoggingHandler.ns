@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package napile.logging.handlers
+package napile.logging.impl.handlers
 
 import napile.logging.LoggingHandler
 import napile.logging.LoggingMessage

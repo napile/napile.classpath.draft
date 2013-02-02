@@ -21,8 +21,8 @@ import napile.logging.LoggingLevel
 import napile.collection.List
 import napile.logging.LoggingHandler
 import napile.collection.ArrayList
-import napile.logging.handlers.ConsoleLoggingHandler
 import napile.logging.LoggingMessage
+import napile.logging.impl.handlers.ConsoleLoggingHandler
 
 /**
  * @author VISTALL
