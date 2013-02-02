@@ -30,7 +30,21 @@ class MapTest0
 		a.put(1, "test 1")
 		a.put(1, "test 2")
 
-		Logger.System.info(a.size())
-		Logger.System.info(a[1])
+		Logger.System.info("size " + a.size())
+		Logger.System.info("require(test2) " + a[1])
+
+		val b = HashMap<Int, Int>()
+		b.put(0, 123456789)
+
+		Logger.System.info("size " + b.size())
+		Logger.System.info("require(123456789) " + b[0])
+		Logger.System.info("require(0) " + b[1])
+
+		val d = HashMap<Int, Int?>()
+		d.put(0, 123456789)
+
+		Logger.System.info("size " + d.size())
+		Logger.System.info("require(123456789) " + d[0])
+		Logger.System.info("require(null) " + d[1])
 	}
 }

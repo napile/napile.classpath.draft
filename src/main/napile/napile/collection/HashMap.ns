@@ -19,6 +19,7 @@ package napile.collection
 import napile.reflect.Class
 import napile.annotation.DefaultValue
 import napile.annotation.InheritImmutable
+import napile.util.TypeUtil
 
 /**
  * @author VISTALL
@@ -69,12 +70,7 @@ class HashMap<K, V> : Map<K, V>
 			index ++
 		}
 
-		val clazz = classOf(V)
-		val defaultAnnotation = clazz.findAnnotation<DefaultValue>()
-		if(defaultAnnotation != null)
-			return defaultAnnotation.value as V
-		else
-			throw UnsupportedOperationException("this is not implemented")
+		return TypeUtil.getDefaultValue()
 	}
 
 	override meth size() : Int = size
