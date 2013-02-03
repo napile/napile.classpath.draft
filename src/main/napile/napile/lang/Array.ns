@@ -2,11 +2,12 @@ package napile.lang
 
 import napile.collection.Iterator
 import napile.collection.Iterable
+import napile.collection.Sizeable
 import napile.reflect.Type
 import napile.annotation.InheritImmutable
 import napile.annotation.ImmutableTarget
-import napile.collection.Sizeable
 import napile.util.TypeUtil
+import napile.logging.Logger
 
 /**
  * @author VISTALL
@@ -19,10 +20,14 @@ final class Array<E> : Iterable<E> & Sizeable
 	{
 		init()
 
-		//val defaultValue : E = TypeUtil.getDefaultValue();
-		//var i = 0
-		//while(i < length)
-		//	set(i++, defaultValue)
+		// dont do anything if is empty array
+		if(length != 0)
+		{
+		//	val defaultValue : E = TypeUtil.getDefaultValue();
+		//	var i = 0
+		//	while(i < length)
+		//		set(i++, defaultValue)
+		}
 	}
 
 	override meth size() : Int = length
@@ -30,9 +35,25 @@ final class Array<E> : Iterable<E> & Sizeable
 	native meth init()
 
 	@ImmutableTarget
-	native meth set(val index : Int, val value : E) : this
+	meth set(val index : Int, val value : E) : this
+	{
+		if(index < 0 || index >= length)
+			throw ArrayIndexOutOfBoundsException(index.toString());
 
-	native meth get(val index : Int) : E
+		return set0(index, value)
+	}
+
+	local native meth set0(val index : Int, val value : E) : this
+
+	meth get(val index : Int) : E
+	{
+		if(index < 0 || index >= length)
+			throw ArrayIndexOutOfBoundsException(index.toString());
+
+		return get0(index)
+	}
+
+	local native meth get0(val index : Int) : E
 
 	override meth iterator() : @InheritImmutable Iterator<E> = ArrayIterator<E>(this)
 
