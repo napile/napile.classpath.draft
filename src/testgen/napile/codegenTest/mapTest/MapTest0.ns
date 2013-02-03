@@ -40,6 +40,13 @@ class MapTest0
 		Logger.System.info("require(123456789) " + b[0])
 		Logger.System.info("require(0) " + b[1])
 
+	/*	val c = HashMap<Int, @DefaultValue(-1) Int>()
+		c.put(0, 123456789)
+
+		Logger.System.info("size " + c.size())
+		Logger.System.info("require(123456789) " + c[0])
+		Logger.System.info("require(-1) " + c[1])     */
+
 		val d = HashMap<Int, Int?>()
 		d.put(0, 123456789)
 

@@ -13,6 +13,6 @@
 	</extension-points>
 
 	<extensions for-id="napile.lang">
-		<loggingHandler id="System" impl="napile.logging.handlers.ConsoleLoggingHandler" />
+		<loggingHandler id="System" impl="napile.logging.impl.handlers.ConsoleLoggingHandler" />
 	</extensions>
 </module>
