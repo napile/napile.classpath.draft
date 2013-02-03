@@ -1,8 +1,11 @@
 package napile.lang
 
+import napile.annotation.DefaultValue
+
 /**
  * @author VISTALL
  */
+@DefaultValue('\u0000')
 final class Char : Number
 {
 	local this()

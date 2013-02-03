@@ -23,10 +23,9 @@ final class Array<E> : Iterable<E> & Sizeable
 		// dont do anything if is empty array
 		if(length != 0)
 		{
-		//	val defaultValue : E = TypeUtil.getDefaultValue();
-		//	var i = 0
-		//	while(i < length)
-		//		set(i++, defaultValue)
+			//val defaultValue : E = TypeUtil.getDefaultValue();
+			//for(c in 0..length)
+			//	set(c, defaultValue)
 		}
 	}
 
