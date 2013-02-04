@@ -14,16 +14,20 @@
  * limitations under the License.
  */
 
-package napile.testing
+package codegenTest.defaultValueTest
 
-import napile.annotation.Annotation
+import napile.annotation.DefaultValue
 
 /~
  ~ Authors
  ~ * VISTALL
  ~/
-@Annotation
-final class Test
+@DefaultValue(DefaultObject("nulled"))
+class DefaultObject
 {
-	this()
+	val toString : String
+
+	this(toString)
+
+	override meth toString() : String = toString
 }

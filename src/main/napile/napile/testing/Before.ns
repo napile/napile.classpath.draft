@@ -23,7 +23,7 @@ import napile.annotation.Annotation
  ~ * VISTALL
  ~/
 @Annotation
-final class Test
+final class Before
 {
 	this()
 }

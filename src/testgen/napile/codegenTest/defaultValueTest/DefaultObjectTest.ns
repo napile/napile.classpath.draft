@@ -14,16 +14,20 @@
  * limitations under the License.
  */
 
-package napile.testing
+package codegenTest.defaultValueTest
 
-import napile.annotation.Annotation
+import napile.logging.Logger
 
 /~
  ~ Authors
  ~ * VISTALL
  ~/
-@Annotation
-final class Test
+class DefaultObjectTest
 {
-	this()
+	static meth main(val arg : Array<String>)
+	{
+		val array = Array<DefaultObject>(1)
+
+		Logger.System.info(array[0])
+	}
 }

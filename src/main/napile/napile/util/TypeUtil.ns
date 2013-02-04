@@ -24,13 +24,24 @@ import napile.reflect.Type
  ~/
 util class TypeUtil
 {
-	meth getDefaultValue<E>() : E
+	meth getDefaultValue<E>(val throwIfNotFound : Bool) : E
 	{
 		val type = typeOf(E)
 		if(type.nullable)
-			return getNullAsNotNull<E>()
+			return getNullAsNotNull()
 		else
-			return type.defaultValue
+		{
+			val def = type.defaultValue
+			if(def == null)
+			{
+				if(throwIfNotFound)
+					throw IllegalArgumentException("cant find default value on type " + type)
+				else
+					return getInvalidNotNull()
+			}
+			else
+				return def
+		}
 	}
 
 	/~
@@ -38,4 +49,6 @@ util class TypeUtil
 	 ~ This is a hack to use null - for return if type constructor is type parameter
 	 ~/
 	local native meth getNullAsNotNull<E>() : E
+
+	local native meth getInvalidNotNull<E>() : E
 }

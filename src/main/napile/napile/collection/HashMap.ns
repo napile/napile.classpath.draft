@@ -70,7 +70,7 @@ class HashMap<K, V> : Map<K, V>
 			index ++
 		}
 
-		return TypeUtil.getDefaultValue()
+		return TypeUtil.getDefaultValue(true)
 	}
 
 	override meth size() : Int = size

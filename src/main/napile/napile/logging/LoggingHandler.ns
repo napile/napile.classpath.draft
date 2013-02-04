@@ -16,6 +16,8 @@
 
 package napile.logging
 
+import napile.annotation.DefaultValue
+
 /**
  * @author VISTALL
  */

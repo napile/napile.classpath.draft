@@ -14,16 +14,17 @@
  * limitations under the License.
  */
 
-package napile.testing
-
-import napile.annotation.Annotation
+package napile.lang
 
 /~
  ~ Authors
  ~ * VISTALL
  ~/
-@Annotation
-final class Test
+final class Invalid
 {
-	this()
+	local static val INSTANCE : Invalid = Invalid()
+
+	local this()
+
+	override meth toString() : String = "invalid"
 }

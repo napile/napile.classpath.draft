@@ -14,16 +14,15 @@
  * limitations under the License.
  */
 
-package napile.testing
-
-import napile.annotation.Annotation
+package napile.lang
 
 /~
+ ~ This class is present - anonym context of method in memory
+ ~
  ~ Authors
  ~ * VISTALL
  ~/
-@Annotation
-final class Test
+class AnonymContext
 {
-	this()
+	local this()
 }
