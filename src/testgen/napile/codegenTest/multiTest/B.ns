@@ -1,11 +1,11 @@
-package codegenTest.multi
+package codegenTest.multiTest
 
 import napile.logging.Logger
 
 /**
  * @author VISTALL
  */
-class A
+class B
 {
 	this(val a : String)
 	{

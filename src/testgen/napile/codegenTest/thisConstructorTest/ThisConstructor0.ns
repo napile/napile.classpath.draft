@@ -1,18 +1,18 @@
-package codegenTest
+package codegenTest.thisConstructorTest
 
 import napile.logging.Logger
 
 /**
  * Created with IntelliJ IDEA.
  * User: VISTALL
- * Date: 20.09.12
- * Time: 14:54
+ * Date: 01.11.12
+ * Time: 13:44
  * To change this template use File | Settings | File Templates.
  */
-class HelloWorldTest
+class ThisConstructor0
 {
-	static meth main(val arg : Array<String>)
+	this(val a : String)
 	{
-		Logger.System.info("Hello world!!!");
+		Logger.System.info("ThisConstructor0")
 	}
 }

@@ -1,6 +1,4 @@
-package codegenTest.bitOperators
-
-import codegenTest.bitOperators.Operators.assertEquals
+package codegenTest.bitOperatorTest
 
 /**
  * @author VISTALL

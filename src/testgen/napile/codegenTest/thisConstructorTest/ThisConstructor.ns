@@ -1,4 +1,4 @@
-package codegenTest.thisConstructor
+package codegenTest.thisConstructorTest
 
 import napile.logging.Logger
 

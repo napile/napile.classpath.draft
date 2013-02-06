@@ -1,4 +1,4 @@
-package codegenTest.multi
+package codegenTest.multiTest
 
 import napile.logging.Logger
 
