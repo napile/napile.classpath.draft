@@ -10,7 +10,7 @@ final class StringBuilder
 
 	this()
 
-	meth plus(val value : Any) : this
+	meth plus(val value : Any?) : this
 	{
 		var str = value.toString()
 

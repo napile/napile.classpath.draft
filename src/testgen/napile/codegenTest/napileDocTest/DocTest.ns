@@ -1,4 +1,4 @@
-package codegenTest.napileDoc
+package codegenTest.napileDocTest
 
 /~
  ~ ## Header
@@ -16,4 +16,19 @@ package codegenTest.napileDoc
  ~/
 class DocTest
 {
+	/~
+	 ~ This is test method
+	 ~
+	 ~ Authors
+	 ~ * VISTALL
+	 ~/
+	meth test()
+	{
+
+	}
+
+	meth test2()
+	{
+		test()
+	}
 }

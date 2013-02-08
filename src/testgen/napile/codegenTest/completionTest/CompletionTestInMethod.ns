@@ -10,7 +10,7 @@ class CompletionTestInMethod
 
 	}
 
-	static meth a(val a : Int)
+	static meth a<T>(val a : Int)
 	{
 
 	}
