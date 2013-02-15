@@ -31,7 +31,7 @@ class Exception
 		for(i in stack)
 		{
 			b += "\tat "
-			b += i.name
+			b += i
 			b += "\n"
 		}
 	}

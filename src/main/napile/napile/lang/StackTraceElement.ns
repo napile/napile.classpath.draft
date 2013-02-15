@@ -1,11 +1,36 @@
 package napile.lang
 
-/**
- * @author VISTALL
- */
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
 class StackTraceElement
 {
-	val name : String
+	val className : String
 
-	this(name)
+	val methodName : String
+
+	val fileName : String
+
+	val line : Int
+
+	val column : Int
+
+	this(className, methodName, fileName, line, column)
+
+	override meth toString() : String
+	{
+		val b = StringBuilder()
+		b += className
+		b += "."
+		b += methodName
+		b += "("
+		b += fileName
+		b += "@"
+		b += line
+		b += ":"
+		b += column
+		b += ")"
+		return b.toString()
+	}
 }
