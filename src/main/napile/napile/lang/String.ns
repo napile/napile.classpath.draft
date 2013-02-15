@@ -1,27 +1,32 @@
 package napile.lang
 
 import napile.annotation.DefaultValue
+import napile.collection.Sizeable
+import napile.annotation.Immutable
 
-/**
- * @author VISTALL
- */
+/~
+ ~ Authors
+ ~  * VISTALL
+ ~/
 @DefaultValue("")
-final class String
+final class String : Sizeable
 {
-	local val array : Array<Char>
+	local val array : @Immutable Array<Char>
 	local val count : Int
 	local val offset : Int
 
-	this(val oldArray : Array<Char>)
+	this(val oldArray : @Immutable Array<Char>)
 	{
 		count = oldArray.length
 		offset = 0
-		array = oldArray.clone()
+		array = oldArray
 	}
 
-	this(val oldArray : Array<Char>, offset, count)
+	this(array, offset, count)
+
+	meth getChars(val srcOffset : Int, val srcEnd : Int, val desc : Array<Char>, val descOffset : Int)
 	{
-		array = ArrayUtil.copyOfRange(oldArray, offset, offset + count);
+		ArrayUtil.copy(array, offset + srcOffset, desc, descOffset, srcEnd - srcOffset)
 	}
 
 	meth toArray() : Array<Char> = ArrayUtil.copyOfRange(array, offset, offset + count)
@@ -44,15 +49,17 @@ final class String
 
 	meth indexOf(val str : String, val fromIndex : Int) : Int = indexOf(array, offset, count, str.array, str.offset, str.count, fromIndex)
 
-	meth contains(val s : String) : Bool = indexOf(s.toString()) > -1;
+	meth contains(val s : String) : Bool = indexOf(s) > -1;
 
 	meth plus(val a : Any?) : String
 	{
 		var c = StringBuilder();
-		c += toString()
-		c += a.toString()
+		c += this
+		c += a
 		return c.toString()
 	}
+
+	override meth size() : Int = count
 
 	override meth equals(val o : Any?) : Bool
 	{

@@ -1,0 +1,13 @@
+package codegenTest.recursiveTest
+
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
+class RecursiveTest
+{
+	static meth a()
+	{
+		a()
+	}
+}

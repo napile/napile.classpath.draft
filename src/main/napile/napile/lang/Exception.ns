@@ -1,4 +1,5 @@
 package napile.lang
+
 import napile.logging.Logger
 
 /**
@@ -28,7 +29,11 @@ class Exception
 
 		b += "\n"
 		for(i in stack)
-			b += "\tat " + i.name + "\n"
+		{
+			b += "\tat "
+			b += i.name
+			b += "\n"
+		}
 	}
 
 	meth printStackTrace()

@@ -1,0 +1,15 @@
+package codegenTest.rombInheritTest
+
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
+class A
+{
+	var a : String
+
+	this()
+
+	//meth a()
+	//{}
+}

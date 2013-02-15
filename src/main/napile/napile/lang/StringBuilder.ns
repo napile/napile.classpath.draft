@@ -12,17 +12,13 @@ final class StringBuilder
 
 	meth plus(val value : Any?) : this
 	{
-		var str = value.toString()
+		var str = if(value is String) value as String else value.toString()
 
-		var arrayOfString = str.toArray();
-
-		var newCount = arrayOfString.length + count
+		var newCount = str.size() + count
 		if(newCount > array.length)
 			expandCapacity(newCount)
 
-		var i = 0;
-		while (i < arrayOfString.length)
-			array[count ++] = arrayOfString[i++];
+		str.getChars(0, str.size(), array, count)
 
 		count = newCount;
 
