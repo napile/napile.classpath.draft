@@ -1,24 +1,27 @@
 <project name="napile-lang" default="dist">
 	<target name="dist">
-		<delete dir="build/classes/" />
-		<mkdir dir="build/classes/" />
-		<napilec srcdir="src/main/napile" outdir="build/classes" />
+		<delete dir="build/napile.lang/" />
+		<delete dir="build/napile.lang.nzip" />
+
+		<mkdir dir="build/napile.lang/" />
+
+		<napilec srcdir="src/main/napile" outdir="build/napile.lang" />
 
 		<nzip destfile="build/napile.lang.nzip" moduledir="src/main/napile">
-			<fileset dir="build/classes/" />
+			<fileset dir="build/napile.lang/" />
 		</nzip>
 	</target>
 
 	<target name="dist-with-testget">
-		<delete dir="build/tests/" />
+		<delete dir="build/codegenTest/" />
+		<delete dir="build/codegenTest.nzip" />
 
-		<mkdir dir="build/tests/" />
-		<mkdir dir="build/tests/codegenTest" />
+		<mkdir dir="build/codegenTest/" />
 
-		<napilec srcdir="src/testgen/napile:src/main/napile" outdir="build/tests" />
+		<napilec srcdir="src/testgen/napile:src/main/napile" outdir="build/codegenTest" />
 
-		<nzip destfile="build/codegenTest.nzip" moduledir="src/main/napile">
-			<fileset dir="build/tests/" />
+		<nzip destfile="build/codegenTest.nzip" moduledir="src/testgen/napile">
+			<fileset dir="build/codegenTest/" />
 		</nzip>
 	</target>
 </project>

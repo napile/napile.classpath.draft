@@ -1,9 +1,0 @@
-package linkingMethodTest
-
-/**
- * @author VISTALL
- */
-class MethodInClass
-{
-	static meth target(val v : napile.lang.Int) : Int = v
-}

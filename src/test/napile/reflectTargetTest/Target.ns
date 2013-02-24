@@ -1,9 +1,0 @@
-package reflectTargetTest
-
-/**
- * @author VISTALL
- */
-class Target
-{
-	val name : Int = 1
-}

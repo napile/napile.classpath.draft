@@ -22,4 +22,6 @@ package napile.collection
 abstract class Sizeable
 {
 	meth size() : Int
+
+	meth isEmpty() : Bool = size() == 0
 }

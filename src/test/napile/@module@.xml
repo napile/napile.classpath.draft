@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<module>
-	<id>codegen.tests</id>
-	<name>@name@</name>
-	<build-by>@build-by@</build-by>
-	<version>1.0</version>
-</module>

@@ -7,8 +7,6 @@ abstract class Collection<E> : Iterable<E> & Sizeable
 {
 	local val emptyArray = Array<E>(0)
 
-	meth isEmpty() : Bool = size() == 0
-
 	meth toArray() : Array<E>
 	{
 		if (isEmpty())
