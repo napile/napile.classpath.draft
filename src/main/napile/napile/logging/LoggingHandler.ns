@@ -21,9 +21,12 @@ import napile.annotation.DefaultValue
 /**
  * @author VISTALL
  */
-abstract class LoggingHandler
+class LoggingHandler
 {
 	this()
 
 	meth log(val message : LoggingMessage)
+	{
+		throw IllegalArgumentException("This method need be overriden")
+	}
 }
