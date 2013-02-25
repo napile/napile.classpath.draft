@@ -16,9 +16,10 @@
 
 package napile.ui
 
-/**
- * @author VISTALL
- */
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
 abstract class Color
 {
 	meth toRgbColor() : RgbColor

@@ -16,11 +16,15 @@
 
 package napile.ui
 
+import napile.ui.render.UiRender
+
 /~
  ~ Authors
  ~ * VISTALL
  ~/
-class RootPanel : BaseComponent
+abstract class Textable
 {
-	this() : BaseComponent()
+	var text : String?
+
+	this(text = null)
 }

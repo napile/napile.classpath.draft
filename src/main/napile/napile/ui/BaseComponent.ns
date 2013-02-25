@@ -16,11 +16,27 @@
 
 package napile.ui
 
+import napile.collection.ArrayList
+import napile.collection.List
+import napile.ui.render.UiRender
+
 /~
  ~ Authors
  ~ * VISTALL
  ~/
-class RootPanel : BaseComponent
+class BaseComponent : Component
 {
-	this() : BaseComponent()
+	local val members : List<Component> = ArrayList()
+
+	this() : Component()
+
+	override meth add(val c : Component)
+	{
+		members.add(c)
+	}
+
+	override heritable meth render(val render : UiRender)
+	{
+
+	}
 }

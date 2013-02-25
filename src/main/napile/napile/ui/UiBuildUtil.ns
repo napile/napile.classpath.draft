@@ -16,11 +16,26 @@
 
 package napile.ui
 
+import napile.annotation.Extension
+
 /~
  ~ Authors
  ~ * VISTALL
  ~/
-class RootPanel : BaseComponent
+util class UiBuildUtil
 {
-	this() : BaseComponent()
+	meth build<T(val text : String? = null) : Component>(val text : String, val builder : {(val v : T) -> Null}) : T
+	{
+		val t = T(text)
+
+		builder(t)
+
+		return t
+	}
+
+	@Extension
+	meth plus(val comp : Component, val member : Component)
+	{
+		comp.add(member)
+	}
 }

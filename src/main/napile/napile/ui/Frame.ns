@@ -20,7 +20,7 @@ package napile.ui
  ~ Authors
  ~ * VISTALL
  ~/
-class RootPanel : BaseComponent
+class Frame : BaseComponent & Textable
 {
-	this() : BaseComponent()
+	this(val text : String? = null) : BaseComponent() & Textable(text)
 }

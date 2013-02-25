@@ -16,9 +16,10 @@
 
 package napile.ui
 
-/**
- * @author VISTALL
- */
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
 class CmykColor : Color
 {
 	override meth toRgbColor(): RgbColor

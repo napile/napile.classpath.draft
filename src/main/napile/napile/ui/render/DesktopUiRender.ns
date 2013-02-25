@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package napile.ui
+package napile.ui.render
 
 /~
  ~ Authors
  ~ * VISTALL
  ~/
-class RootPanel : BaseComponent
+class DesktopUiRender : UiRender
 {
-	this() : BaseComponent()
+	this()
 }

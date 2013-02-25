@@ -1,10 +1,17 @@
 package napile.ui
 
-/**
- * @author VISTALL
- */
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
 class RgbColor : Color
 {
+	enum val RED : RgbColor(0xFF, 0x00, 0x00)
+
+	enum val GREEN : RgbColor(0x00, 0xFF, 0x00)
+
+	enum val BLUE : RgbColor(0x00, 0x00, 0xFF)
+
 	val red : Int
 	val green : Int
 	val blue : Int

@@ -24,11 +24,9 @@ import napile.util.listeners.ListenerHolder
  ~ Authors
  ~ * VISTALL
  ~/
-class Button : Component
+class Button : BaseComponent & Textable
 {
-	var text : String
-
 	val clickListener : ListenerHolder<ClickEvent> = ListenerHolder()
 
-	this(text = "")
+	this(val text : String? = null) : BaseComponent() & Textable(text)
 }

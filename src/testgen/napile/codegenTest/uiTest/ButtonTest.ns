@@ -19,6 +19,10 @@ package codegenTest.uiTest
 import napile.ui.Button
 import napile.logging.Logger
 
+import napile.ui.Frame
+import napile.ui.UiBuildUtil.plus
+import napile.ui.UiBuildUtil.build
+
 /~
  ~ Authors
  ~ * VISTALL
@@ -27,7 +31,14 @@ class ButtonTest
 {
 	static meth main(val arg : Array<String>)
 	{
-		val b = Button("ButtonText")
-		b.clickListener += {Logger.System.info("Click Handler")}
+		val frame = build<Frame>("FrameText")
+		{
+			value += build<Button>("ButtonText")
+			{
+				value.clickListener += {Logger.System.info("Click Handler")}
+			}
+		}
+
+		frame.visible = true
 	}
 }

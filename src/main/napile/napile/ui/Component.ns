@@ -16,10 +16,29 @@
 
 package napile.ui
 
+import napile.ui.render.UiRender
+
 /~
  ~ Authors
  ~ * VISTALL
  ~/
 abstract class Component
 {
+	var x : Int = 0
+
+	var y : Int = 0
+
+	var width : Int = 0
+
+	var height : Int = 0
+
+	var enabled : Bool = false
+
+	var visible : Bool = false
+
+	this()
+
+	meth add(val c : Component)
+
+	heritable meth render(val render : UiRender)
 }
