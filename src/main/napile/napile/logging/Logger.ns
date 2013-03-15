@@ -19,20 +19,29 @@ package napile.logging
 import napile.reflect.Class
 import napile.logging.impl.LoggerImpl
 import napile.module.extension.ExtensionPointName
-import napile.module.extension.descriptors.SimpleDescriptorWithId
+import napile.module.extension.descriptors.SimpleFactoryExtensionWithId
+import napile.collection.IterableUtil.select
 
 /**
  * @author VISTALL
  */
 abstract class Logger
 {
-	static val EP_NAME : ExtensionPointName<SimpleDescriptorWithId<LoggingHandler>> = ExtensionPointName("napile.lang", "logger")
+	static val EP_NAME : ExtensionPointName<SimpleFactoryExtensionWithId<Logger>> = ExtensionPointName("napile.lang", "logger")
 
 	static val System : Logger = Logger.getLogger("System");
 
 	static meth getLogger(val name : String) : Logger
 	{
-		//TODO [VISTALL] make better
+		// select extension by name
+		val extension = EP_NAME.getValues().select{value.id == name}
+
+		if(extension != null)
+		{
+			return extension.create()
+		}
+
+		//TODO [VISTALL] is no extension get by '*'
 		return LoggerImpl(name)
 	}
 

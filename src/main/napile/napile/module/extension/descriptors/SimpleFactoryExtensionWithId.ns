@@ -14,20 +14,18 @@
  * limitations under the License.
  */
 
-package napile.logging
+package napile.module.extension.descriptors
 
-import napile.annotation.DefaultValue
-import napile.module.extension.ExtensionPointName
-import napile.module.extension.descriptors.SimpleFactoryExtensionWithId
+import xml.annotation.DomAttribute
 
-/**
- * @author VISTALL
- */
-abstract class LoggingHandler
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
+class SimpleFactoryExtensionWithId<T()> : SimpleFactoryExtension<T>
 {
-	static val EP_NAME : ExtensionPointName<SimpleFactoryExtensionWithId<LoggingHandler>> = ExtensionPointName("napile.lang", "loggingHandler")
+	@DomAttribute("id")
+	val id : String = ""
 
-	this()
-
-	meth log(val message : LoggingMessage)
+	this() : SimpleFactoryExtension<T>()
 }

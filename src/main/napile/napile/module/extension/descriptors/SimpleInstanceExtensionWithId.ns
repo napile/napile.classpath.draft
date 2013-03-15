@@ -16,20 +16,16 @@
 
 package napile.module.extension.descriptors
 
-import napile.module.extension.ExtensionPointName
+import xml.annotation.DomAttribute
 
 /~
  ~ Authors
  ~ * VISTALL
  ~/
-class SimpleDescriptor<T()>
+class SimpleInstanceExtensionWithId<T()> : SimpleInstanceExtension<T>
 {
-	local val impl : T = T()
+	@DomAttribute("id")
+	val id : String = ""
 
-	this()
-
-	meth getImpl<E()>() : E
-	{
-		return impl as E
-	}
+	this() : SimpleInstanceExtension<T>()
 }

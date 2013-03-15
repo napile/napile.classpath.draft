@@ -7,10 +7,10 @@
 	<version>1.0</version>
 
 	<extension-points>
-		<extension-point name="loggingHandler" descriptor="napile.module.extension.descriptors.SimpleDescriptorWithId">
+		<extension-point name="loggingHandler" descriptor="napile.module.extension.descriptors.SimpleFactoryExtensionWithId">
 			<ref-attribute-to-type-parameter attribute="impl" type-parameter="T" />
 		</extension-point>
-		<extension-point name="logger" descriptor="napile.module.extension.descriptors.SimpleDescriptorWithId">
+		<extension-point name="logger" descriptor="napile.module.extension.descriptors.SimpleFactoryExtensionWithId">
 			<ref-attribute-to-type-parameter attribute="impl" type-parameter="T" />
 		</extension-point>
 	</extension-points>

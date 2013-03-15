@@ -16,16 +16,18 @@
 
 package napile.module.extension.descriptors
 
-import xml.annotation.DomAttribute
+import napile.module.extension.ExtensionPointName
 
 /~
+ ~ This is simple extension - that have one variable - instance of `T`
+ ~ Diff between `SimpleFactoryExtension` - it handle singleton of `T`
+ ~
  ~ Authors
  ~ * VISTALL
  ~/
-class SimpleDescriptorWithId<T()> : SimpleDescriptor<T>
+class SimpleInstanceExtension<T()>
 {
-	@DomAttribute("id")
-	val id : String = ""
+	val impl : T = T()
 
-	this() : SimpleDescriptor<T>()
+	this()
 }

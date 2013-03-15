@@ -16,6 +16,8 @@
 
 package napile.module.extension
 
+import napile.annotation.Immutable
+
 /**
  * @author VISTALL
  */
@@ -25,4 +27,9 @@ class ExtensionPointName<T>
 	val name : String
 
 	this(id, name)
+
+	meth getValues() : @Immutable Array<T>
+	{
+		return Array<T>(0) //TODO [VISTALL]
+	}
 }
