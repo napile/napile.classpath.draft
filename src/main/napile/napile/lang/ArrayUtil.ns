@@ -1,6 +1,8 @@
 package napile.lang
 
 import napile.annotation.Extension
+import napile.util.MathUtil
+
 /**
  * @author VISTALL
  */
@@ -10,7 +12,7 @@ util class ArrayUtil
 	meth copyOf<E>(val oldArray : Array<E>, val newSize : Int) : Array<E>
 	{
 		var c1 = Array<E>(newSize)
-		copy(oldArray, 0, c1, 0, Math.min(oldArray.length, newSize));
+		copy(oldArray, 0, c1, 0, MathUtil.min(oldArray.length, newSize));
 		return c1
 	}
 
