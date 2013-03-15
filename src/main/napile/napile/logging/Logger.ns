@@ -18,12 +18,16 @@ package napile.logging
 
 import napile.reflect.Class
 import napile.logging.impl.LoggerImpl
+import napile.module.extension.ExtensionPointName
+import napile.module.extension.descriptors.SimpleDescriptorWithId
 
 /**
  * @author VISTALL
  */
 abstract class Logger
 {
+	static val EP_NAME : ExtensionPointName<SimpleDescriptorWithId<LoggingHandler>> = ExtensionPointName("napile.lang", "logger")
+
 	static val System : Logger = Logger.getLogger("System");
 
 	static meth getLogger(val name : String) : Logger
@@ -33,6 +37,8 @@ abstract class Logger
 	}
 
 	static meth getLogger(val clazz : Class<Any?>) : Logger = getLogger(clazz.name)
+
+	this()
 
 	meth info(val message : Any? = null, val exception : Exception? = null) : Null = log(LoggingLevel.INFO, message, exception)
 

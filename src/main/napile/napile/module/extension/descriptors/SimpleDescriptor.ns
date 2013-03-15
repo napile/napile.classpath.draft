@@ -14,20 +14,22 @@
  * limitations under the License.
  */
 
-package napile.logging
+package napile.module.extension.descriptors
 
-import napile.annotation.DefaultValue
 import napile.module.extension.ExtensionPointName
-import napile.module.extension.descriptors.SimpleDescriptorWithId
 
-/**
- * @author VISTALL
- */
-abstract class LoggingHandler
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
+class SimpleDescriptor<T()>
 {
-	static val EP_NAME : ExtensionPointName<SimpleDescriptorWithId<LoggingHandler>> = ExtensionPointName("napile.lang", "loggingHandler")
+	local val impl : T = T()
 
 	this()
 
-	meth log(val message : LoggingMessage)
+	meth getImpl<E()>() : E
+	{
+		return impl as E
+	}
 }
