@@ -1,0 +1,17 @@
+package codegenTest.stringEscapeTest
+
+import napile.logging.Logger
+
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
+class StringEscapeTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		val str = "\n \t"
+		val char = '\0'
+		Logger.System.info(char)
+	}
+}

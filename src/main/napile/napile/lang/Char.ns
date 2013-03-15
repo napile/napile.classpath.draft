@@ -5,7 +5,7 @@ import napile.annotation.DefaultValue
 /**
  * @author VISTALL
  */
-//@DefaultValue('\u0000')
+@DefaultValue('\0')
 final class Char : Number
 {
 	local this()
@@ -23,4 +23,6 @@ final class Char : Number
 	native override meth toDouble() : Double
 
 	override native meth equals(val o : Any?) : Bool
+
+	override native meth toString() : String
 }

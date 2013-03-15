@@ -12,19 +12,23 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
-*/
+ */
 
-package napile.ui
+package codegenTest.colorTest
 
-import napile.util.listeners.ListenerHolder
+import napile.ui.RgbColor
+import napile.collection.ArrayList
 
 /~
  ~ Authors
  ~ * VISTALL
  ~/
-class Button : BaseComponent & Textable
+class Test
 {
-	val clickListener : ListenerHolder<ClickEvent> = ListenerHolder()
+	static val BLUE : RgbColor = RgbColor(0x00, 0xFF, 0x00)
 
-	this(val text : String? = null) : BaseComponent() & Textable(text)
+	meth a()
+	{
+
+	}
 }

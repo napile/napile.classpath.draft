@@ -3,9 +3,9 @@ package napile.lang
 import napile.reflect.Class
 import napile.reflect.Type
 
-/**
- * @author VISTALL
- */
+/~
+ ~ This class is parent of all classes.
+ ~/
 class Any
 {
 	static meth synchronized(val obj : Any?, val fun : {})

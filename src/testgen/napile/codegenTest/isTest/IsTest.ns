@@ -30,6 +30,10 @@ class IsTest
 		if (target is Any)
 			Logger.System.info("Array<Int> is Any")
 
+		val a : Any = Array<String>(10)
+		if(a is Array<String>)
+		{}
+
 		//if (target !is Int)
 		//	Logger.System.info("Array<Int> !is Int")
 	}

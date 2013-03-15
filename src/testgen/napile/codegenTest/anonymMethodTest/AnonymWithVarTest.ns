@@ -12,19 +12,27 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
-*/
+ */
 
-package napile.ui
+package codegenTest.anonymMethodTest
 
-import napile.util.listeners.ListenerHolder
+import napile.logging.Logger
 
 /~
  ~ Authors
  ~ * VISTALL
  ~/
-class Button : BaseComponent & Textable
+class AnonymWithVarTest
 {
-	val clickListener : ListenerHolder<ClickEvent> = ListenerHolder()
+	static meth main(val arg : Array<String>)
+	{
+		val a : {(val a : Int) -> String} =
+		{
+			val d : {(val c : Int) -> Int} = {value + 1}
 
-	this(val text : String? = null) : BaseComponent() & Textable(text)
+			d(value).toString()
+		}
+
+		Logger.System.info(a(1))
+	}
 }
