@@ -41,7 +41,7 @@ abstract class Logger
 			return extension.create()
 		}
 
-		//TODO [VISTALL] is no extension get by '*'
+		//TODO [VISTALL] if no extension get by '*'
 		return LoggerImpl(name)
 	}
 
