@@ -25,17 +25,17 @@ import napile.asm.members.typeConstructor.AsmClassType
  ~ Authors
  ~ * VISTALL
  ~/
-class AsmUtil
+util class AsmUtil
 {
 	/~
 	 ~ Return : asm type equivalent of `T` type
 	 ~/
-	static meth toAsmType<T>() : AsmType = toAsmType(typeOf(T))
+	meth toAsmType<T>() : AsmType = toAsmType(typeOf(T))
 
 	/~
 	 ~ Return : asm type equivalent of `type`
 	 ~/
-	static meth toAsmType(val type : Type<Any?>) : AsmType
+	meth toAsmType(val type : Type<Any?>) : AsmType
 	{
 		val parameters = Array<AsmType>(type.parameters.size())
 
@@ -44,6 +44,7 @@ class AsmUtil
 			parameters[i ++] = toAsmType(c)
 
 		val annotations = Array<AsmAnnotation>(0)
+		//TODO [VISTALL] no annotations - currently
 		return AsmType(annotations, AsmClassType(type.constructorClass.name), parameters, type.nullable)
 	}
 }
