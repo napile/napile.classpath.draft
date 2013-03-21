@@ -1,0 +1,10 @@
+package codegenTest.traitTest
+
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
+class TraitedClass
+{
+	var A : Int = 1
+}
