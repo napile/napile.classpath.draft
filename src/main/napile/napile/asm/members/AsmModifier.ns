@@ -1,0 +1,28 @@
+package napile.asm.members
+
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
+final class AsmModifier
+{
+	static val LOCAL : AsmModifier = AsmModifier()
+
+	static val HERITABLE : AsmModifier = AsmModifier()
+
+	static val COVERED : AsmModifier = AsmModifier()
+
+	static val MUTABLE : AsmModifier = AsmModifier()
+
+	static val STATIC : AsmModifier = AsmModifier()
+
+	static val ABSTRACT : AsmModifier = AsmModifier()
+
+	static val FINAL : AsmModifier = AsmModifier()
+
+	static val NATIVE : AsmModifier = AsmModifier()
+
+	static val UTIL : AsmModifier = AsmModifier()
+
+	local this()
+}

@@ -1,22 +1,64 @@
 package napile.asm.members
 
-import xml.annotation.DomElement
-import napile.reflect.Modifier
-import xml.annotation.DomAttribute
-import napile.annotation.LazyType
-import napile.annotation.Lazy
+import napile.collection.List
+import napile.collection.IterableUtil.select
+import napile.collection.ArrayList
+import napile.annotation.InheritImmutable
+import napile.annotation.VarArgs
 
-/**
- * @author VISTALL
- */
-@DomElement("class")
-class AsmClass
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
+final class AsmClass : AsmMember & AsmSuperTypesOwner
 {
-	@DomAttribute("name")
-	@Lazy(LazyType.INJECTION)
-	lazy val name : String = "this is need rework"
+	val members : List<AsmMember>
+	{
+		@InheritImmutable
+		get
+	} = ArrayList<AsmMember>()
 
-	this()
+	this(val name : String) : AsmMember(name) & AsmSuperTypesOwner()
 
-	this(name)
+	/~
+	 ~ Usage
+	 ~ 	val myVariable = findMemberByName<AsmVariable>("test")
+	 ~/
+	meth findMemberByName<T : AsmMember>(val name : String) : T?
+	{
+		return members.select { value is T && value.name == name } as? T
+	}
+
+	meth findMethod(val name : String, @VarArgs val parameterTypes : Array<AsmType>) : AsmMethod?
+	{
+		for(c in members)
+		{
+			if(c.name == name && c is AsmMethod)
+			{
+				val p = c.parameters
+				if(p.size() == parameterTypes.size())
+				{
+					val find = true
+
+					var i = 0
+					while(i < p.size())
+					{
+						if(p[i].type != parameterTypes[i])
+						{
+							find = false
+							break
+						}
+
+						i ++
+					}
+
+					if(find)
+					{
+						return c
+					}
+				}
+			}
+		}
+		return null
+	}
 }

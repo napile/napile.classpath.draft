@@ -14,12 +14,26 @@
  * limitations under the License.
  */
 
-package napile.asm.members
+package napile.asm.members.typeConstructor
+
+import napile.annotation.Immutable
+import napile.asm.members.AsmVariable
+import napile.annotation.InheritImmutable
+import napile.collection.List
+import napile.collection.ArrayList
+import napile.asm.members.AsmTypeConstructor
 
 /~
  ~ Authors
  ~ * VISTALL
  ~/
-final class AsmAnnotation
+final class AsmMultiType : AsmTypeConstructor
 {
+	val entries : List<AsmVariable>
+	{
+		@InheritImmutable
+		get
+	} = ArrayList<AsmVariable>()
+
+	this(entries)
 }

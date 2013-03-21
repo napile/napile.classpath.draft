@@ -20,6 +20,7 @@ package napile.asm.members
  ~ Authors
  ~ * VISTALL
  ~/
-final class AsmAnnotation
+final class AsmMethod : AsmMember & AsmCallParametersOwner
 {
+	this(val name : String) : AsmMember(name) & AsmCallParametersOwner()
 }

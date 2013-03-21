@@ -13,4 +13,31 @@ abstract class List<E> : Collection<E>
 	meth set(val index : Int, val e : E)
 
 	meth get(val index : Int) : E
+
+	override meth equals(val o : Any?) : Bool
+	{
+		if(o is List<Any>)
+		{
+			if(size() != o.size())
+			{
+				return false
+			}
+
+			var i = 0
+			while(i < size())
+			{
+				if(this[i] != o[i])
+				{
+					return false
+				}
+				i++
+			}
+
+			return true
+		}
+		else
+		{
+			return false
+		}
+	}
 }

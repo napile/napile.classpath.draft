@@ -3,10 +3,12 @@ package napile.reflect
 import napile.reflect.Class
 import napile.annotation.Immutable
 import napile.asm.members.AsmType
+import napile.annotation.Deprecated
 
 /**
  * @author VISTALL
  */
+@Deprecated
 final class Class<E> : Member
 {
 	/**

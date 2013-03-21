@@ -19,11 +19,11 @@ package napile.asm.members.typeConstructor
 import napile.asm.members.AsmTypeConstructor
 import napile.annotation.Equality
 
-/**
- * @author VISTALL
- * @date 10:58/17.01.13
- */
-class AsmClassType : AsmTypeConstructor
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
+final class AsmClassType : AsmTypeConstructor
 {
 	@Equality
 	val qualifiedName : String
@@ -32,10 +32,7 @@ class AsmClassType : AsmTypeConstructor
 
 	override meth equals(val o : Any?) : Bool
 	{
-		if(o is AsmClassType)
-			return qualifiedName == o.qualifiedName
-		else
-			return false
+		return if(o is AsmClassType) qualifiedName == o.qualifiedName else false
 	}
 
 	override meth toString() : String = qualifiedName

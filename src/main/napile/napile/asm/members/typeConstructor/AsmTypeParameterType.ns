@@ -19,10 +19,11 @@ package napile.asm.members.typeConstructor
 import napile.asm.members.AsmTypeConstructor
 import napile.annotation.Equality
 
-/**
- * @author VISTALL
- */
-class AsmTypeParameterType : AsmTypeConstructor
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
+final class AsmTypeParameterType : AsmTypeConstructor
 {
 	@Equality
 	val name : String

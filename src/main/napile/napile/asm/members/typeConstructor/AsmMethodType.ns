@@ -1,0 +1,14 @@
+package napile.asm.members.typeConstructor
+
+import napile.asm.members.AsmTypeConstructor
+import napile.asm.members.AsmType
+import napile.asm.members.AsmCallParametersOwner
+
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
+final class AsmMethodType : AsmTypeConstructor & AsmCallParametersOwner
+{
+	this() : AsmCallParametersOwner()
+}

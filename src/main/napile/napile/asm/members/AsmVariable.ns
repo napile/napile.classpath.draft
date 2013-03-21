@@ -16,10 +16,19 @@
 
 package napile.asm.members
 
+import napile.annotation.ImmutableTarget
+
 /~
  ~ Authors
  ~ * VISTALL
  ~/
-final class AsmAnnotation
+final class AsmVariable : AsmMember
 {
+	var type : AsmType
+	{
+		@ImmutableTarget
+		set
+	}
+
+	this(val name : String) : AsmMember(name)
 }

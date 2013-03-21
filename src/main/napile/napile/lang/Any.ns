@@ -2,6 +2,8 @@ package napile.lang
 
 import napile.reflect.Class
 import napile.reflect.Type
+import napile.asm.members.AsmClass
+import napile.annotation.Immutable
 
 /~
  ~ This class is parent of all classes.
@@ -19,9 +21,11 @@ class Any
 			throw AssertionError(message)
 	}
 
-	native meth getClass() : Class<this>
+	final native meth getClass() : Class<this>
 
-	native meth getType() : Type<this>
+	final native meth getClass2() : @Immutable AsmClass
+
+	final native meth getType() : Type<this>
 
 	native meth hashCode() : Int
 

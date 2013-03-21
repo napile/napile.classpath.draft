@@ -16,10 +16,10 @@
 
 package napile.asm.members
 
-/**
- * @author VISTALL
- * @date 10:46/17.01.13
- */
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
 abstract class AsmTypeConstructor
 {
 }

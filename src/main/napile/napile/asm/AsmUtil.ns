@@ -37,14 +37,13 @@ util class AsmUtil
 	 ~/
 	meth toAsmType(val type : Type<Any?>) : AsmType
 	{
-		val parameters = Array<AsmType>(type.parameters.size())
+		val asmType = AsmType(AsmClassType(type.constructorClass.name), type.nullable)
 
-		var i = 0
+		//TODO [VISTALL] annotations
+
 		for(c in type.parameters)
-			parameters[i ++] = toAsmType(c)
+			asmType.parameters.add(toAsmType(c))
 
-		val annotations = Array<AsmAnnotation>(0)
-		//TODO [VISTALL] no annotations - currently
-		return AsmType(annotations, AsmClassType(type.constructorClass.name), parameters, type.nullable)
+		return asmType
 	}
 }

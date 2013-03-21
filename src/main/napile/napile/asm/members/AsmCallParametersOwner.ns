@@ -16,10 +16,28 @@
 
 package napile.asm.members
 
+import napile.collection.ArrayList
+import napile.collection.List
+import napile.annotation.InheritImmutable
+import napile.annotation.ImmutableTarget
+
 /~
  ~ Authors
  ~ * VISTALL
  ~/
-final class AsmAnnotation
+class AsmCallParametersOwner
 {
+	val parameters : List<AsmCallParameter>
+	{
+		@InheritImmutable
+		get
+	} = ArrayList<AsmCallParameter>()
+
+	var returnType : AsmType
+	{
+		@ImmutableTarget
+		set
+	}
+
+	heritable this()
 }

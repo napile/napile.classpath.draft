@@ -16,10 +16,21 @@
 
 package napile.asm.members
 
+import napile.collection.List
+import napile.collection.ArrayList
+import napile.annotation.InheritImmutable
+
 /~
  ~ Authors
  ~ * VISTALL
  ~/
-final class AsmAnnotation
+class AsmSuperTypesOwner
 {
+	val superTypes : List<AsmType>
+	{
+		@InheritImmutable
+		get
+	} = ArrayList<AsmType>()
+
+	heritable this()
 }

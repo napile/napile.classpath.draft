@@ -16,10 +16,21 @@
 
 package napile.asm.members
 
+import napile.collection.ArrayList
+import napile.annotation.InheritImmutable
+import napile.collection.List
+
 /~
  ~ Authors
  ~ * VISTALL
  ~/
-final class AsmAnnotation
+class AsmModifiersOwner
 {
+	final val modifiers : List<AsmModifier>
+	{
+		@InheritImmutable
+		get
+	} = ArrayList<AsmModifier>()
+
+	heritable this()
 }

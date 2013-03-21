@@ -20,6 +20,11 @@ package napile.asm.members
  ~ Authors
  ~ * VISTALL
  ~/
-final class AsmAnnotation
+final class AsmConstructor : AsmMember & AsmCallParametersOwner
 {
+	static val INSTANCE_CONSTRUCTOR_NAME : String = "this"
+
+	static val STATIC_CONSTRUCTOR_NAME : String = "static"
+
+	this(val name : String) : AsmMember(name) & AsmCallParametersOwner()
 }

@@ -14,12 +14,15 @@
  * limitations under the License.
  */
 
-package napile.asm.members
+package codegenTest.reflectionTest
 
 /~
  ~ Authors
  ~ * VISTALL
  ~/
-final class AsmAnnotation
+class SuperTypeTest
 {
+	static meth main(val arg : Array<String>)
+	{
+	}
 }
