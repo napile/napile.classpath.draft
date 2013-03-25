@@ -1,0 +1,22 @@
+package codegenTest.annotationTest
+
+import napile.annotation.DefaultValue
+import napile.logging.Logger
+
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
+class TypeAnnotationsTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		var list : Array<Int> = Array<@DefaultValue(-1) Int>(5)
+
+		Logger.System.info(list[0])
+
+		list = Array<Int>(5)
+
+		Logger.System.info(list[0])
+	}
+}
