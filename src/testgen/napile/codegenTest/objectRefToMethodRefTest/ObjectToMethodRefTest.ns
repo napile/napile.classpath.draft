@@ -1,0 +1,18 @@
+package codegenTest.objectRefToMethodRefTest
+
+import napile.condition.CompareResult
+
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
+class ObjectToMethodRefTest
+{
+	static meth main(val arg : Array<String>)
+	{
+		val test = TestObject()
+
+		test.compareIt{(e) -> CompareResult.EQUAL}
+		//test.compareIt(1.toByte())
+	}
+}
