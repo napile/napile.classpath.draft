@@ -29,5 +29,8 @@ class IsTest
 
 		if (target is Any)
 			Logger.System.info("Array<Int> is Any")
+
+		if (target is Any?)
+			Logger.System.info("Array<Int> is Any?")
 	}
 }
