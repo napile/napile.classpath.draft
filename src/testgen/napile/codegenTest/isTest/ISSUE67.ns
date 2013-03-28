@@ -1,0 +1,15 @@
+package codegenTest.isTest
+
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
+class ISSUE67
+{
+	static meth main(val arg : Array<String>)
+	{
+		val a : Any = Array<String>(10)
+		if(a is Array<String>)
+		{}
+	}
+}

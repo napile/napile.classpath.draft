@@ -13,7 +13,7 @@ class IsTest
 {
 	static meth main(val arg : Array<String>)
 	{
-		var target = Array<Int>(0)
+		var target /*: Any*/ = Array<Int>(0)
 
 		if(target is Array<Int>)
 			Logger.System.info("Array<Int> is Array<Int>")
@@ -21,20 +21,13 @@ class IsTest
 		if(target is Array<Any>)
 			Logger.System.info("Array<Int> is Array<Any>")
 
-		//if(target is Array<Any?>)
-		//	Logger.System.info("Array<Int> is Array<Any?>")
+		if(target is Array<Any?>)
+			Logger.System.info("Array<Int> is Array<Any?>")
 
 		//if(target is Array<String>)
 		//	Logger.System.info("Array<Int> is Array<String>")
 
 		if (target is Any)
 			Logger.System.info("Array<Int> is Any")
-
-		val a : Any = Array<String>(10)
-		if(a is Array<String>)
-		{}
-
-		//if (target !is Int)
-		//	Logger.System.info("Array<Int> !is Int")
 	}
 }

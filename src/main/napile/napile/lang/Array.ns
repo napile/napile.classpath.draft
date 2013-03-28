@@ -57,4 +57,29 @@ final class Array<E> : Iterable<E> & Sizeable
 	override meth iterator() : @InheritImmutable Iterator<E> = ArrayIterator<E>(this)
 
 	override meth clone() : this = ArrayUtil.copyOfRange(this, 0, length)
+
+	override meth equals(val o : Any?) : Bool
+	{
+		if(o is Array<E>)
+		{
+			if(o.size() != size())
+			{
+				return false
+			}
+
+			for(i in 0..size())
+			{
+				if(o[i] != this[i])
+				{
+					return false
+				}
+			}
+
+			return true
+		}
+		else
+		{
+			return false
+		}
+	}
 }
