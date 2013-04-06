@@ -31,13 +31,8 @@ class ButtonTest
 {
 	static meth main(val arg : Array<String>)
 	{
-		val frame = build<Frame>("FrameText")
-		{
-			value += build<Button>("ButtonText")
-			{
-				value.clickListener += {Logger.System.info("Click Handler")}
-			}
-		}
+		val frame = Frame("MyTest")
+		frame.propertyChangeListener += {Logger.System.info("test")}
 
 		frame.visible = true
 	}

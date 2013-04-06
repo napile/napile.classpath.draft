@@ -14,21 +14,17 @@
  * limitations under the License.
  */
 
-package codegenTest.objectRefToMethodRefTest
-
-import napile.condition.CompareResult
-import napile.logging.Logger
+package napile.util.listeners
 
 /~
  ~ Authors
  ~ * VISTALL
  ~/
-class TestObject
+class VariableChangeEvent<T>
 {
-	this()
+	val name : String
+	val oldValue : T
+	val newValue : T
 
-	meth compareIt(val compareTo : {(val value : Byte) -> CompareResult})
-	{
-		Logger.System.info(compareTo(1.toByte()))
-	}
+	this(name, oldValue, newValue)
 }

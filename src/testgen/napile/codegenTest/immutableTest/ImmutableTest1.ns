@@ -18,13 +18,14 @@ package codegenTest.immutableTest
 
 import napile.annotation.Immutable
 import napile.collection.ArrayList
+import napile.collection.List
 
 /**
  * @author VISTALL
  */
 class ImmutableTest1
 {
-	static val list : @Immutable ArrayList<String> =  ArrayList<String>()
+	static val list : @Immutable List<String> =  ArrayList<String>()
 
 	static meth main(val arg : Array<String>)
 	{

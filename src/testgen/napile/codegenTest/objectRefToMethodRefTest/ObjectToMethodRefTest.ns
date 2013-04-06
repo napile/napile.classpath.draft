@@ -1,6 +1,7 @@
 package codegenTest.objectRefToMethodRefTest
 
 import napile.condition.CompareResult
+import napile.logging.Logger
 
 /~
  ~ Authors
@@ -8,11 +9,31 @@ import napile.condition.CompareResult
  ~/
 class ObjectToMethodRefTest
 {
+	val byte : Byte
+
+	this(byte)
+
+	meth testByte(val compareTo : {(val value : Byte) -> CompareResult})
+	{
+		Logger.System.info(compareTo(byte))
+	}
+
+	// -----------------------------------------------------------------
+
+	static meth myCompare(val value : Byte) : CompareResult
+	{
+		return 1.compareTo(value)
+	}
+
+	// -----------------------------------------------------------------
+
+
 	static meth main(val arg : Array<String>)
 	{
-		val test = TestObject()
+		val test = ObjectToMethodRefTest(1.toByte())
 
-		test.compareIt{(e) -> CompareResult.EQUAL}
-		//test.compareIt(1.toByte())
+		test.testByte{(e) -> 1.compareTo(e)}
+		test.testByte(#myCompare)
+		test.testByte(->> 1)
 	}
 }

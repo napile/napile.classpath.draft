@@ -1,0 +1,17 @@
+package codegenTest.thisConstructorTest
+
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
+class ISSUE44<A, B>
+{
+	this(val a : Int)
+
+	this() : this(1)
+
+	static meth main(var arg: Array<String>)
+	{
+		ISSUE44<Any, Any>()
+	}
+}

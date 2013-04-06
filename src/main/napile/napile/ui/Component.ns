@@ -17,6 +17,8 @@
 package napile.ui
 
 import napile.ui.render.UiRender
+import napile.util.listeners.VariableChangeEvent
+import napile.util.listeners.ListenerHolder
 
 /~
  ~ Authors
@@ -34,7 +36,19 @@ abstract class Component
 
 	var enabled : Bool = false
 
-	var visible : Bool = false
+	var visible : Bool
+	{
+		set
+		{
+			val old = value
+
+			value = newValue
+
+			propertyChangeListener.fire(VariableChangeEvent<Bool>("visible", old, newValue))
+		}
+	} = false
+
+	val propertyChangeListener : ListenerHolder<VariableChangeEvent<Any>> = ListenerHolder();
 
 	this()
 
