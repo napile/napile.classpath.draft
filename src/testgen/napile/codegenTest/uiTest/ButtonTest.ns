@@ -33,7 +33,6 @@ class ButtonTest
 	{
 		val frame = Frame("MyTest")
 		frame.propertyChangeListener += {Logger.System.info("test")}
-
 		frame.visible = true
 	}
 }
