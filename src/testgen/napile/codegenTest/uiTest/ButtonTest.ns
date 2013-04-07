@@ -32,7 +32,7 @@ class ButtonTest
 	static meth main(val arg : Array<String>)
 	{
 		val frame = Frame("MyTest")
-		frame.propertyChangeListener += {Logger.System.info("test")}
+		frame.variableChangeListener += {Logger.System.info(/:text var '#{value.name}' from '#{value.oldValue}' to '#{value.newValue}':/)}
 		frame.visible = true
 	}
 }

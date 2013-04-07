@@ -14,32 +14,18 @@
  * limitations under the License.
  */
 
-package napile.util.listeners
+package codegenTest.injectionTest
 
-import napile.collection.List
-import napile.collection.ArrayList
+import napile.logging.Logger
 
 /~
  ~ Authors
  ~ * VISTALL
  ~/
-final class ListenerHolder<E>
+class TextInjectionSimpleTest
 {
-	local val listeners : List<{(val e : E) -> Null}> = ArrayList()
-
-	this()
-
-	meth plus(val impl : {(val e : E) -> Null}) : this
+	static meth main(var arg: Array<String>)
 	{
-		listeners.add(impl)
-		return this
-	}
-
-	meth fire(val event : E)
-	{
-		for(l in listeners)
-		{
-			l(event)
-		}
+		Logger.System.info(/:text test fsdfdsfsdfsdfsdf:/)
 	}
 }

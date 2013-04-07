@@ -44,11 +44,11 @@ abstract class Component
 
 			value = newValue
 
-			propertyChangeListener.fire(VariableChangeEvent<Bool>("visible", old, newValue))
+			variableChangeListener.fire(VariableChangeEvent<Bool>("visible", old, newValue))
 		}
 	} = false
 
-	val propertyChangeListener : ListenerHolder<VariableChangeEvent<Any>> = ListenerHolder();
+	val variableChangeListener : ListenerHolder<VariableChangeEvent<Any>> = ListenerHolder();
 
 	this()
 

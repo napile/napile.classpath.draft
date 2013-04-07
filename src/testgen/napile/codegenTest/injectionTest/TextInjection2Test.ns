@@ -13,7 +13,7 @@ class TextInjection2Test
 {
 	static meth main(val arg : Array<String>)
 	{
-		var i : String =  /text/ {this call of method: #{callTo()}()}
+		var i : String =  /:text this call of method: #{callTo()}() :/
 
 		Logger.System.info(i)
 	}

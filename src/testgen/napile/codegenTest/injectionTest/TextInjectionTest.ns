@@ -16,9 +16,8 @@ class TextInjectionTest
 	static meth main(val arg : Array<String>)
 	{
 		var i : String =
-/text/
-{
-				Languages
+/:text
+Languages
 	1. XML = <xml att="1234" />
 	2. Java =
 			public class A
@@ -30,10 +29,10 @@ class TextInjectionTest
 			}
 	3. SQL = SELECT * WHERE `name` = 1 FROM tests
 
-	MY_VAR == #{MY_VAR}
+	MY_VAR == #{MY_VAR}   #{}
 
 	4. After MY_VAR
-}
+:/
 		Logger.System.info(i)
 	}
 }
