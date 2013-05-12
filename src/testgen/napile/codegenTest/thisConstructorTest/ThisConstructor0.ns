@@ -13,6 +13,6 @@ class ThisConstructor0
 {
 	this(val a : String)
 	{
-		Logger.System.info("ThisConstructor0")
+		Logger.System.info('ThisConstructor0')
 	}
 }

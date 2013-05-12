@@ -9,6 +9,6 @@ class My2
 {
 	meth test()
 	{
-		Logger.System.info("'test' from 'My2'")
+		Logger.System.info('\'test\' from \'My2\'')
 	}
 }

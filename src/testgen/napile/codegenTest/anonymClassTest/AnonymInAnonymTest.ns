@@ -35,7 +35,7 @@ class AnonymInAnonymTest
 			{
 				return anonym : Any
 				{
-					override meth toString() : String = "anonym in anonym"
+					override meth toString() : String = 'anonym in anonym'
 				}.toString()
 			}
 		}.toString()

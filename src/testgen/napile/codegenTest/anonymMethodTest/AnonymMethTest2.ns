@@ -9,7 +9,7 @@ class AnonymMethTest2
 {
 	this()
 	{
-		{(a : Int) -> Logger.System.info("test " + a)}(1)
+		{(a : Int) -> Logger.System.info('test ' + a)}(1)
 	}
 
 	static meth main(val arg : Array<String>)

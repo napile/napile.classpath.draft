@@ -26,9 +26,9 @@ class ArrayEqualTest
 {
 	static meth main(val arg : Array<String>)
 	{
-		val ar1 = arrayOf("test", "test2")
+		val ar1 = arrayOf('test', 'test2')
 
-		val ar2 = arrayOf("test", "test2")
+		val ar2 = arrayOf('test', 'test2')
 
 		Logger.System.info(ar1 == ar2)
 	}

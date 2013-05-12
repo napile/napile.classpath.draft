@@ -15,6 +15,6 @@ class SimpleEquals
 	{
 		var b = 1
 		if(b == 1)
-			Logger.System.info("test");
+			Logger.System.info('test');
 	}
 }

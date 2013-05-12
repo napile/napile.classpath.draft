@@ -22,17 +22,17 @@ class ArrayUtilTest
 		for (c in b)
 		{
 			NativeConsole.write(c)
-			NativeConsole.write("-")
+			NativeConsole.write('-')
 		}
 
-		Logger.System.info("")
-		Logger.System.info("After copyOfRange")
+		Logger.System.info('')
+		Logger.System.info('After copyOfRange')
 
 		var newArray = ArrayUtil.copyOfRange(b, 0, 5)
 		for (val c in newArray)
 		{
 			NativeConsole.write(c)
-			NativeConsole.write("-")
+			NativeConsole.write('-')
 		}
 	}
 }

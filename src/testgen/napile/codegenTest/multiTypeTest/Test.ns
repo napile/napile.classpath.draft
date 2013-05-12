@@ -11,15 +11,15 @@ class Test
 
 	static meth main(val arg : Array<String>)
 	{
-		ENTRY = ["Key", "Value"]
+		ENTRY = ['Key', 'Value']
 
-		Logger.System.info("key is " + ENTRY.key)
-		Logger.System.info("value is " + ENTRY.value)
+		Logger.System.info('key is ' + ENTRY.key)
+		Logger.System.info('value is ' + ENTRY.value)
 
-		ENTRY.key = "NewKey"
-		ENTRY.value = "NewValue"
+		ENTRY.key = 'NewKey'
+		ENTRY.value = 'NewValue'
 
-		Logger.System.info("key is " + ENTRY.key)
-		Logger.System.info("value is " + ENTRY.value)
+		Logger.System.info('key is ' + ENTRY.key)
+		Logger.System.info('value is ' + ENTRY.value)
 	}
 }

@@ -38,7 +38,7 @@ import napile.collection.Iterable
 
 		} */
 
-		val d : String = ""
+		val d : String = ''
 		if(d is String)
 		{
 

@@ -13,6 +13,6 @@ class HelloWorldTest
 {
 	static meth main(val arg : Array<String>)
 	{
-		Logger.System.info("Hello world!!!");
+		Logger.System.info('Hello world!!!');
 	}
 }

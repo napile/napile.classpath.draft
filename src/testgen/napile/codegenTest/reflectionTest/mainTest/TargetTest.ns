@@ -29,8 +29,8 @@ class TargetTest
 	{
 		val clazz = classOf(TargetMain)
 
-		val method = clazz.findStaticMethod("main", arrayOf(toAsmType<Array<String>>()))!!
+		val method = clazz.findStaticMethod('main', arrayOf(toAsmType<Array<String>>()))!!
 
-		method.invokeStatic(arrayOf("test"))
+		method.invokeStatic(arrayOf('test'))
 	}
 }

@@ -13,9 +13,9 @@ class WhenExpTest
 
 		when
 		{
-			i == 2 -> Logger.System.info("i == 2")
-			i == 1 -> Logger.System.info("i == 1")
-			else -> Logger.System.info("error")
+			i == 2 -> Logger.System.info('i == 2')
+			i == 1 -> Logger.System.info('i == 1')
+			else -> Logger.System.info('error')
 		}
 	}
 }

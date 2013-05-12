@@ -13,8 +13,8 @@ class WhenIsTest
 
 		when (i)
 		{
-			is Int -> Logger.System.info("i is Int")
-			else -> Logger.System.info("error")
+			is Int -> Logger.System.info('i is Int')
+			else -> Logger.System.info('error')
 		}
 	}
 }

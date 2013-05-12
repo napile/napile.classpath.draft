@@ -15,7 +15,7 @@ class TryCatchObject
 	{
 		try
 		{
-			throw Exception("TryCatchObject.throwMe")
+			throw Exception('TryCatchObject.throwMe')
 		}
 		catch(val e : Exception)
 		{

@@ -24,7 +24,7 @@ import napile.logging.Logger
  */
 class AnonymIteratorTest
 {
-	var insideVar : String = "Inside Var"
+	var insideVar : String = 'Inside Var'
 
 	this()
 

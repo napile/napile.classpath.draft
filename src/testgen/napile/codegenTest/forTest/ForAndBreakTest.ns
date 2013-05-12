@@ -21,6 +21,6 @@ class ForAndBreakTest
 			Logger.System.info(a.toString())
 		}
 
-		Logger.System.info("End");
+		Logger.System.info('End');
 	}
 }

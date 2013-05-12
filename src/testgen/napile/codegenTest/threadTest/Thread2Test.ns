@@ -36,7 +36,7 @@ class Thread2Test
 				break
 			else
 			{
-				Logger.System.info(i.toString() + " " + c)
+				Logger.System.info(i.toString() + ' ' + c)
 			}
 		}
 	}

@@ -17,7 +17,7 @@ class Macro1Test
 
 		a0()
 
-		Logger.System.info("'main' called")
+		Logger.System.info('\'main\' called')
 	}
 
 
@@ -28,6 +28,6 @@ class Macro1Test
 
 		a++
 
-		Logger.System.info("a == " + a)
+		Logger.System.info('a == ' + a)
 	}
 }

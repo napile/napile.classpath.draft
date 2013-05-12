@@ -16,11 +16,11 @@ class VariableAccessObject
 		}
 		set
 		{
-			Logger.System.info("before set " + value)
+			Logger.System.info('before set ' + value)
 
 			value = newValue
 
-			Logger.System.info("after set " + value)
+			Logger.System.info('after set ' + value)
 		}
 	} = 1
 

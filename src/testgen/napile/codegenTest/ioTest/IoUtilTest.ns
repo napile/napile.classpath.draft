@@ -28,7 +28,7 @@ class IoUtilTest
 {
 	static meth main(val arg : Array<String>)
 	{
-		use(FileInputStream(File("C:/test.out")))
+		use(FileInputStream(File('C:/test.out')))
 		{
 			value.close()
 		}

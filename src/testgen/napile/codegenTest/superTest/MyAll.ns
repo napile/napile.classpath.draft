@@ -14,7 +14,7 @@ class MyAll : My1 & My2
 		super<My1>.test()
 		super<My2>.test()
 
-		Logger.System.info("'test' from MyAll")
+		Logger.System.info('\'test\' from MyAll')
 	}
 
 	static meth main(val arg : Array<String>)

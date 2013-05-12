@@ -26,7 +26,7 @@ class FileExistsTest
 {
 	static meth main(val arg : Array<String>)
 	{
-		val file = File("F:/napile.test")
+		val file = File('F:/napile.test')
 
 		Logger.System.info(file.exists().toString())
 	}

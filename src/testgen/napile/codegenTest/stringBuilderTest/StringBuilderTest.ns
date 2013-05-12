@@ -15,12 +15,12 @@ class StringBuilderTest
 
 	static meth main(val arg : Array<String>)
 	{
-		b += "val is "
+		b += 'val is '
 		b += 1
-		b += " end task"
+		b += ' end task'
 
 		Logger.System.info(b.toString())
 
-		Logger.System.info("test plus one " + 1 + " after")
+		Logger.System.info('test plus one ' + 1 + ' after')
 	}
 }

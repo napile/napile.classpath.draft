@@ -19,7 +19,7 @@ class Macro2Test
 
 		a0()
 
-		Logger.System.info("'test' called")
+		Logger.System.info('\'test\' called')
 	}
 
 	local macro a0()
@@ -29,7 +29,7 @@ class Macro2Test
 
 		a++
 
-		Logger.System.info("a == " + a)
+		Logger.System.info('a == ' + a)
 	}
 
 	static meth main(val arg : Array<String>)

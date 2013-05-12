@@ -25,6 +25,6 @@ class TargetMain
 {
 	static meth main(val arg : Array<String>)
 	{
-		Logger.System.info("TargetMain " + arg[0])
+		Logger.System.info('TargetMain ' + arg[0])
 	}
 }

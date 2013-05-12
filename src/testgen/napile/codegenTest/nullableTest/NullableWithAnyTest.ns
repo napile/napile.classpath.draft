@@ -15,12 +15,12 @@ class NullableWithAnyTest
 		var c : MyObject? = a
 
 		if(b == null)
-			Logger.System.info("b is null")
+			Logger.System.info('b is null')
 
 		if (c != null)
-			Logger.System.info("c is not null")
+			Logger.System.info('c is not null')
 
 		if(c.equals(a))
-			Logger.System.info("a is equals c")
+			Logger.System.info('a is equals c')
 	}
 }

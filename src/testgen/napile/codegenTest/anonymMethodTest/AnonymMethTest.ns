@@ -11,14 +11,14 @@ class AnonymMethTest
 
 	meth call()
 	{
-		test {(a : Int) -> Logger.System.info("test " + a.toString())}
+		test {(a : Int) -> Logger.System.info('test ' + a.toString())}
 
 		test(#testTarget)
 	}
 
 	static meth testTarget(val a : Int)
 	{
-		Logger.System.info("testTarget " + a.toString())
+		Logger.System.info('testTarget ' + a.toString())
 	}
 
 	meth test(val m : {(val a : Int) -> Null})

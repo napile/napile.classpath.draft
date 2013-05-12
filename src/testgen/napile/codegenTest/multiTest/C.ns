@@ -7,7 +7,7 @@ import napile.logging.Logger
  */
 class C : B
 {
-	this(val a : String) : B("this from B")
+	this(val a : String) : B('this from B')
 	{
 		Logger.System.info(a)
 	}

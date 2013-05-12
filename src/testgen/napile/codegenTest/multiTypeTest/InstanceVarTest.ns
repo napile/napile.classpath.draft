@@ -7,15 +7,15 @@ import napile.logging.Logger
  */
 class InstanceVarTest
 {
-	var myVar : [var arg1 : String, var arg2 : String] = ["1", "2"]
+	var myVar : [var arg1 : String, var arg2 : String] = ['1', '2']
 
 	this()
 
 	meth change()
 	{
 		Logger.System.info(myVar.toString())
-		myVar.arg1 = "3"
-		myVar.arg2 = "4"
+		myVar.arg1 = '3'
+		myVar.arg2 = '4'
 		Logger.System.info(myVar.toString())
 	}
 

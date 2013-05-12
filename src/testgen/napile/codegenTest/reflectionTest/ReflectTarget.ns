@@ -11,7 +11,7 @@ class ReflectTarget
 {
 	var myVar : Int = 1
 
-	var myVar2 : String = "myValue"
+	var myVar2 : String = 'myValue'
 
 	this()
 

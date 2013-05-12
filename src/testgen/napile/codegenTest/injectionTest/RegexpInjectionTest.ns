@@ -14,17 +14,16 @@
  * limitations under the License.
  */
 
-package napile.io
+package codegenTest.injectionTest
 
-import napile.annotation.Deprecated
-
-/**
- * @author VISTALL
- */
-@Deprecated('Need rework')
-util class NativeConsole
+/~
+ ~ Authors
+ ~ * VISTALL
+ ~/
+class RegexpInjectionTest
 {
-	native meth write(val value : String)
+	static meth main(var arg: Array<String>) {
 
-	native meth writeLine(val value : String)
+	//	val r = /:regexp \w\w\W\s\S(\w){1,2}+:/
+	}
 }

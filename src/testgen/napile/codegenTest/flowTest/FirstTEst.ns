@@ -22,7 +22,7 @@ package codegenTest.flowTest
  ~/
 class FirstTest
 {
-	val a : String = ""
+	val a : String = ''
 
 	this()
 	{

@@ -8,7 +8,7 @@ class Operators
 	static meth assertEquals(val v1 : Any, val v2 : Any)
 	{
 		if(v1 != v2)
-			throw IllegalArgumentException(v1.toString() + " is not equal " + v2.toString())
+			throw IllegalArgumentException(v1.toString() + ' is not equal ' + v2.toString())
 	}
 
 	static meth main(val arg : Array<String>)

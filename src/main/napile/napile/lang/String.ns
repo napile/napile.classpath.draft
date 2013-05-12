@@ -8,7 +8,7 @@ import napile.annotation.Immutable
  ~ Authors
  ~  * VISTALL
  ~/
-@DefaultValue("")
+@DefaultValue('')
 final class String : Sizeable
 {
 	local val array : @Immutable Array<Char>
@@ -27,6 +27,15 @@ final class String : Sizeable
 	meth getChars(val srcOffset : Int, val srcEnd : Int, val desc : Array<Char>, val descOffset : Int)
 	{
 		ArrayUtil.copy(array, offset + srcOffset, desc, descOffset, srcEnd - srcOffset)
+	}
+
+	meth toChar() : Char
+	{
+		if(count != 1)
+		{
+			throw IllegalArgumentException('Char cast need only only symbol')
+		}
+		return array[offset]
 	}
 
 	meth toArray() : Array<Char> = ArrayUtil.copyOfRange(array, offset, offset + count)

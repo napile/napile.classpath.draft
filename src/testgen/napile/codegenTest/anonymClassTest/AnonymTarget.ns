@@ -9,11 +9,11 @@ class AnonymTarget
 {
 	this()
 	{
-		Logger.System.info("'this'")
+		Logger.System.info('\'this\'')
 	}
 
 	meth call()
 	{
-		Logger.System.info("'call'")
+		Logger.System.info('\'call\'')
 	}
 }

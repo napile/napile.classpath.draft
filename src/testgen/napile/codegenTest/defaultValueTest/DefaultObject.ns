@@ -22,7 +22,7 @@ import napile.annotation.DefaultValue
  ~ Authors
  ~ * VISTALL
  ~/
-@DefaultValue(DefaultObject("nulled"))
+@DefaultValue(DefaultObject('nulled'))
 class DefaultObject
 {
 	val toString : String

@@ -13,10 +13,10 @@ class TWithConstructorTest
 	{
 		var c : TWithTarget = factory(1234)
 
-		Logger.System.info("Class is: " + c.getClass().name + ", length: " + c.length)
+		Logger.System.info('Class is: ' + c.getClass().name + ', length: ' + c.length)
 
 		c = factory<TWithTarget>(1)
 
-		Logger.System.info("Class is: " + c.getClass().name + ", length: " + c.length)
+		Logger.System.info('Class is: ' + c.getClass().name + ', length: ' + c.length)
 	}
 }

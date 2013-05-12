@@ -18,6 +18,6 @@ class MyObject
 
 		val myAnnotation : MyAnnotation? = clazz.findAnnotation()
 
-		Logger.System.info("MyValue is " + myAnnotation?.intValue)
+		Logger.System.info('MyValue is ' + myAnnotation?.intValue)
 	}
 }

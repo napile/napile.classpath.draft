@@ -26,7 +26,7 @@ class NativeConsoleTest
 {
 	static meth main(val arg : Array<String>)
 	{
-		val bytes = "Hello IO".getBytes()
+		val bytes = 'Hello IO'.getBytes()
 
 		val stream = FileOutputStream(FileDescriptor.systemErr)
 

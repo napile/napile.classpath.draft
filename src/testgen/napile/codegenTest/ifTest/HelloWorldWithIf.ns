@@ -16,12 +16,12 @@ class HelloWorldWithIf
 		var b = false
 
 		if(!b)
-			Logger.System.info("Hello world!!! : FALSE");
+			Logger.System.info('Hello world!!! : FALSE');
 
-		Logger.System.info("Hello world!!!");
+		Logger.System.info('Hello world!!!');
 
 		b = true
 		if(b)
-			Logger.System.info("Hello world!!! : TRUE");
+			Logger.System.info('Hello world!!! : TRUE');
 	}
 }

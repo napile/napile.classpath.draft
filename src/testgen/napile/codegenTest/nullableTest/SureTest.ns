@@ -20,6 +20,6 @@ class SureTest
 			e.printStackTrace()
 		}
 
-		Logger.System.info("Test is ended");
+		Logger.System.info('Test is ended');
 	}
 }

@@ -9,10 +9,10 @@ class EndsWithTest
 {
 	static meth main(val arg : Array<String>)
 	{
-		var str = "endsWith"
+		var str = 'endsWith'
 
-		Logger.System.info("str: " + str + " : result(With): " + str.endsWith("With"))
+		Logger.System.info('str: ' + str + ' : result(With): ' + str.endsWith('With'))
 
-		Logger.System.info("str: " + str + " : result(ends): " + str.endsWith("ends"))
+		Logger.System.info('str: ' + str + ' : result(ends): ' + str.endsWith('ends'))
 	}
 }

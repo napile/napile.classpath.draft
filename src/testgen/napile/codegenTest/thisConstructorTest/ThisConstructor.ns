@@ -11,9 +11,9 @@ import napile.logging.Logger
  */
 class ThisConstructor : ThisConstructor0
 {
-	this() : this("val")
+	this() : this('val')
 	{
-		Logger.System.info("after this call")
+		Logger.System.info('after this call')
 	}
 
 	this(val value : String) : ThisConstructor0(value)

@@ -14,7 +14,7 @@ class RefTest
 
 		refTest(c, d)
 
-		Logger.System.info(c.toString() + " " + d)
+		Logger.System.info(c.toString() + ' ' + d)
 	}
 
 	static meth refTest(ref c : Int, ref d : Int)

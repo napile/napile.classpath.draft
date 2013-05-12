@@ -13,12 +13,12 @@ class TryCatchTest
 {
 	static meth main(val arg : Array<String>)
 	{
-		Logger.System.info("Before throw")
+		Logger.System.info('Before throw')
 
 		var b = TryCatchObject()
 
 		b.b()
 
-		Logger.System.info("After throw")
+		Logger.System.info('After throw')
 	}
 }

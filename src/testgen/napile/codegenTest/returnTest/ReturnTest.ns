@@ -9,14 +9,14 @@ class ReturnTest
 {
 	static meth main(val arg : Array<String>)
 	{
-		Logger.System.info("before return");
+		Logger.System.info('before return');
 
 		if (true)
 		{
-			Logger.System.info("is returned")
+			Logger.System.info('is returned')
 			return
 		}
 
-		Logger.System.info("after return")
+		Logger.System.info('after return')
 	}
 }

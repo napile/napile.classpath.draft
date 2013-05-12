@@ -11,7 +11,7 @@ import napile.logging.Logger
  */
 class LazyPropertyTest
 {
-	lazy val value : String = "LAZY_VALUE"
+	lazy val value : String = 'LAZY_VALUE'
 
 	this()
 

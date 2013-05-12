@@ -18,13 +18,13 @@ class MultiLabelTest
 			{
 				if (Bool.TRUE)
 				{
-					Logger.System.info("break B")
+					Logger.System.info('break B')
 					break B
 				}
-				Logger.System.info("UnEnter code 'B'")
+				Logger.System.info('UnEnter code \'B\'')
 			}
 
-			Logger.System.info("Enter code 'A'")
+			Logger.System.info('Enter code \'A\'')
 		}
 	}
 }

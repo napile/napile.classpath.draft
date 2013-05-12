@@ -5,9 +5,9 @@ package codegenTest.safeAccessTest
  */
 class MyObject
 {
-	var myVar : String? = "test"
+	var myVar : String? = 'test'
 
 	this()
 
-	meth test() : String = "aaa"
+	meth test() : String = 'aaa'
 }

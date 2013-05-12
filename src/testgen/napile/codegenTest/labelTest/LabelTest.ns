@@ -17,10 +17,10 @@ class LabelTest
 		{
 			if (Bool.TRUE)
 			{
-				Logger.System.info("break me")
+				Logger.System.info('break me')
 				break my
 			}
-			Logger.System.info("UnEnter code")
+			Logger.System.info('UnEnter code')
 		}
 		return
 	}

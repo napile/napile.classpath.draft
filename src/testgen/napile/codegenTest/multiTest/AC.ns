@@ -7,15 +7,15 @@ import napile.logging.Logger
  */
 class AC : A & C
 {
-	this() : this("this from AС(single)")
+	this() : this('this from AС(single)')
 
-	this(val a : String) : A("this from A") & C("this from C")
+	this(val a : String) : A('this from A') & C('this from C')
 	{
 		Logger.System.info(a)
 	}
 
 	static meth main(val arg : Array<String>)
 	{
-		AC("this from AC")
+		AC('this from AC')
 	}
 }

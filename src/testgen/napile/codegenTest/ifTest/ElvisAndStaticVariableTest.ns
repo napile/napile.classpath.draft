@@ -27,7 +27,7 @@ class ElvisAndStaticVariableTest
 
 	static meth main(val arg : Array<String>)
 	{
-		name = null ?: "test"
+		name = null ?: 'test'
 
 		Logger.System.info(name)
 	}

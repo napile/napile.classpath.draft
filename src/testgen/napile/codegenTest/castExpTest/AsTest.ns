@@ -9,7 +9,7 @@ class AsTest
 {
 	static meth main(val arg : Array<String>)
 	{
-		var o : Any = "inner"
+		var o : Any = 'inner'
 
 		var a : String = o as String
 

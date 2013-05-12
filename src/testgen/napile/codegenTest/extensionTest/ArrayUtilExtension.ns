@@ -11,9 +11,9 @@ class ArrayUtilExtension
 	static meth main(val arg : Array<String>)
 	{
 		val myArray = Array<String>(1)
-		myArray[0] = "123456789"
+		myArray[0] = '123456789'
 
-		Logger.System.info(myArray.contains("1"))
-		Logger.System.info(myArray.contains("123456789"))
+		Logger.System.info(myArray.contains('1'))
+		Logger.System.info(myArray.contains('123456789'))
 	}
 }

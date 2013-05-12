@@ -19,7 +19,7 @@ class BreakWhileTest
 		{
 			if(b == 10)
 			{
-				Logger.System.info("10 break")
+				Logger.System.info('10 break')
 				break
 			}
 
@@ -28,6 +28,6 @@ class BreakWhileTest
 			b = b + 1
 		}
 
-		Logger.System.info("End")
+		Logger.System.info('End')
 	}
 }

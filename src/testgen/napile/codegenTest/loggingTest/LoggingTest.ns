@@ -25,10 +25,10 @@ class LoggingTest
 {
 	static meth main(val arg : Array<String>)
 	{
-		Logger.System.info("test")
+		Logger.System.info('test')
 
-		Logger.System.warn("test")
+		Logger.System.warn('test')
 
-		Logger.System.error("test")
+		Logger.System.error('test')
 	}
 }

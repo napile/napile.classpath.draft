@@ -13,12 +13,12 @@ class StringTest
 {
 	static meth main(val arg : Array<String>)
 	{
-		var str = "str"
+		var str = 'str'
 
-		Logger.System.info(str == "str")
+		Logger.System.info(str == 'str')
 
 		Logger.System.info(str == str)
 
-		Logger.System.info(str == "equal")
+		Logger.System.info(str == 'equal')
 	}
 }

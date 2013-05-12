@@ -15,11 +15,11 @@ class ElvisTest
 	{
 		var b : String? = null
 
-		b = b ?: "now is not null"
+		b = b ?: 'now is not null'
 
 		Logger.System.info(b.toString())
 
-		b = b ?: "this text cant be set"
+		b = b ?: 'this text cant be set'
 
 		Logger.System.info(b.toString())
 	}

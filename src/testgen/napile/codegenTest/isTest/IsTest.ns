@@ -16,21 +16,21 @@ class IsTest
 		var target /*: Any*/ = Array<Int>(0)
 
 		if(target is Array<Int>)
-			Logger.System.info("Array<Int> is Array<Int>")
+			Logger.System.info('Array<Int> is Array<Int>')
 
 		if(target is Array<Any>)
-			Logger.System.info("Array<Int> is Array<Any>")
+			Logger.System.info('Array<Int> is Array<Any>')
 
 		if(target is Array<Any?>)
-			Logger.System.info("Array<Int> is Array<Any?>")
+			Logger.System.info('Array<Int> is Array<Any?>')
 
 		//if(target is Array<String>)
 		//	Logger.System.info("Array<Int> is Array<String>")
 
 		if (target is Any)
-			Logger.System.info("Array<Int> is Any")
+			Logger.System.info('Array<Int> is Any')
 
 		if (target is Any?)
-			Logger.System.info("Array<Int> is Any?")
+			Logger.System.info('Array<Int> is Any?')
 	}
 }

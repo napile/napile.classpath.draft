@@ -7,5 +7,5 @@ class MyObject
 {
 	this()
 
-	meth call() : String = "myObject"
+	meth call() : String = 'myObject'
 }
