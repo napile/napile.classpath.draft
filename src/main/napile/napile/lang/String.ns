@@ -33,7 +33,7 @@ final class String : Sizeable
 	{
 		if(count != 1)
 		{
-			throw IllegalArgumentException('Char cast need only only symbol')
+			throw IllegalArgumentException('Char cast need only one symbol')
 		}
 		return array[offset]
 	}
