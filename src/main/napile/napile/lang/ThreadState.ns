@@ -5,11 +5,11 @@ package napile.lang
  */
 class ThreadState
 {
-	static val NEW : ThreadState = ThreadState()
+	enum val NEW : ThreadState()
 
-	static val STARTED : ThreadState = ThreadState()
+	enum val STARTED : ThreadState()
 
-	static val FINISHED : ThreadState = ThreadState()
+	enum val FINISHED : ThreadState()
 
 	this()
 }
