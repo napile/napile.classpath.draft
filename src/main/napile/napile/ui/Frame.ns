@@ -22,5 +22,5 @@ package napile.ui
  ~/
 class Frame : BaseComponent & Textable
 {
-	this(val text : String? = null) : BaseComponent() & Textable(text)
+	this(val text : String? = null) : Textable(text)
 }

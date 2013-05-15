@@ -19,6 +19,7 @@ package napile.ui
 import napile.ui.render.UiRender
 import napile.util.listeners.VariableChangeEvent
 import napile.util.listeners.ListenerHolder
+import napile.annotation.VariableChangeListener
 
 /~
  ~ Authors
@@ -36,6 +37,7 @@ abstract class Component
 
 	var enabled : Bool = false
 
+	@VariableChangeListener
 	var visible : Bool
 	{
 		set
@@ -49,8 +51,6 @@ abstract class Component
 	} = false
 
 	val variableChangeListener : ListenerHolder<VariableChangeEvent<Any>> = ListenerHolder();
-
-	this()
 
 	meth add(val c : Component)
 

@@ -28,8 +28,6 @@ class BaseComponent : Component
 {
 	local val members : List<Component> = ArrayList()
 
-	this() : Component()
-
 	override meth add(val c : Component)
 	{
 		members.add(c)

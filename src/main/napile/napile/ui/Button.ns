@@ -26,5 +26,5 @@ class Button : BaseComponent & Textable
 {
 	val clickListener : ListenerHolder<ClickEvent> = ListenerHolder()
 
-	this(val text : String? = null) : BaseComponent() & Textable(text)
+	this(val text : String? = null) : Textable(text)
 }

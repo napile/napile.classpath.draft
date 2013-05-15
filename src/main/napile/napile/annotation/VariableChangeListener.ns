@@ -14,13 +14,14 @@
  * limitations under the License.
  */
 
-package napile.ui
+package napile.annotation
 
 /~
  ~ Authors
  ~ * VISTALL
  ~/
-class RootPanel : BaseComponent
+@Annotation
+final class VariableChangeListener
 {
 	this()
 }
