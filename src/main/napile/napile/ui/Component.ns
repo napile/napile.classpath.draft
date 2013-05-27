@@ -38,19 +38,7 @@ abstract class Component
 	var enabled : Bool = false
 
 	@VariableChangeListener
-	var visible : Bool
-	{
-		set
-		{
-			val old = value
-
-			value = newValue
-
-			variableChangeListener.fire(VariableChangeEvent<Bool>('visible', old, newValue))
-		}
-	} = false
-
-	val variableChangeListener : ListenerHolder<VariableChangeEvent<Any>> = ListenerHolder();
+	var visible : Bool = false
 
 	meth add(val c : Component)
 

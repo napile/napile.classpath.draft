@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="NewModuleRootManager">
+    <extension id="java" enabled="false" sdk-name="" language-level="JDK_1_8" />
+    <extension id="consulo-plugin" enabled="false" sdk-name="" />
+    <extension id="lombok" enabled="false" />
+    <extension id="lombok-pg" enabled="false" />
+    <extension id="napile" enabled="true" />
+    <content url="file://$MODULE_DIR$">
+      <content-folder type="SOURCE" url="file://$MODULE_DIR$/src/main/napile" />
+      <content-folder type="RESOURCE" url="file://$MODULE_DIR$/rsc/main/napile" />
+      <content-folder type="SOURCE" url="file://$MODULE_DIR$/src/testgen/napile" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
+
