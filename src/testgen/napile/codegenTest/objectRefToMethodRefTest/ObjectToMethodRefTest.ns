@@ -34,6 +34,6 @@ class ObjectToMethodRefTest
 
 		test.testByte{(e) -> 1.compareTo(e)}
 		test.testByte(#myCompare)
-		test.testByte(->> 1)
+		test.testByte(->>1)
 	}
 }

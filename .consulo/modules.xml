@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ModuleManager">
+    <modules>
+      <module name="napile.classpath.draft" dirurl="file://$PROJECT_DIR$">
+        <extension id="napile" />
+        <content url="file://$MODULE_DIR$">
+          <content-folder type="SOURCE" url="file://$MODULE_DIR$/src/main/napile" />
+          <content-folder type="SOURCE" url="file://$MODULE_DIR$/src/testgen/napile" />
+          <content-folder type="RESOURCE" url="file://$MODULE_DIR$/rsc/main/napile" />
+        </content>
+        <orderEntry type="sourceFolder" forTests="false" />
+      </module>
+    </modules>
+  </component>
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/napile.classpath.draft.cxmf" filepath="$PROJECT_DIR$/napile.classpath.draft.cxmf" />
