@@ -3,11 +3,11 @@
   <component name="ModuleManager">
     <modules>
       <module name="napile.classpath.draft" dirurl="file://$PROJECT_DIR$">
-        <extension id="napile" />
+        <extension id="napile" sdk-module-name="" sdk-name="" />
         <content url="file://$MODULE_DIR$">
-          <content-folder type="SOURCE" url="file://$MODULE_DIR$/src/main/napile" />
-          <content-folder type="SOURCE" url="file://$MODULE_DIR$/src/testgen/napile" />
-          <content-folder type="RESOURCE" url="file://$MODULE_DIR$/rsc/main/napile" />
+          <content-folder type="PRODUCTION" url="file://$MODULE_DIR$/src/main/napile" />
+          <content-folder type="PRODUCTION" url="file://$MODULE_DIR$/src/testgen/napile" />
+          <content-folder type="PRODUCTION_RESOURCE" url="file://$MODULE_DIR$/rsc/main/napile" />
         </content>
         <orderEntry type="sourceFolder" forTests="false" />
       </module>
