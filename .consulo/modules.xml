@@ -5,10 +5,11 @@
       <module name="napile.classpath.draft" dirurl="file://$PROJECT_DIR$">
         <extension id="napile" sdk-module-name="" sdk-name="" />
         <content url="file://$MODULE_DIR$">
-          <content-folder type="PRODUCTION" url="file://$MODULE_DIR$/src/main/napile" />
-          <content-folder type="PRODUCTION" url="file://$MODULE_DIR$/src/testgen/napile" />
-          <content-folder type="PRODUCTION_RESOURCE" url="file://$MODULE_DIR$/rsc/main/napile" />
+          <content-folder type="PRODUCTION" url="file://$MODULE_DIR$/src" />
+          <content-folder type="PRODUCTION_RESOURCE" url="file://$MODULE_DIR$/resources" />
+          <content-folder type="TEST" url="file://$MODULE_DIR$/testSrc" />
         </content>
+        <orderEntry type="module-extension-sdk" extension-id="napile" />
         <orderEntry type="sourceFolder" forTests="false" />
       </module>
     </modules>
